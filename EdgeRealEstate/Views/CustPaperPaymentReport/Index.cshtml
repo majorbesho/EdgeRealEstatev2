@@ -1,0 +1,212 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<h3 style="text-align:center">  تقرير سندات صرف نقدية عميل</h3>
+@*@using (Html.BeginForm("ShowList", "PaperPaymentReport"))
+{*@
+@using (Html.BeginForm("Download_PDF", "CustPaperPaymentReport"))
+{
+<div>
+    <div class="form-horizontal" dir="rtl">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                @Html.Label("toDate", "الى تاريخ", htmlAttributes: new { @class = "control-label" })
+
+                @(Html.Kendo().DatePicker().Name("toDate").Format("yyyy/MM/dd").HtmlAttributes(new { @class = "form-control" }))
+                @Html.ValidationMessage("toDate", "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                @Html.Label("FromDate", "من تاريخ", htmlAttributes: new { @class = "control-label" })
+
+                @(Html.Kendo().DatePicker().Name("FromDate").Format("yyyy/MM/dd").HtmlAttributes(new { @class = "form-control" }))
+                @Html.ValidationMessage("FromDate", "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    @*<div class="col-md-2">
+                @(Html.Kendo().ComboBox()
+                   .Name("toCust")
+                   .Placeholder("اختر")
+                   //.DataTextField("barCodeUnv")
+                   .DataTextField("ARName")
+                   //.Template("#= barCodeUnv # - #= arName #")
+                   .DataValueField("Id")
+                   .Filter("contains")
+                   .MinLength(1)
+                   .HtmlAttributes(new { style = "padding-bottom:10px;" })
+                   //.Events(e => e.Change("onComboChange"))
+                   .DataSource(source =>
+                   {
+                       source.Read(read =>
+                       {
+                           read.Action("ServerFiltering_GetCustomers", "PaperPaymentReport");
+                       })
+                   .ServerFiltering(true);
+                   })
+                )
+            </div>
+            @Html.Label("Cust", " الى عميل :", htmlAttributes: new { @class = "control-label col-md-1" })
+            <div class="col-md-2">
+                @(Html.Kendo().ComboBox()
+                   .Name("FromCust")
+                   .Placeholder("اختر")
+                   //.DataTextField("barCodeUnv")
+                   .DataTextField("ARName")
+                   //.Template("#= barCodeUnv # - #= arName #")
+                   .DataValueField("Id")
+                   .Filter("contains")
+                   .MinLength(1)
+                   .HtmlAttributes(new { style = "padding-bottom:10px;" })
+                   //.Events(e => e.Change("onComboChange"))
+                   .DataSource(source =>
+                   {
+                       source.Read(read =>
+                       {
+                           read.Action("ServerFiltering_GetCustomers", "PaperPaymentReport");
+                       })
+                   .ServerFiltering(true);
+                   })
+                )
+            </div>
+            @Html.Label("FromCust", " من عميل :", htmlAttributes: new { @class = "control-label col-md-1" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                </div>
+                <div class="col-md-2">
+                    @(Html.Kendo().ComboBox()
+                       .Name("toSalesMan")
+                       .Placeholder("اختر")
+                       //.DataTextField("barCodeUnv")
+                       .DataTextField("ARName")
+                       //.Template("#= barCodeUnv # - #= arName #")
+                       .DataValueField("Id")
+                       .Filter("contains")
+                       .MinLength(1)
+                       .HtmlAttributes(new { style = "padding-bottom:10px;" })
+                       //.Events(e => e.Change("onComboChange"))
+                       .DataSource(source =>
+                       {
+                           source.Read(read =>
+                           {
+                               read.Action("ServerFiltering_GetSalesMan", "PaperPaymentReport");
+                           })
+                       .ServerFiltering(true);
+                       })
+                    )
+                </div>
+                @Html.Label("toSalesMan", " الى مندوب :", htmlAttributes: new { @class = "control-label col-md-1" })
+                <div class="col-md-2">
+                    @(Html.Kendo().ComboBox()
+                       .Name("FromSalesMan")
+                       .Placeholder("اختر")
+                       //.DataTextField("barCodeUnv")
+                       .DataTextField("ARName")
+                       //.Template("#= barCodeUnv # - #= arName #")
+                       .DataValueField("Id")
+                       .Filter("contains")
+                       .MinLength(1)
+                       .HtmlAttributes(new { style = "padding-bottom:10px;" })
+                       //.Events(e => e.Change("onComboChange"))
+                       .DataSource(source =>
+                       {
+                           source.Read(read =>
+                           {
+                               read.Action("ServerFiltering_GetSalesMan", "PaperPaymentReport");
+                           })
+                       .ServerFiltering(true);
+                       })
+                    )
+                </div>
+                @Html.Label("FromSalesMan", " من مندوب :", htmlAttributes: new { @class = "control-label col-md-1" })
+            </div>*@
+    @*<div class="form-group" dir="rtl">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn-primary" value="طباعة التقرير" style="text-align:center;background-color: steelblue;color: white;cursor: pointer;" />
+            <br />
+            <br />
+        </div>
+    *@
+</div>
+    <br />
+
+    <div class="form-group bmd-form-group" dir="rtl">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-primary fa fa-print" value="طباعة التقرير" style="text-align:center;color: white;cursor: pointer;" />
+            <br />
+            <br />
+        </div>
+    </div>
+</div>
+}
+
+
+<br />
+@*}*@
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.CustPaperPaymentViewModel>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+        columns.Bound(p => p.indate).ClientTemplate("#= kendo.toString(indate, \"yyyy/MM/dd\") #");
+
+        columns.Bound(p => p.custName)
+       .ClientTemplate((@Html.ActionLink("#=custName#", "Details", "Customer"
+       , new { id = "#=customerId#" }, null).ToHtmlString()));
+
+        
+
+        columns.Bound(p => p.paid);
+        columns.Bound(p => p.paidMethod);
+        columns.Bound(p => p.billId);
+    })
+    .Pageable()
+    .Sortable()
+    .Filterable()
+    .Scrollable()
+    .HtmlAttributes(new { @class = "k-rtl" })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Batch(true)
+        .ServerOperation(false)
+        .Model(model =>
+        {
+            model.Id(p => p.id);
+            model.Field(p => p.id).Editable(false);
+        })
+        .PageSize(20)
+        .Read(read => read.Action("EditingCustom_Read", "CustPaperPaymentReport").Data("getmasterdata"))
+    )
+)
+<script>
+        
+      $('#toDate').change(function () {
+        $("#grid").data("kendoGrid").dataSource.read(read => read.Action("EditingCustom_Read", "CustPaperPaymentReport").Data("getmasterdata"));
+            $("#grid").css("display", "block");
+        });
+       
+
+    function getmasterdata() {
+
+        
+        var vFromDate = $("#FromDate").val();
+        var vtoDate = $("#toDate").val();
+        
+        return {
+            
+            "FromDate": vFromDate,
+            "toDate": vtoDate,
+                   
+        };
+    }
+</script>
+
+

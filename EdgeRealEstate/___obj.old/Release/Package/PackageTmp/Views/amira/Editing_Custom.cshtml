@@ -1,0 +1,149 @@
+﻿@{ 
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #icon{
+        padding-left:10px;
+    }
+</style>
+<br />
+<h3 style="text-align:center">فاتورة بيع</h3>
+<div dir="rtl">
+    <button id="saveChanges" class="btn-primary" style="background-color: steelblue;color: white;cursor: pointer;"><i class="fa fa-save" id="icon"></i>   حفظ</button>
+    |
+    @Html.ActionLink("رجوع", "Index")
+    @*<button id="saveChanges" class="btn btn-primary"> <span class="glyphicon glyphicon-floppy-saved"></span>  حفظ </button>*@
+</div>
+<br />
+            <div class="form-group" id="alertsuccess" hidden="hidden" dir="rtl">
+                <div class="alert alert-success alert-dismissable fade-in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>تم الحفظ بنجاح</strong>
+                </div>
+            </div>
+            <div class="form-horizontal" dir="rtl">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    <div class="col-md-2">
+                        @Html.TextBox("ENname", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("ENname", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("ENname", "الاسم الانجليزى", new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.TextBox("ARname", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("ARname", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("ARname", "الاسم العربى", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+
+</div>
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.amiraDetailsViewModel>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.name);
+            columns.Command(command => command.Destroy().Text("حذف")).Width(150);
+        })
+        .ToolBar(toolBar =>
+        {
+            toolBar.Create().Text("اضافة صنف جديد");
+        })
+        .Editable(editable => editable.Mode(GridEditMode.InCell))
+        .Pageable()
+        .Sortable()
+        .Scrollable()
+        .HtmlAttributes(new { style = "height:300px;", @class = "k-rtl" })
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .Batch(true)
+            .ServerOperation(false)
+            .Events(events => events.Error("error_handler"))
+            .Model(model =>
+            {
+                model.Id(p => p.id);
+                model.Field(p => p.id).Editable(false);
+            })
+            .PageSize(3)
+            .Read(read => read.Action("EditingCustom_Read", "amira"))
+            .Create(create => create.Action("EditingCustom_Create", "amira").Data("getmasterdata"))
+            .Update(update => update.Action("EditingCustom_Update", "amira"))
+            .Destroy(destroy => destroy.Action("EditingCustom_Destroy", "amira"))
+        )
+)
+
+
+
+    <script type="text/javascript">
+        function error_handler(e) {
+            if (e.errors) {
+                var message = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            message += this + "\n";
+                        });
+                    }
+                });
+                alert(message);
+            }
+        }
+    </script>
+    <script>
+    $("#saveChanges").kendoButton({
+        click: function (e) {
+            var grid = $("#grid").data("kendoGrid");
+            var vARname = $("#ARname").val();
+            var vENname = $("#ENname").val();
+            
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("Create")',
+                data: {
+                    "ENname": vENname, "ARname": vARname,
+                  
+                },
+                dataType: 'json',
+                success: function (data) {
+                     grid.saveChanges();
+                },
+                error: function () {
+                }
+            });
+              
+                            grid.saveChanges();
+                            $("#alertsuccess").show();
+                            $("#alertsuccess").fadeTo(2000, 500).slideUp(500, function () {
+                                $("#alertsuccess").slideUp(500);
+
+                            });
+
+            }
+    })
+
+    </script>
+
+    <script>
+
+    function getmasterdata() {
+
+        var vbillType = $("#billType").val();
+        var vempID = $("#empID").val();
+        var vcustomersId = $("#customersId").val();
+        var vrefNo = $("#refNo").val();
+        var vsalesManId = $("#salesManId").val();
+        var vrefType = $("#refType").val();
+        var vpaidType = $("#paidType").val();
+        var vaddDate = $("#addDate").val();
+        var visApproval = $("#isApproval").prop('checked');
+        var vpaid = $("#paid").val();
+ 
+        return {
+            empID: vempID, customersId: vcustomersId, refNo: vrefNo, salesManId: vsalesManId,billType: vbillType,
+            refType: vrefType,paidType: vpaidType,addDate: vaddDate,isApproval: visApproval,paid: vpaid
+        };
+        }
+    </script>
+

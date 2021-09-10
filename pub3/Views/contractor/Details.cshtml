@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Index contractor";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+@model EdgeRealEstate.Entities.contractor
+<h3 style="text-align:center">المقاولين</h3>
+<div class="k-rtl">
+    <div class="demo-section k-content">
+        @(Html.Kendo().TabStrip()
+              .Name("Customer")
+              .Items(tabstrip =>
+              {
+
+tabstrip.Add().Text("بيانات شخصية")
+.Content(model => Html.Partial("DetailsPartialPersonnel", model));
+     tabstrip.Add().Text("بيانات الحساب")
+.Content(model => Html.Partial("DetailsPartialAccount", model));
+})
+.SelectedIndex(0)
+        )
+    </div>
+</div>
+<br />
+<div dir="rtl">
+    @Html.ActionLink("رجوع", "Index")
+</div>
+

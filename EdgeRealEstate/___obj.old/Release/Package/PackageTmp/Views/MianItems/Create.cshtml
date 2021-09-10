@@ -1,0 +1,147 @@
+﻿@model EdgeRealEstate.Models.ViewModels.MainItemMaterialMaster
+@{
+    ViewBag.Title = "Master";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<style>
+            .bootstrap-select > .dropdown-toggle.bs-placeholder,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:active 
+        {
+            color: #fff;
+        }
+</style>
+<h2>Create</h2>
+
+@using (Html.BeginForm("Save", "MianItems", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+{
+    <div class="form-horizontal">
+        <h4>MainItem</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MainItem.Aname, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MainItem.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MainItem.Aname, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MainItem.Ename, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MainItem.Ename, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MainItem.Ename, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MainItem.NoOfDaies, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MainItem.NoOfDaies, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MainItem.NoOfDaies, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MainItem.Description, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MainItem.Description, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MainItem.Description, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MainItem.AttachedId, htmlAttributes: new { @class = "control-label " })
+            @*@Html.EditorFor(model => model.Project.attachedFileAndPic, new { htmlAttributes = new { @class = "form-control" } })*@
+            @(Html.Kendo().Upload()
+            .Name("Files")
+            .HtmlAttributes(new { aria_label = "Files" })
+            .Multiple(true)
+            //.Validation(validation => validation.AllowedExtensions(new string[] { ".gif", ".jpg", ".png" }))
+            )
+            @Html.ValidationMessageFor(model => model.MainItem.AttachedId, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MainItem.DegreeOfExcellenceId, htmlAttributes: new { @class = "control-label " })
+            @Html.DropDownListFor(model => model.MainItem.DegreeOfExcellenceId, (IEnumerable<SelectListItem>)ViewBag.DegreeOfExe, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MainItem.DegreeOfExcellenceId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MainItem.HaveItem, htmlAttributes: new { @class = "control-label " })
+            <div class="checkbox">
+                @Html.EditorFor(model => model.MainItem.HaveItem)
+                @Html.ValidationMessageFor(model => model.MainItem.HaveItem, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MainItem.Nots, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MainItem.Nots, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MainItem.Nots, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="form-group col-md-12">
+                    @(Html.Kendo().Grid(Model.MaterialsDetails)
+    .Name("MaterialsDetails")
+    .ToolBar(tools => tools.Create().Text("اضف مادة جديدة"))
+    .Editable(editable => editable.Mode(GridEditMode.InCell).CreateAt(GridInsertRowPosition.Bottom))
+    .Columns(columns =>
+    {
+
+        columns.ForeignKey(p => p.MaterialID, (System.Collections.IEnumerable)ViewData["Materials"], "StageID", "StageName").ClientTemplate("#= MaterialID #" +
+        "<input type='hidden' name='MaterialsDetails[#= index(data)#].MaterialID' value='#= MaterialID #' />");
+
+        columns.Bound(p => p.Quantity).ClientTemplate("#= Quantity #" +
+        "<input type='hidden' name='MaterialsDetails[#= index(data)#].Quantity' value='#= Quantity #' />");
+
+        columns.Bound(p => p.price).ClientTemplate("#= price #" +
+        "<input type='hidden' name='MaterialsDetails[#= index(data)#].price' value='#= price #' />");
+
+        columns.Command(command => command.Destroy().Text("حذف"));
+
+    })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Batch(true)
+        .Model(model =>
+        {
+            model.Id(p => p.ID);
+            model.Field(p => p.ID).Editable(false);
+            model.Field(p => p.MaterialID).DefaultValue(1);
+            //model.Field(p => p.Stage).DefaultValue(
+            //ViewData["defaultStage"] as EdgeRealEstate.Models.ViewModels.StageListVM);
+        })
+    //.Aggregates(aggregates =>
+    //    {
+    //        aggregates.Add(p => p.rowTotal).Sum();
+    //    })
+    .ServerOperation(false)
+    ).HtmlAttributes(new { @class = "k-rtl" })
+        )
+
+        </div>
+    </div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+    
+}
+<script>
+
+    function index(dataItem) {
+        var data = $("#MaterialsDetails").data("kendoGrid").dataSource.data();
+<div class="col-md-12">
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section Scripts
+{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+        return data.indexOf(dataItem);
+    }
+
+</script>

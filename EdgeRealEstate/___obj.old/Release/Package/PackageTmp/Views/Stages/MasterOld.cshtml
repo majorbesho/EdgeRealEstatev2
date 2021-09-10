@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "MasterDetails";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>MasterDetails</h2>
+
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.StageVM>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.Ename);
+            columns.Bound(p => p.Aname);
+            columns.Bound(p => p.code);
+            columns.Bound(p => p.lastCost);
+            columns.Bound(p => p.nots);
+            columns.Bound(p => p.IsHaveItem);
+            columns.Bound(p => p.BeginDateAcutely).Format("{0:dd/MM/yyyy}");
+            columns.Bound(p => p.EndDateAcutely).Format("{0:dd/MM/yyyy}");
+            //columns.Bound(p => p.Main).ClientTemplate("#=Main.Name#").Sortable(false).Width(150);
+            columns.Bound(p => p.Main).ClientTemplate("#=Main.Name#").Sortable(false).Width(180);
+
+            //columns.ForeignKey(p => p.MainItemID, (System.Collections.IEnumerable)ViewData["categories"], "ID", "Name")
+            //    .Title("Main Item").Width(200);
+
+            columns.Command(command => command.Destroy()).Width(150);
+        })
+        .ToolBar(toolBar =>
+        {
+            toolBar.Create();
+            toolBar.Save();
+        })
+        .Editable(editable => editable.Mode(GridEditMode.InCell))
+        .Pageable()
+        .Sortable()
+        .Scrollable()
+        .HtmlAttributes(new { style = "height:550px;" })
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .Batch(true)
+            .ServerOperation(false)
+            .Events(events => events.Error("error_handler"))
+            .Model(model =>
+            {
+                model.Id(p => p.id);
+
+                model.Field(p => p.id).Editable(false);
+
+                model.Field(p => p.Main).DefaultValue(
+                ViewData["defaultCategory"] as EdgeRealEstate.Models.ViewModels.MainItemViewModel);
+                
+            })
+            .PageSize(20)
+            .Read(read => read.Action("EditingCustom_Read", "Stages"))
+            .Create(create => create.Action("EditingCustom_Create", "Stages"))
+            .Update(update => update.Action("EditingCustom_Update", "Stages"))
+            .Destroy(destroy => destroy.Action("EditingCustom_Destroy", "Stages"))
+        )
+    )
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        });
+        function error_handler(e) {
+            if (e.errors) {
+                var message = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function() {
+                            message += this + "\n";
+                        });
+                    }
+                });
+                alert(message);
+            }
+        }
+    </script>
+
+
+
+

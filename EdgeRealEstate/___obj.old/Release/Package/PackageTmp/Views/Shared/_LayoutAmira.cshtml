@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Kendo/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/Kendo/kendo.blueopal.min.css" rel="stylesheet" />
+    <link href="~/Content/Kendo/kendo.rtl.min.css" rel="stylesheet" />
+    @*<link href="~/Content/material-dashboard.min.css" rel="stylesheet" />*@
+    @*<script src="~/Scripts/jquery-3.4.1.min.js"></script>*@
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.all.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.aspnetmvc.min.js"></script>
+
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @* @Scripts.Render("~/Content/css")
+        @Styles.Render("~/Content/kendo/css")
+
+        @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+
+        @Scripts.Render("~/bundles/kendo")*@
+</head>
+<body>
+    @*@Html.Action("TopNav", "Navigation")*@    @*Navbar rendering*@
+    @*@Html.Action("Index", "Menu")*@
+    @*<div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">*@
+    @*<div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Electronic Service", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>*@
+    @*<div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink(" حسابى ", "Index", "PslMobileRequest", null, new { @class = "glyphicon glyphicon-user" })*@
+    @*@Html.ActionLink(" حسابى ", "Index", "PslMobileRequest")*@
+    @*</li >
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span> الطلبات</a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("طلب اجازة", "Create", "PslMobileRequest")</li>
+                                <li>@Html.ActionLink("طلب تجديد العقد", "About", "PslMobileRequest")</li>
+                                <li>@Html.ActionLink("طلب سلفة", "Contact", "PslMobileRequest")</li>
+                            </ul>
+                        </li>
+                        <li>@Html.ActionLink("الرئيسية", "UserDashBoard", "Home")</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>*@
+
+    @*<span class="glyphicon glyphicon-user">@Html.ActionLink("", "PslMobileRequest")</span>*@
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer style="text-align:center">
+            <p>&copy; @DateTime.Now.Year - EDGE Solution </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+  @*  @RenderSection("scripts", required: false)*@
+</body>
+</html>
+

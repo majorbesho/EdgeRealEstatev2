@@ -1,0 +1,159 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.Projects>
+
+@{
+    ViewBag.Title = "Index";
+    ViewBag.current = "Projects";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MainProjectid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LandNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LandSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.attachedFileAndPic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaxLevelForContributions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BeginDateAcutely)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BeginDateExpected)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDateAcutely)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDateExpected)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsExtand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlatNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoveNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShopNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LevelNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VellaNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdminstrationLevelNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectDescriptionID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nots)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MainProjectid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ename)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LandNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LandSize)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.attachedFileAndPic)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaxLevelForContributions)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImgURL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BeginDateAcutely)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BeginDateExpected)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDateAcutely)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDateExpected)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsExtand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlatNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoveNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShopNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LevelNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VellaNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdminstrationLevelNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProjectDescriptionID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nots)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>

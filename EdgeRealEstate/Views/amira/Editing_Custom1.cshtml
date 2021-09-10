@@ -1,0 +1,501 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #icon{
+        padding-left:10px;
+    }
+</style>
+<br />
+<h3 style="text-align:center">فاتورة بيع</h3>
+<div dir="rtl">
+    <button id="saveChanges" class="btn-primary" style="background-color: steelblue;color: white;cursor: pointer;"><i class="fa fa-save" id="icon"></i>   حفظ</button>
+    |
+    @Html.ActionLink("رجوع", "Index")
+    @*<button id="saveChanges" class="btn btn-primary"> <span class="glyphicon glyphicon-floppy-saved"></span>  حفظ </button>*@
+</div>
+<br />
+            <div class="form-group" id="alertsuccess" hidden="hidden" dir="rtl">
+                <div class="alert alert-success alert-dismissable fade-in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>تم الحفظ بنجاح</strong>
+                </div>
+            </div>
+            <div class="form-horizontal" dir="rtl">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @*<div class="form-group">
+                    <div class="col-md-2">
+                        @Html.DropDownList("customersId", (SelectList)ViewBag.Customers, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("customersId", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("customersId", "العميل", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @(Html.Kendo().DatePicker().Name("addDate").Format("yyyy/MM/dd").HtmlAttributes(new { @class = "form-control" }))
+                        @Html.ValidationMessage("addDate", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("addDate", "تاريخ الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-2">
+                    @Html.DropDownList("billType", new List<SelectListItem> {
+                   new SelectListItem{ Text="اجل",Value="اجل"},
+                   new SelectListItem{ Text="نقدى",Value="نقدى"}}, "اختر", new { @class = "form-control" })
+                    @Html.ValidationMessage("billType", "", new { @class = "text-danger" })
+                    <label for="billTypeCredit" id="billTypeCredit" hidden="hidden"></label>
+                </div>
+                    @Html.Label("billType", "نوع الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+                  
+                </div>*@
+                @*<div class="form-group">
+                    <div class="col-md-2">
+                        @Html.DropDownList("paidType", new List<SelectListItem> {
+                         new SelectListItem{ Text="كاش",Value="كاش"},
+                         new SelectListItem{ Text="شيك",Value="شيك"} ,
+                   new SelectListItem{ Text="حوالة بنكية",Value="حوالة بنكية"}}, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("paidType", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("paidType", "طريقة الدفع", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.DropDownList("salesManId", (SelectList)ViewBag.SalesMans, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("salesManId", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("salesManId", "المندوب", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.DropDownList("empID", (SelectList)ViewBag.Employees, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("empID", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("empID", "الموظف مدخل البيانات", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>*@
+                <div class="form-group">
+                    @*<div class="col-md-2">
+                        @Html.CheckBox("isApproval")
+                    </div>
+                    @Html.Label("الاعتماد", htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-2">
+                        @Html.TextBox("ENname", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("ENname", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("ENname", "الاسم الانجليزى", new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.TextBox("ARname", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("ARname", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("ARname", "الاسم العربى", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+
+</div>
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.amiraDetailsViewModel>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            //columns.Bound(p => p.Items).ClientTemplate("#=Items.arName#").Sortable(false).Width(180).ClientFooterTemplate("الاجمالى");
+            columns.Bound(p => p.name);
+            //columns.Bound(p => p.price);
+            //columns.Bound(p => p.disPer).ClientFooterTemplate("#=sum#").Format("{0:n2}");
+            //columns.Bound(p => p.disNo).ClientFooterTemplate("#=sum#").Format("{0:n2}");
+            //columns.Bound(p => p.tax).ClientFooterTemplate("#=sum#").Format("{0:n2}");
+            //columns.Bound(p => p.rowTotal).Width(130).ClientFooterTemplate("#=sum#").Format("{0:n2}");
+            columns.Command(command => command.Destroy().Text("حذف")).Width(150);
+        })
+        .ToolBar(toolBar =>
+        {
+            toolBar.Create().Text("اضافة صنف جديد");
+            //toolBar.Save().SaveText(" حفظ الفاتورة").CancelText("الغاء");
+        })
+        .Editable(editable => editable.Mode(GridEditMode.InCell))
+        .Pageable()
+        .Sortable()
+        .Scrollable()
+        .HtmlAttributes(new { style = "height:300px;", @class = "k-rtl" })
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .Batch(true)
+            .ServerOperation(false)
+            .Events(events => events.Error("error_handler").Change("onChange"))
+            .Model(model =>
+            {
+                model.Id(p => p.id);
+                model.Field(p => p.id).Editable(false);
+                //model.Field(p => p.Items).DefaultValue(
+                //    ViewData["defaultItems"] as PointOfSaleApp.Models.ViewModel.ItemsViewModel);
+            })
+            .PageSize(3)
+            //.Aggregates(aggregates =>
+            //{
+            //    //aggregates.Add(p => p.disPer).Sum();
+            //    aggregates.Add(p => p.disNo).Sum();
+            //    aggregates.Add(p => p.tax).Sum();
+            //    aggregates.Add(p => p.rowTotal).Sum();
+            //})
+            .Read(read => read.Action("EditingCustom_Read", "amira"))
+            .Create(create => create.Action("EditingCustom_Create", "amira").Data("getmasterdata"))
+            .Update(update => update.Action("EditingCustom_Update", "amira"))
+            .Destroy(destroy => destroy.Action("EditingCustom_Destroy", "amira"))
+        )
+)
+@*<div class="form-horizontal" dir="rtl" style="margin-top:20px;">
+    <div class="form-group">
+        <div class="col-md-4">
+        </div>
+            <div class="col-md-2">
+                @Html.TextBox("paid", (decimal?)ViewBag.paid, new { @class = "form-control" })
+                @Html.ValidationMessage("paid", "", new { @class = "text-danger" })
+            </div>
+            @Html.Label("paid", "المدفوع", new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.TextBox("disMoney", " ", new { @class = "form-control" })
+                @Html.ValidationMessage("disMoney", "", new { @class = "text-danger" })
+            </div>
+            @Html.Label("disMoney", "قيمة الخصم", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group" dir="rtl">
+            <label class="col-md-2" for="dif" id="dif"> @ViewBag.net </label>
+            @Html.Label("الباقى", htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="col-md-2" for="net" id="net"> @ViewBag.net </label>
+            @Html.Label("صافى الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="col-md-2" for="total" id="total"> @ViewBag.total </label>
+            @Html.Label("اجمالى الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+
+    </div>*@
+
+
+    <script>
+         function onChange(arg) {
+
+            var grid = $("#grid").data("kendoGrid");
+            var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+            //$("#total").text(aggrrowTotal.sum);
+            //var aggrdisNo = grid.dataSource.aggregates().disNo;
+            //var aggrtax = grid.dataSource.aggregates().tax;
+            //var disMoney = $("#disMoney").val();
+            //$("#net").text((aggrrowTotal.sum ) - disMoney);
+
+        }
+        $("#disPerM").blur(function () {
+            var disPerM = $("#disPerM").val();
+            var grid = $("#grid").data("kendoGrid");
+            var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+            var tt = ((aggrrowTotal.sum) / 100) * disPerM;
+            $("#disMoney").val(tt);
+            var aggrdisNo = grid.dataSource.aggregates().disNo;
+            var aggrtax = grid.dataSource.aggregates().tax;
+            var disMoney = $("#disMoney").val();
+            $("#net").text((aggrrowTotal.sum /*+ aggrtax.sum*/) /*- aggrdisNo.sum*/ - disMoney);
+        });
+
+        $("#disMoney").blur(function () {
+            var disMoney = $("#disMoney").val();
+            var grid = $("#grid").data("kendoGrid");
+            var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+            var tt = (disMoney / (aggrrowTotal.sum)) * 100;
+            $("#disPerM").val(tt);
+            var aggrdisNo = grid.dataSource.aggregates().disNo;
+            var aggrtax = grid.dataSource.aggregates().tax;
+            var disMoney = $("#disMoney").val();
+            $("#net").text((aggrrowTotal.sum /*+ aggrtax.sum*/) /*- aggrdisNo.sum */- disMoney);
+        });
+
+           $("#customersId").blur(function () {
+            var vcustomersId = $("#customersId").val();
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetIsCredit")',
+                data: { "customersId": vcustomersId },
+                dataType: 'json',
+                success: function (data) {
+                    if (data == false) {
+                        $("#billType").hide();
+                        $("#billTypeCredit").text("نقدى");
+                        $("#billTypeCredit").show();
+                    } else {
+                        $("#billType").show();
+                        $("#billTypeCredit").text("");
+                        $("#billTypeCredit").hide();
+                    }                      
+                }            
+                 });
+           
+           });
+
+        $("#paid").blur(function () {
+            var net = $("#net").text();
+            var paid = $("#paid").val();
+            $("#dif").text(net - paid);
+        });
+    </script>
+    <script type="text/javascript">
+
+        var itemId;
+        var total_tax = 0;
+        var total_disPer = 0;
+        var total_disNo = 0;
+        var total_total = 0;
+        var net = 0;
+        var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+        var rowTotal = 0;
+        function onComboChange(e) {
+            var dataItem = e.sender.dataItem();
+            itemId = dataItem.id;
+            var grid = $("#grid").data("kendoGrid");
+            var editedDataItem = grid.dataItem(".k-grid-edit-row");
+            var vcustomersId = $("#customersId").val();
+            @*editedDataItem.set("tax", 0);
+            editedDataItem.set("rowTotal", 0);
+            editedDataItem.set("Qu", 0);
+            editedDataItem.set("disPer", 0);
+            editedDataItem.set("disNo", 0);
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("Getprice")',
+                data: { "itmId": itemId, "customersId": vcustomersId },
+                dataType: 'json',
+                success: function (data) {
+                    editedDataItem.set("price", data);
+                }
+            });*@
+        }
+
+        /**********************/
+             function Quchange() {
+         var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+           $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetTax")',
+            data: {},
+            dataType: 'json',
+            success: function (data) {
+                var price = editedDataItem.get("price");
+                var qu = editedDataItem.get("Qu");
+                var total = price * qu;
+                var taxvalue = (total / 100) * data;
+                total_tax = total_tax + taxvalue;
+                $("#tax").text(total_tax);
+                editedDataItem.set("tax", taxvalue);
+                editedDataItem.set("rowTotal", total + taxvalue);
+                editedDataItem.set("disNo", 0);
+                editedDataItem.set("disPer", 0);
+                //var rowTotal = editedDataItem.get("rowTotal");
+                //total_total = total_total + (total + taxvalue);
+                //$("#total").text(total_total);
+                //$("#net").text((total_total+total_tax)-total_disNo);
+                //var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+                //$("#total").text(aggrrowTotal.sum);
+                //var aggrdisNo = grid.dataSource.aggregates().disNo;
+                //var aggrtax = grid.dataSource.aggregates().tax;
+                //$("#net").text((aggrrowTotal.sum + aggrtax.sum) - aggrdisNo.sum);
+            }
+           });
+        }
+     //$("#tax").val() = taxvalue;
+     function disPerchange() {
+        var grid = $("#grid").data("kendoGrid");
+         var editedDataItem = grid.dataItem(".k-grid-edit-row");
+         var price = editedDataItem.get("price");
+         var disPer = editedDataItem.get("disPer");
+           $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetTax")',
+            data: {},
+            dataType: 'json',
+            success: function (data) {
+                var qu = editedDataItem.get("Qu");
+                var total = price * qu;
+                var taxvalue = (total / 100) * data;
+                var totalPlusTax = total + taxvalue;
+                var disNo = (totalPlusTax / 100) * disPer;
+                total_disPer = total_disPer + disPer;
+                $("#disPer").text(total_disPer/*.toFixed(2)*/);
+                total_disNo = total_disNo + disNo;
+                $("#disNo").text(total_disNo/*.toFixed(2)*/);
+                editedDataItem.set("disNo", disNo);
+                var rowTotal_before = editedDataItem.get("rowTotal");
+                editedDataItem.set("rowTotal", totalPlusTax - disNo);
+                //var rowTotal_after = editedDataItem.get("rowTotal");
+                //total_total = (total_total-rowTotal_before) + rowTotal_after;
+                //$("#total").text(total_total);
+                //$("#net").text((total_total+total_tax)-total_disNo);
+                //var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+                //$("#total").text(aggrrowTotal.sum);
+                //var aggrdisNo = grid.dataSource.aggregates().disNo;
+                //var aggrtax = grid.dataSource.aggregates().tax;
+                //$("#net").text((aggrrowTotal.sum + aggrtax.sum) - aggrdisNo.sum);
+            }
+
+                });
+        }
+     function disNochange() {
+        var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+         var price = editedDataItem.get("price");
+         var disNo = editedDataItem.get("disNo");
+           $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetTax")',
+            data: {},
+            dataType: 'json',
+            success: function (data) {
+                var qu = editedDataItem.get("Qu");
+                var total = price * qu;
+                var taxvalue = (total / 100) * data;
+                var totalPlusTax = total + taxvalue;
+                var disPer = (disNo / totalPlusTax) * 100;
+                total_disPer = total_disPer + disPer;
+                $("#disPer").text(total_disPer/*.toFixed(2)*/);
+                total_disNo = total_disNo + disNo;
+                $("#disNo").text(total_disNo/*.toFixed(2)*/);
+                editedDataItem.set("disPer", disPer/*.toFixed(2)*/);
+                var rowTotal_before = editedDataItem.get("rowTotal");
+                editedDataItem.set("rowTotal", totalPlusTax - disNo);
+                //var rowTotal_after = editedDataItem.get("rowTotal");
+                //total_total = (total_total - rowTotal_before) + rowTotal_after;
+                //$("#total").text(total_total);
+                //$("#net").text((total_total+total_tax)-total_disNo);
+                //var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+                //$("#total").text(aggrrowTotal.sum);
+                //var aggrdisNo = grid.dataSource.aggregates().disNo;
+                //var aggrtax = grid.dataSource.aggregates().tax;
+                //$("#net").text((aggrrowTotal.sum + aggrtax.sum) - aggrdisNo.sum);
+            },
+            error: function (emp) {
+                alert('error');
+            }
+           });
+        }
+    </script>
+    @*<script>
+            $("#grid").find(".k-grid-toolbar").insertAfter($("#grid .k-grid-content"));
+        </script>*@
+    <script type="text/javascript">
+        function error_handler(e) {
+            if (e.errors) {
+                var message = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            message += this + "\n";
+                        });
+                    }
+                });
+                alert(message);
+            }
+        }
+    </script>
+    <script>
+    $("#saveChanges").kendoButton({
+        click: function (e) {
+            var grid = $("#grid").data("kendoGrid");
+            var vARname = $("#ARname").val();
+            var vENname = $("#ENname").val();
+            //var vcustomersId = $("#customersId").val();
+            //var vrefNo = $("#refNo").val();
+            //var vsalesManId = $("#salesManId").val();
+            //var vbillType = $("#billType").val();
+            //var vrefType = $("#refType").val();
+            //var vpaidType = $("#paidType").val();
+            //var vaddDate = $("#addDate").val();
+            //var visApproval = $("#isApproval").prop('checked');
+            //var vtax = $("#tax").text();
+            //var vdisPer = $("#disPerM").val();
+            //var vdisNo = $("#disMoney").val();
+            //var vtotal = $("#total").text();
+            //var vbillTypeCredit = $("#billTypeCredit").text();
+            //var aggrdisNo = grid.dataSource.aggregates().disNo;
+            //var aggrtax = grid.dataSource.aggregates().tax;
+            //var disNosum = aggrdisNo.sum;
+            //var sumtax = aggrtax.sum;
+            //if ($("#paid").val().length > 0) {
+            //    var vpaid = $("#paid").val();
+            //} else {
+            //     vpaid = 0;
+            //}
+          
+            //var vnet = $("#net").text();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("Create")',
+                data: {
+                    "ENname": vENname, "ARname": vARname,
+                    //"refNo": vrefNo, "salesManId": vsalesManId, "billType": vbillType,
+                    //"refType": vrefType, "paidType": vpaidType, "addDate": vaddDate, "isApproval": visApproval, "tax": vtax, "disPer": vdisPer,
+                    //"disMoney": vdisNo, "total": vtotal, "paid": vpaid, "net": vnet, "billTypeCredit": vbillTypeCredit,
+                    //"disNosum": disNosum,"sumtax": sumtax
+                },
+                dataType: 'json',
+                success: function (data) {
+                     grid.saveChanges();
+                },
+                error: function () {
+                }
+            });
+               @*if ((vbillTypeCredit != "" && vpaid == vnet) || vbillTypeCredit == "") {
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("getMoneyLimitCheck")',
+                    data: {
+                        "customersId": vcustomersId, "net": vnet
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data == true) {*@
+                            grid.saveChanges();
+                            $("#alertsuccess").show();
+                            $("#alertsuccess").fadeTo(2000, 500).slideUp(500, function () {
+                                $("#alertsuccess").slideUp(500);
+
+                            });
+            //            }
+            //            else {
+            //                alert("خطأ .. حد الائتمان لا يسمح");
+            //            }
+            //        },
+            //        error: function () {
+            //        }
+            //    });
+            //}
+ //           if ((vbillTypeCredit != "" && vpaid == vnet) || vbillTypeCredit == "") {
+ //           grid.saveChanges();
+ //           $("#alertsuccess").show();
+ //           $("#alertsuccess").fadeTo(2000, 500).slideUp(500, function () {
+ //               $("#alertsuccess").slideUp(500);
+        //});}
+        //else {
+        //        alert("خطأ .. المدفوع لا يساوى  قيمة الفاتورة");
+        //    }
+            }
+    })
+
+    </script>
+
+    <script>
+
+    function getmasterdata() {
+
+        var vbillType = $("#billType").val();
+        var vempID = $("#empID").val();
+        var vcustomersId = $("#customersId").val();
+        var vrefNo = $("#refNo").val();
+        var vsalesManId = $("#salesManId").val();
+        var vrefType = $("#refType").val();
+        var vpaidType = $("#paidType").val();
+        var vaddDate = $("#addDate").val();
+        var visApproval = $("#isApproval").prop('checked');
+        var vpaid = $("#paid").val();
+        @*$.ajax({
+            type: 'GET',
+            url: '@Url.Action("EditingCustom_Create")',
+            data: { "billType": billType },
+            dataType: 'json',
+            success: function (data) {
+                alert(data);
+            },
+            error: function () {
+                alert('error');
+            }
+        });*@
+        return {
+            empID: vempID, customersId: vcustomersId, refNo: vrefNo, salesManId: vsalesManId,billType: vbillType,
+            refType: vrefType,paidType: vpaidType,addDate: vaddDate,isApproval: visApproval,paid: vpaid
+        };
+        }
+    </script>
+

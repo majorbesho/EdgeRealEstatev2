@@ -1,0 +1,140 @@
+﻿@model EdgeRealEstate.Entities.Items
+
+@{
+    ViewBag.Title = "Details";
+    ViewBag.current = "Items";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Items</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfDaies)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfDaies)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttachedId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttachedId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DegreeOfExcellenceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DegreeOfExcellenceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HaveItem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HaveItem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nots)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nots)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitsId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitsId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Long)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Long)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.width)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.width)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.brand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.brand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.types)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.types)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RelatedWithSuppelyId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RelatedWithSuppelyId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

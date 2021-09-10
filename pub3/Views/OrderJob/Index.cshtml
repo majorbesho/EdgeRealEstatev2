@@ -1,0 +1,106 @@
+﻿@model PagedList.IPagedList<EdgeRealEstate.Entities.OrderJob>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "OrderJob";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<br />
+<h3 style="text-align:center">أمر شغل</h3>
+<div>
+    <table class="table" dir="rtl">
+        <tr>
+            <td>
+
+                    <a href="@Url.Action("Editing_Custom", "OrderJob")" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </a>
+                @foreach (var item in Model)
+                {
+
+                        <a href="@Url.Action("Editing_CustomForEdit", "OrderJob", new { id = item.Id })" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>
+
+                        <a href="@Url.Action("Delete", "OrderJob", new { id = item.Id })" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                }
+            </td>
+            <td>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+            </td>
+        </tr>
+
+    </table>
+</div>
+<div class="form-horizontal" dir="rtl">
+    @foreach (var item in Model)
+    {
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.Id, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("الكود", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.CheckBoxFor(modelItem => item.IsCreateContract)
+            </div>
+            @Html.Label("انشاء عقد", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.OrderJobCode, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("كود امر الشغل", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.contractor.ARName, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("المقاول", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.MainProject.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("المشروع الرئيسى", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.Engennering.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("المهندس القائم بالاستلام", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.Engennering1.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("المهندس القائم بالاشراف", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.Projects.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("المشروع الفرعى", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.SpecialNote, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("مواصفات خاصة", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.Note, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("ملاحظات", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+
+        <div id="partial">@{Html.RenderAction("Editing_CustomForIndex");}</div>
+
+    }
+</div>

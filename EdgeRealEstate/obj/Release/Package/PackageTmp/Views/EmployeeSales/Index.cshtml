@@ -1,0 +1,113 @@
+﻿@model PagedList.IPagedList<EdgeRealEstate.Entities.EmployeeSales>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Index EmployeeSales";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<br />
+<h3 style="text-align:center">مبيعات المندوب </h3>
+
+<p dir="rtl">
+    <a href="@Url.Action("Create", "EmployeeSales")" class="btn btn-primary">
+        <span class="glyphicon glyphicon-plus"></span>
+        <strong style="font-size:16px"> جديد  </strong>
+    </a>
+</p>
+
+<table class="table table-bordered" dir="rtl">
+    <tr>
+        <th class="text-right">
+            @Html.DisplayName("الكود")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("المندوب")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("العميل")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("المشروع")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("الشقة")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("الفيلا")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("نظام السداد")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("المبلغ")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("دفعة مقدمة")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("طباعة")
+        </th>
+        <th class="text-right">
+            @Html.DisplayName("ملاحظات")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Employee.ARName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Customer.ARName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Project.ARName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Flat.ARName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Villa.ARName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PaymentSystems.ARName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Paid)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.AdvancePayment)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsPrint)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Note)
+    </td>
+    <td>
+        <a href="@Url.Action("Details","EmployeeSales",new { id = item.id })" style="padding-left:20px;">
+            <span class="glyphicon glyphicon-info-sign" style="font-size:18px;" title="تفاصيل"></span>
+        </a>
+
+        <a href="@Url.Action("Edit","EmployeeSales",new { id = item.id })" style="padding-left:20px;">
+            <span class="glyphicon glyphicon-edit" style="font-size:18px;" title="تعديل"></span>
+        </a>
+
+        <a href="@Url.Action("Delete","EmployeeSales",new { id = item.id })" style="padding-left:20px;">
+            <span class="glyphicon glyphicon-trash" style="font-size:18px;" title="حذف"></span>
+        </a>
+
+    </td>
+</tr>
+    }
+
+</table>
+<div style="text-align:center">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>

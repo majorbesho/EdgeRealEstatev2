@@ -1,0 +1,57 @@
+﻿@model EdgeRealEstate.Entities.EmployeeAttach
+
+@{
+    ViewBag.Title = "create EmployeeAttach";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<br />
+<h3 style="text-align:center">ملفات الموظف</h3>
+@using (Html.BeginForm( "create" ,"EmployeeAttach" ,FormMethod.Post,  
+                        new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal" dir="rtl">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.EmpId,(SelectList)ViewBag.Employees, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.EmpId, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.EmpId, "الموظف", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @*@Html.TextBoxFor(model => model.attachFile, new { type = "file" })*@
+                <input type="file" name="File" />
+                @Html.ValidationMessageFor(model => model.attachFile, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.attachFile, "الملف المرفق", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>     
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-primary" /> |
+                @Html.ActionLink("رجوع", "Index")
+            </div>
+        </div>
+        @if (ViewBag.msgg == 1)
+        {
+            <div class="form-group">
+                <div class="alert alert-success alert-dismissable fade-in" id="success-alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>تم الحفظ بنجاح</strong>
+                </div>
+            </div>
+        }
+    </div>
+}
+<script>
+    $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
+    $("#success-alert").slideUp(500);
+});
+</script>
+
+
+
+

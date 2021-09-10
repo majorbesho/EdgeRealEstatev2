@@ -1,0 +1,120 @@
+﻿
+@{
+    ViewBag.Title = "SearchProjects";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2 class="text-center ">عرض المشاريع الرئيسية المرتبطة بالارض الرئيسية</h2>
+<br />
+<br />
+<script>
+    function change() {
+        var MainLands = $("#MainLands").data("kendoDropDownList");
+        var val = MainLands.value();
+        console.log(val);
+        $("#grid").data("kendoGrid").dataSource.read(read => read.Action("HierarchyBinding_MainProjects", "MainLands").Data("GetMainLandID"));
+        $("#grid").css("display", "block");
+    };
+    function GetMainLandID() {
+        var MainLands = $("#MainLands").data("kendoDropDownList");
+        var val = MainLands.value();
+        console.log(val);
+        return { MainLand_Id: val };
+    }
+</script>
+
+
+
+<div class="container">
+    <div class="row">
+        @Html.Label("MainLands", " الارض الرئيسية :", htmlAttributes: new { @class = "control-label col-md-2" })
+
+        <div class="col-md-4">
+
+            @(Html.Kendo().DropDownList()
+    .Name("MainLands")
+    .OptionLabel("عرض الكل")
+    .DataTextField("ARName")
+    .DataValueField("Id")
+    .HtmlAttributes(new { @class = "form-control" })
+    .Events(e => e.Change("change"))
+    .DataSource(source =>
+    {
+        source.Read(read =>
+        {
+            read.Action("GetMainLands", "MainLands"); // Set the Action and Controller names.
+        })
+        .ServerFiltering(true); // If true, the DataSource will not filter the data on the client.
+    })
+    .SelectedIndex(0) // Select the first item.
+
+            )
+        </div>
+    </div>
+</div>
+<br />
+<br />
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.MainProjectGridVM>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(e => e.LandNo).Width(130);
+            columns.Bound(e => e.Aname).Width(130);
+            columns.Bound(e => e.TypesInvestment).Width(130);
+            columns.Bound(e => e.MaxLevelForContributions).Width(50);
+            columns.Bound(e => e.id).Title("عرض").ClientTemplate("<a class='btn btn-circle btn-info  btn-sm' href='/MainProjects/Details/#=id#'><span class='k-icon k-i-eye'></span> عرض المشروع الرئيسى </a>").Width(120);
+
+        })
+        .HtmlAttributes(new { @class = "k-rtl" })
+        .Sortable()
+        .Pageable()
+        .Scrollable()
+        .Filterable()
+        .ClientDetailTemplateId("template")
+        .HtmlAttributes(new { style = "height:600px;" })
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .PageSize(6)
+            .Read(read => read.Action("HierarchyBinding_MainProjects", "MainLands").Data("GetMainLandID"))
+
+            )
+        .Events(events => events.DataBound("dataBound"))
+        .Resizable(resize => resize.Columns(true))
+        .Reorderable(order => order.Columns(true))
+        .ColumnMenu()
+)
+
+<script id="template" type="text/kendo-tmpl">
+    @(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.ProjectGridVM>()
+            .Name("grid_#=id#") // template expression, to be evaluated in the master context
+            .Columns(columns =>
+            {
+                columns.Bound(o => o.Aname).Width(110);
+                columns.Bound(o => o.LandSize).Width(150);
+                columns.Bound(o => o.MaxLevelForContributions).Width(50);
+                columns.Bound(o => o.VellaNO).Width(50);
+                columns.Bound(o => o.FlatNO).Width(50);
+                columns.Bound(e => e.id).Title("عرض").ClientTemplate("<a class='btn btn-circle btn-info  btn-sm' href='/Projects/Details/#=id#'><span class='k-icon k-i-eye'></span> عرض المشروع </a>").Width(120);
+
+            })
+            .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+                .Read(read => read.Action("HierarchyBinding_Projects", "MainLands", new { id = "#=id#" }))
+            )
+            .Resizable(resize => resize.Columns(true))
+            .Reorderable(order => order.Columns(true))
+            .ColumnMenu()
+            .Pageable()
+            .Sortable()
+            .HtmlAttributes(new { @class = "k-rtl" })
+            .Filterable()
+            .ToClientTemplate()
+            
+    )
+</script>
+<script>
+    function dataBound() {
+        this.expandRow(this.tbody.find("tr.k-master-row").first());
+    }
+</script>

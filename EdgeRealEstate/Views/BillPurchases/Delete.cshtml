@@ -1,0 +1,113 @@
+﻿@model EdgeRealEstate.Entities.BillPurchasesMaster
+@{
+    ViewBag.Title = "Delete BillPurchasesMaster";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<br />
+<h3 style="text-align:center">فاتورة شراء</h3>
+<h4 dir="rtl">هل أنت متأكد من أنك تريد حذف هذه الفاتورة ؟</h4>
+<div class="form-horizontal" dir="rtl">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Customer.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("العميل - المورد", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.id, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الكود", htmlAttributes: new { @class = "control-label col-md-2" })
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Employee1.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("المندوب", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Employee.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الموظف مدخل البيانات", htmlAttributes: new { @class = "control-label col-md-2" })
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.refType, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("نوع المرجع", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.refNo, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("رقم مرجعى", htmlAttributes: new { @class = "control-label col-md-2" })
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.addDate, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("تاريخ", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.billType, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("نوع الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.isApproval)
+        </div>
+        @Html.Label("الاعتماد", htmlAttributes: new { @class = "control-label col-md-2" })
+
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.paidType, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("طريقة الدفع", htmlAttributes: new { @class = "control-label col-md-2" })
+
+    </div>
+    @*<div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.disPer, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("نسبة الخصم", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.disMoney, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("قيمة الخصم", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>*@
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="حذف" class="btn btn-primary" /> |
+        @Html.ActionLink("رجوع", "Index")
+    </div>
+}
+</div>
+
+<div id="partial">@{Html.RenderAction("Editing_CustomForDelete");}</div>
+
+<div class="form-group">
+    <div class="col-md-4">
+        @Html.DisplayFor(model => model.total, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    @Html.Label("الاجمالى", htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-4">
+        @Html.DisplayFor(model => model.paid, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    @Html.Label("المدفوع", htmlAttributes: new { @class = "control-label col-md-2" })
+
+</div>
+<div class="form-group">
+    <div class="col-md-4">
+        @Html.DisplayFor(model => model.net, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    @Html.Label("الصاقى", htmlAttributes: new { @class = "control-label col-md-2" })
+
+    @*<div class="col-md-4">
+        @Html.DisplayFor(model => model.tax, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    @Html.Label("الضرائب", htmlAttributes: new { @class = "control-label col-md-2" })*@
+</div>

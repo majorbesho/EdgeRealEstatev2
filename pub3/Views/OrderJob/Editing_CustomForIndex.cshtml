@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.OrderJobDetailsViewModel>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+        columns.Bound(p => p.Id).Visible(false);
+        columns.Bound(p => p.Stage).ClientTemplate("#=Stage.Aname#").Sortable(false).Width(180);
+        columns.Bound(p => p.MianItems).ClientTemplate("#=MianItems.Name#").Sortable(false).Width(180);
+        columns.Bound(p => p.Cost);
+
+            columns.Bound(p => p.BeginDateExpected).ClientTemplate("#= kendo.toString(BeginDateExpected, \"dd.MM.yyyy\") #");
+            columns.Bound(p => p.EndDateExpected).ClientTemplate("#= kendo.toString(EndDateExpected, \"dd.MM.yyyy\") #");
+            columns.Bound(p => p.BeginDateAcutely).ClientTemplate("#= kendo.toString(BeginDateAcutely, \"dd.MM.yyyy\") #");
+            columns.Bound(p => p.EndDateAcutely).ClientTemplate("#= kendo.toString(EndDateAcutely, \"dd.MM.yyyy\") #");
+            columns.Bound(p => p.ExecutionTime);
+            columns.Bound(p => p.Note);
+    })
+    .Pageable()
+    .Sortable()
+    .Scrollable()
+    .HtmlAttributes(new { style = "height:200px;", @class = "k-rtl" })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Batch(true)
+        .ServerOperation(false)
+        // .Events(events => events.Change("onChange"))
+        .Model(model =>
+        {
+            model.Id(p => p.Id);
+            model.Field(p => p.Id).Editable(false);
+                model.Field(p => p.Stage).DefaultValue(
+                    ViewData["defaultStage"] as EdgeRealEstate.Models.ViewModels.StageVM);
+                model.Field(p => p.MianItems).DefaultValue(
+                   ViewData["defaultMainItems"] as EdgeRealEstate.Models.ViewModels.MainItemViewModel);
+        })
+        .PageSize(3)
+        .Read(read => read.Action("EditingCustom_ReadForIndex", "OrderJob"))
+    )
+)
+

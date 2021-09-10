@@ -1,0 +1,1784 @@
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\EdgeRealEstate.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\EdgeRealEstate.pdb
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\csc.exe
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\csc.exe.config
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\csc.rsp
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\csi.exe
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\csi.exe.config
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\csi.rsp
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Console.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\vbc.exe
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\vbc.exe.config
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\vbc.rsp
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Antlr3.Runtime.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\EntityFramework.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Newtonsoft.Json.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Owin.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.Helpers.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.Mvc.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.Optimization.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.Razor.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.WebPages.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\WebGrease.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.Helpers.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.Mvc.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.Optimization.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.Razor.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.WebPages.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Newtonsoft.Json.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\EntityFramework.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Edge-real-estate-development\EdgeRealEstate\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\EdgeRealEstate.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\EdgeRealEstate.pdb
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\csc.exe
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\csc.exe.config
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\csc.rsp
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\csi.exe
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\csi.exe.config
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\csi.rsp
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Console.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\vbc.exe
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\vbc.exe.config
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\vbc.rsp
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Antlr3.Runtime.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\EntityFramework.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Newtonsoft.Json.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Owin.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.Helpers.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.Mvc.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.Optimization.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.Razor.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\WebGrease.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\EntityFramework.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Newtonsoft.Json.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.Helpers.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.Mvc.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.Optimization.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.Razor.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CoreCompileInputs.cache
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+C:\Users\dev4\source\repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\csc.exe
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\csc.exe.config
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\csc.rsp
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\csi.exe
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\csi.exe.config
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\csi.rsp
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Console.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\vbc.exe
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\vbc.exe.config
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\vbc.rsp
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Antlr3.Runtime.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\EntityFramework.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Newtonsoft.Json.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Owin.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.Helpers.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.Mvc.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.Optimization.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.Razor.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.WebPages.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\WebGrease.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\EntityFramework.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Newtonsoft.Json.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.Helpers.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.Mvc.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.Optimization.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.Razor.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.WebPages.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CoreCompileInputs.cache
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\EdgeRealEstate.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\EdgeRealEstate.pdb
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\csc.exe
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\csc.exe.config
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\csc.rsp
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\csi.exe
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\csi.exe.config
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\csi.rsp
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Console.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\vbc.exe
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\vbc.exe.config
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\vbc.rsp
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Antlr3.Runtime.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\EntityFramework.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Newtonsoft.Json.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Owin.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.Helpers.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.Mvc.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.Optimization.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.Razor.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\WebGrease.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\EntityFramework.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Newtonsoft.Json.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.Helpers.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.Mvc.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.Optimization.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.Razor.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.addmessagemodel.resources
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmessagemodel.resources
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmessagemodel2.resources
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmessage22.resources
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmessage3.resources
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+C:\Users\Besho\Source\Repos\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Kendo.Mvc.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\Kendo.Mvc.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.afterDelMigration.resources
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\PagedList.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\PagedList.Mvc.dll
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\PagedList.xml
+E:\eisa\12-11-20193-2ary\32ary\EdgeRealEstate\bin\PagedList.Mvc.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.afterDelMigration.resources
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\EdgeRealEstate.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\EdgeRealEstate.pdb
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\csc.exe
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\csc.exe.config
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\csc.rsp
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\csi.exe
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\csi.exe.config
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\csi.rsp
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Console.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\vbc.exe
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\vbc.exe.config
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\vbc.rsp
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Antlr3.Runtime.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\EntityFramework.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Kendo.Mvc.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Newtonsoft.Json.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Owin.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\PagedList.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\PagedList.Mvc.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.Helpers.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.Mvc.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.Optimization.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.Razor.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.WebPages.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\WebGrease.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\EntityFramework.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Kendo.Mvc.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Newtonsoft.Json.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\PagedList.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\PagedList.Mvc.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.Helpers.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.Mvc.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.Optimization.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.Razor.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.WebPages.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.xxx.resources
+D:\amira\2019-11-24 - Good\32ary\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.afterProbInMigration.resources
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\EdgeRealEstate.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\EdgeRealEstate.pdb
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\csc.exe
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\csc.exe.config
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\csc.rsp
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\csi.exe
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\csi.exe.config
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\csi.rsp
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Console.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\vbc.exe
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\vbc.exe.config
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\vbc.rsp
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Antlr3.Runtime.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\EntityFramework.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Kendo.Mvc.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Newtonsoft.Json.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Owin.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\PagedList.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\PagedList.Mvc.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.Helpers.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.Mvc.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.Optimization.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.Razor.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.WebPages.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\WebGrease.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\EntityFramework.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Kendo.Mvc.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Newtonsoft.Json.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\PagedList.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\PagedList.Mvc.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.Helpers.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.Mvc.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.Optimization.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.Razor.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.WebPages.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.afterDleEveryThing.resources
+D:\amira\2019-11-24 - Good\32ary 02-12-2019\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CoreCompileInputs.cache
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\csc.exe
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\csc.exe.config
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\csc.rsp
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\csi.exe
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\csi.exe.config
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\csi.rsp
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Console.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\vbc.exe
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\vbc.exe.config
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\vbc.rsp
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Antlr3.Runtime.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\EntityFramework.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Kendo.Mvc.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Newtonsoft.Json.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Owin.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\PagedList.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\PagedList.Mvc.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.Helpers.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.Mvc.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.Optimization.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.Razor.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.WebPages.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\WebGrease.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\EntityFramework.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Kendo.Mvc.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Newtonsoft.Json.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\PagedList.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\PagedList.Mvc.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.Helpers.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.Mvc.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.Optimization.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.Razor.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.WebPages.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.adddatabase.resources
+E:\eisa\12-11-20193-2ary\Amira\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\EdgeRealEstate.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\EdgeRealEstate.pdb
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\csc.exe
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\csc.exe.config
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\csc.rsp
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\csi.exe
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\csi.exe.config
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\csi.rsp
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Console.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\vbc.exe
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\vbc.exe.config
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\vbc.rsp
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Antlr3.Runtime.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\EntityFramework.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Newtonsoft.Json.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Owin.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\PagedList.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\PagedList.Mvc.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.Helpers.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.Mvc.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.Optimization.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.Razor.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.WebPages.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\WebGrease.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\EntityFramework.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Kendo.Mvc.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Newtonsoft.Json.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\PagedList.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\PagedList.Mvc.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.Helpers.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.Mvc.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.Optimization.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.Razor.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.WebPages.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.adddatabase.resources
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+C:\Users\Besho\Desktop\fromGit\fromGit\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\csc.exe
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\csc.exe.config
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\csc.rsp
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\csi.exe
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\csi.exe.config
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\csi.rsp
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Console.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\vbc.exe
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\vbc.exe.config
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\vbc.rsp
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Antlr3.Runtime.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\EntityFramework.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Kendo.Mvc.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Newtonsoft.Json.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Owin.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\PagedList.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\PagedList.Mvc.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.Helpers.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.Mvc.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.Optimization.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.Razor.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\WebGrease.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\EntityFramework.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Kendo.Mvc.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Newtonsoft.Json.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\PagedList.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\PagedList.Mvc.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.Helpers.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.Mvc.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.Optimization.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.Razor.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.adddatabase.resources
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CoreCompileInputs.cache
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmaterialsmainprojectmainlandproject.resources
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\csc.exe
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\csc.exe.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\csc.rsp
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\csi.exe
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\csi.exe.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\csi.rsp
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Console.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\vbc.exe
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\vbc.exe.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\vbc.rsp
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Antlr3.Runtime.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\EntityFramework.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Kendo.Mvc.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Newtonsoft.Json.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Owin.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\PagedList.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\PagedList.Mvc.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.Helpers.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.Mvc.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.Optimization.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.Razor.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\WebGrease.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\EntityFramework.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Kendo.Mvc.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Newtonsoft.Json.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\PagedList.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\PagedList.Mvc.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.Helpers.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.Mvc.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.Optimization.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.Razor.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.adddatabase.resources
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmaterialsmainprojectmainlandproject.resources
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CoreCompileInputs.cache
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EdgeRealEstate.pdb
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csc.exe
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csc.exe.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csc.rsp
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csi.exe
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csi.exe.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csi.rsp
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Console.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\vbc.exe
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\vbc.exe.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\vbc.rsp
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Antlr3.Runtime.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EntityFramework.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Kendo.Mvc.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Newtonsoft.Json.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Owin.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\PagedList.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\PagedList.Mvc.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Helpers.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Mvc.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Optimization.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Razor.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\WebGrease.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EntityFramework.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Kendo.Mvc.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Newtonsoft.Json.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\PagedList.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\PagedList.Mvc.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Helpers.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Mvc.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Optimization.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Razor.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.adddatabase.resources
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmaterialsmainprojectmainlandproject.resources
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CoreCompileInputs.cache
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+E:\eisa\12-11-20193-2ary\2019-12-17-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EdgeRealEstate.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EdgeRealEstate.pdb
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csc.exe
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csc.exe.config
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csc.rsp
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csi.exe
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csi.exe.config
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\csi.rsp
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Console.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\vbc.exe
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\vbc.exe.config
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\vbc.rsp
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Antlr3.Runtime.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EntityFramework.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Newtonsoft.Json.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Owin.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\PagedList.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\PagedList.Mvc.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Helpers.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Mvc.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Optimization.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Razor.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\WebGrease.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EntityFramework.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Kendo.Mvc.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Newtonsoft.Json.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\PagedList.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\PagedList.Mvc.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Helpers.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Mvc.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Optimization.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.Razor.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.adddatabase.resources
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmaterialsmainprojectmainlandproject.resources
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+E:\DeskTop\2019-12-18-23aryFinal-with-new-dashboard\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EdgeRealEstate.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EdgeRealEstate.pdb
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csc.exe
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csc.exe.config
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csc.rsp
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csi.exe
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csi.exe.config
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csi.rsp
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Console.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\vbc.exe
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\vbc.exe.config
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\vbc.rsp
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Antlr3.Runtime.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EntityFramework.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Kendo.Mvc.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Newtonsoft.Json.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Owin.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\PagedList.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\PagedList.Mvc.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Helpers.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Mvc.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Optimization.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Razor.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\WebGrease.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EntityFramework.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Kendo.Mvc.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Newtonsoft.Json.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\PagedList.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\PagedList.Mvc.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Helpers.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Mvc.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Optimization.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Razor.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\ar-AE\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\bg-BG\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\cs-CZ\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\da-DK\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\de-DE\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\el-GR\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\es-ES\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\fr-CA\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\fr-FR\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\he-IL\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\it-IT\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\nl-NL\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\pl-PL\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\pt-BR\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\pt-PT\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\ro-RO\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\ru-RU\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\sk-SK\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\sv-SE\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\tr-TR\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\uk-UA\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\zh-CN\Kendo.Mvc.resources.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.adddatabase.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmaterialsmainprojectmainlandproject.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CoreCompileInputs.cache
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.addmanlandattachments.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.addmainitemattach.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.addMainProjectAttachment.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.addFlatAttachment.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.updateVilla.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.addVillaAttachment.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.ChangeDteiNMainLnd.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.removematerialmainitemrelation.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.addMaterialDetails.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmaterialdetails.resources
+C:\Users\dev4\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.editmaterialdetails2.resources
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.csprojAssemblyReference.cache
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.Migrations.AfterErrorInHost.resources
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.GenerateResource.cache
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.pdb
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EdgeRealEstate.dll.config
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EdgeRealEstate.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EdgeRealEstate.pdb
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csc.exe
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csc.exe.config
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csc.rsp
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csi.exe
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csi.exe.config
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\csi.rsp
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.AppContext.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Console.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.IO.Compression.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Net.Http.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.ValueTuple.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\vbc.exe
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\vbc.exe.config
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\vbc.rsp
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Antlr3.Runtime.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EntityFramework.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EntityFramework.SqlServer.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Newtonsoft.Json.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Owin.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\PagedList.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\PagedList.Mvc.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Helpers.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Mvc.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Optimization.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Razor.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.Razor.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\WebGrease.dll
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EntityFramework.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\EntityFramework.SqlServer.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Newtonsoft.Json.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\PagedList.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\PagedList.Mvc.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Helpers.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Mvc.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Optimization.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.Razor.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\System.Web.WebPages.Razor.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Antlr3.Runtime.pdb
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Besho\source\repos\majorbesho\elmajed\EdgeRealEstate\obj\Debug\EdgeRealEstate.csproj.CopyComplete

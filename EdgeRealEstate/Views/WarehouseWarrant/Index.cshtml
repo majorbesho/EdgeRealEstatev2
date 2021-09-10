@@ -1,0 +1,84 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+@model PagedList.IPagedList<EdgeRealEstate.Entities.WarehouseWarrantMaster>
+@using PagedList.Mvc;
+@using PagedList;
+
+<h3 style="text-align:center">سند صرف مخزنى</h3>
+@*<div>*@
+<table class="table" dir="rtl">
+    <tr>
+        <td>
+            <a href="@Url.Action("Editing_Custom", "WarehouseWarrant")" class="btn btn-primary">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+            @foreach (var item in Model)
+            {
+
+                <a href="@Url.Action("Editing_CustomForEdit", "WarehouseWarrant", new { id = item.id })" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-edit"></span>
+                </a>
+
+                <a href="@Url.Action("Delete", "WarehouseWarrant", new { id = item.id })" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </a>
+            }
+        </td>
+        <td>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+        </td>
+    </tr>
+
+</table>
+@*</div>*@
+<div class="form-horizontal" dir="rtl">
+    @foreach (var item in Model)
+    {
+        <div class="form-group">
+            <div class="col-md-2">
+                @Html.DisplayFor(modelItem => item.addDate, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("تاريخ السند", htmlAttributes: new { @class = "control-label col-md-2" })
+
+            <div class="col-md-2">
+                @Html.DisplayFor(modelItem => item.id, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("رقم السند", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-2">
+                @Html.DisplayFor(modelItem => item.Engennering.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("المهندس", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.DisplayFor(modelItem => item.Employee.ARName, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("الموظف مدخل البيانات", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.DisplayFor(modelItem => item.contractor.ARName, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("المقاول", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-2">
+                @Html.DisplayFor(modelItem => item.refType, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("نوع المرجع", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.DisplayFor(modelItem => item.refNo, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("رقم مرجعى", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+
+        <div id="partial">@{Html.RenderAction("Editing_CustomForIndex");}</div>
+        <div class="form-group">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-2">
+                @Html.DisplayFor(modelItem => item.total, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("الاجمالى ", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+    }
+</div>

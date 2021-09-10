@@ -1,0 +1,20 @@
+﻿@(Html.Kendo().ComboBox()
+       .Name("Material")
+       .Placeholder("اختر")
+       //.DataTextField("barCodeUnv")
+       .DataTextField("MaterialName")
+       .DataValueField("ID")
+       .Filter("contains")
+       .MinLength(1)
+       //.Events(e => e.Change("onComboChange"))
+       .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetMaterials", "MianItems");
+           })
+           .ServerFiltering(true);
+       })
+)
+@*.ClientTemplate("#= Material.MaterialName #" +
+        "<input type='hidden' name='Materials[#= index(data)#].Ma*@terial.ID' value='#= Material.ID #' />").Sortable(false).Width(180);

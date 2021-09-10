@@ -1,0 +1,157 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<h3 style="text-align:center"> تقرير متابعة امر شغل</h3>
+
+<div class="form-horizontal" dir="rtl">
+    <div class="form-group">
+        <div class="col-md-2">
+            @(Html.Kendo().ComboBox()
+               .Name("Project")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("Aname")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetMainProject", "OrderJobFollowUpReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("Project", " مشروع :", htmlAttributes: new { @class = "control-label col-md-1" })
+
+        <div class="col-md-2">
+            @(Html.Kendo().ComboBox()
+               .Name("Cust")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("ARName")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("Id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetCustomers", "OrderJobFollowUpReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("Cust", "  مقاول :", htmlAttributes: new { @class = "control-label col-md-1" })
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-2">
+            @(Html.Kendo().ComboBox()
+               .Name("SalesMan")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("ARName")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("Id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetSalesMan", "OrderJobFollowUpReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("SalesMan", " مهندس :", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+</div>
+<br />
+@*}*@
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.OrderJobDetailsViewModel>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+         columns.Bound(p => p.OrderJobId).Title("رقم امر الشغل")
+            .ClientTemplate((@Html.ActionLink("#=OrderJobId#", "Index", "OrderJob"
+        , new { id = "#=OrderJobId#" }, null).ToHtmlString())).ClientFooterTemplate("#=count#");
+
+          columns.Bound(p => p.MainProjectName).Title("المشروع الرئيسى")
+       .ClientTemplate((@Html.ActionLink("#=MainProjectName#", "Details", "MainProjects"
+       , new { id = "#=MainProjectId#" }, null).ToHtmlString()));
+
+        columns.Bound(p => p.contractorName).Title("المقاول")
+       .ClientTemplate((@Html.ActionLink("#=contractorName#", "Details", "contractor"
+       , new { id = "#=contractorId#" }, null).ToHtmlString()));
+
+        columns.Bound(p => p.SupervisorEngenneringName).Title("المهندس المشرف")
+    .ClientTemplate((@Html.ActionLink("#=SupervisorEngenneringName#", "Details", "Engennerings"
+    , new { id = "#=SupervisorEngenneringId#" }, null).ToHtmlString()));
+
+    })
+    .Pageable()
+    .Sortable()
+    .Scrollable()
+    .HtmlAttributes(new { @class = "k-rtl" })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Batch(true)
+        .ServerOperation(false)
+        .Model(model =>
+        {
+            model.Id(p => p.Id);
+            model.Field(p => p.Id).Editable(false);
+        })
+        .PageSize(20)
+                                .Aggregates(aggregates =>
+                                {
+                                    aggregates.Add(p => p.OrderJobId).Count();
+                                })
+        .Read(read => read.Action("EditingCustom_Read2", "OrderJobFollowUpReport").Data("getmasterdata"))
+    )
+)
+<script>
+    $('#Cust').change(function () {
+        $("#grid").data("kendoGrid").dataSource.read(read => read.Action("EditingCustom_Read2", "OrderJobFollowUpReport").Data("getmasterdata"));
+        $("#grid").css("display", "block");
+    });
+
+    $('#Project').change(function () {
+        $("#grid").data("kendoGrid").dataSource.read(read => read.Action("EditingCustom_Read2", "OrderJobFollowUpReport").Data("getmasterdata"));
+        $("#grid").css("display", "block");
+    });
+
+    $('#SalesMan').change(function () {
+        $("#grid").data("kendoGrid").dataSource.read(read => read.Action("EditingCustom_Read2", "OrderJobFollowUpReport").Data("getmasterdata"));
+        $("#grid").css("display", "block");
+    });
+
+    function getmasterdata() {
+
+        var vCust = $("#Cust").val();
+        var vProject = $("#Project").val();
+        var vSalesMan = $("#SalesMan").val();
+        return {
+            "Cust": vCust,
+            "Project": vProject,
+            "SalesMan": vSalesMan
+
+        };
+    }
+</script>

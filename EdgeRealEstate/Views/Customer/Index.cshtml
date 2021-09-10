@@ -1,0 +1,102 @@
+﻿@model PagedList.IPagedList<EdgeRealEstate.Entities.Customer>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Index Customer";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<br />
+<h3 style="text-align:center">العملاء/الموردين </h3>
+
+    <p dir="rtl">
+        <a href="@Url.Action("Create", "Customer")" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus"></span>
+            <strong style="font-size:16px"> جديد  </strong>
+        </a>
+    </p>
+
+    <table class="table table-bordered" dir="rtl">
+        <tr>
+            <th class="text-right">
+                @Html.DisplayName("الاسم العربى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الاسم الانجليزى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("عميل / مورد")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الحساب")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("نشط")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الرصيد الافتتاحى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الرصيد الحالى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("ملاحظات")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ARName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ENName)
+                </td>
+                <td>
+                    @if (item.Type == false)
+                    {
+                        @Html.Label("عميل", new { htmlAttributes = new { @class = "form-control" } })
+                    }
+                    else
+                    {
+                        @Html.Label("مورد", new { htmlAttributes = new { @class = "form-control" } })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LKAccount.ARName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.isActive)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intialValue)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.currentValue)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Notes)
+                </td>
+                <td>
+                    <a href="@Url.Action("Details","Customer",new { id = item.Id })" style="padding-left:20px;">
+                        <span class="glyphicon glyphicon-info-sign" style="font-size:18px;" title="تفاصيل"></span>
+                    </a>
+                  
+                    <a href="@Url.Action("Edit","Customer",new { id = item.Id })" style="padding-left:20px;">
+                        <span class="glyphicon glyphicon-edit" style="font-size:18px;" title="تعديل"></span>
+                    </a>
+                  
+                    <a href="@Url.Action("Delete","Customer",new { id = item.Id })" style="padding-left:20px;">
+                        <span class="glyphicon glyphicon-trash" style="font-size:18px;" title="حذف"></span>
+                    </a>
+                   
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div style="text-align:center">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </div>

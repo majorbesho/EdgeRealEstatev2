@@ -1,0 +1,62 @@
+﻿@model PagedList.IPagedList<EdgeRealEstate.Entities.EmployeeAttach>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Index EmployeeAttach";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<br />
+<h3 style="text-align:center">ملفات الموظف</h3>
+<div>
+    <table class="table" dir="rtl">
+        <tr>
+
+            <td>
+                    <a href="@Url.Action("Create", "EmployeeAttach")" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </a>
+                    @foreach (var item in Model)
+                    {
+                        <a href="@Url.Action("Edit", "EmployeeAttach", new { id = item.id })" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>
+                        <a href="@Url.Action("Delete", "EmployeeAttach", new { id = item.id })" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    }
+                </td>
+
+        </tr>
+
+    </table>
+</div>
+<div class="form-horizontal" dir="rtl">
+    @foreach (var item in Model)
+    {
+        <div class="form-group">
+
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.id, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("الكود", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.Employee.ARName, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("الموظف", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DisplayFor(modelItem => item.FileName, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            @Html.Label("اسم الملف", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>    
+    }
+</div>
+
+<div dir="rtl">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>
+

@@ -1,0 +1,115 @@
+﻿@model EdgeRealEstate.Entities.ConstructionMaterial
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ConstructionMaterial</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MasuringUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MasuringUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Length)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Length)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Width)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Width)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.effective)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.effective)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProcessingTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProcessingTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Specifications)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Specifications)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

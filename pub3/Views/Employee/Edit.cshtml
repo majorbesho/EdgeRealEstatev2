@@ -1,0 +1,177 @@
+﻿@model EdgeRealEstate.Entities.Employee
+@{
+    ViewBag.Title = "Edit Employee";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<br />
+<h3 style="text-align:center">الموظفين</h3>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal" dir="rtl">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.ENName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.ENName, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.ENName, "الاسم الانجليزى", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.ARName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.ARName, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.ARName, "الاسم العربى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.RadioButtonFor(model => model.isFemale, false)ذكر
+            @Html.RadioButtonFor(model => model.isFemale, true)انثى
+            @Html.ValidationMessageFor(model => model.isFemale, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.isFemale, "الجنس", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.RadioButtonFor(model => model.religion, "مسلم")مسلم
+            @Html.RadioButtonFor(model => model.religion, "غير مسلم")غير مسلم
+            @Html.ValidationMessageFor(model => model.religion, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.religion, "الديانة", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DropDownListFor(model => model.SocStatus, new List<SelectListItem> {
+           new SelectListItem{Text="اعزب",Value="اعزب"} ,
+           new SelectListItem{ Text="متزوج",Value="متزوج"} }, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SocStatus, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.SocStatus, "الحالة الاجتماعية", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DropDownListFor(model => model.LKNationalityId, (SelectList)ViewBag.Nationalities, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.LKNationalityId, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.LKNationalityId, "الجنسية", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @(Html.Kendo().DatePicker().Name("DOB").Format("yyyy/MM/dd").HtmlAttributes(new { @class = "form-control" }))
+            @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.DOB, "تاريخ الميلاد", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DropDownListFor(model => model.Degree, new List<SelectListItem> {
+            new SelectListItem{Text="بكالوريوس",Value="بكالوريوس"} ,
+            new SelectListItem{ Text="ماجستر",Value="ماجستر"},
+            new SelectListItem{ Text="دكتوراة",Value="دكتوراة"}}, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Degree, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.Degree, "الدرجة العلمية", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.tele, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.tele, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.tele, "تليفون", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.nearTele, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.nearTele, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.nearTele, "اقرب تليفون", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.address, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.address, "العنوان", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.nationalTele, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.nationalTele, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.nationalTele, "تليفون محلى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.section, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.section, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.section, "قطاع", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DropDownListFor(model => model.LKBranchId, (SelectList)ViewBag.Branchs, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.LKBranchId, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.LKBranchId, "الفرع", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.ContractDur, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.ContractDur, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.ContractDur, "مدة العقد", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DropDownListFor(model => model.TitleId, (SelectList)ViewBag.Titles, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.TitleId, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.TitleId, "المسمى الوظيفى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.salary, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.salary, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.salary, "المرتب", htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-4">
+        @Html.TextBoxFor(model => model.Housingallowance, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Housingallowance, "", new { @class = "text-danger" })
+    </div>
+        @Html.LabelFor(model => model.Housingallowance, "بدل سكن", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @(Html.Kendo().DatePicker().Name("startDate").Format("yyyy/MM/dd").HtmlAttributes(new { @class = "form-control" }))
+            @Html.ValidationMessageFor(model => model.startDate, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.startDate, "بداية من", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @(Html.Kendo().DatePicker().Name("POB").Format("yyyy/MM/dd").HtmlAttributes(new { @class = "form-control" }))
+            @Html.ValidationMessageFor(model => model.POB, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.POB, "تاريخ الالتحاق", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.isActive)
+            @Html.ValidationMessageFor(model => model.isActive, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.isActive, "نشط – موقوف", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.Description, "ملاحظات", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="حفظ" class="btn btn-primary" /> |
+            @Html.ActionLink("رجوع", "Index")
+        </div>
+    </div>
+    @if (ViewBag.msgg == 1)
+    {
+        <div class="form-group">
+            <div class="alert alert-success alert-dismissable fade-in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>تم الحفظ بنجاح</strong>
+            </div>
+        </div>
+    }
+</div>
+}
+
+
+
+

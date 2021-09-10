@@ -1,0 +1,933 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.MianItems>
+
+
+@{
+    ViewBag.Title = "MasterDetails2";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<div class="modal fade" id="newOrderModal">
+    <div class="modal-dialog modal-lg" style=" width: 900px !important;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h4>Add New Main Item</h4>
+            </div>
+
+            <form id="NewOrderForm">
+                <div class="modal-body">
+                    @*Main Item Details*@
+                    <h5 style="color:#ff6347;font-weight:800">Main Item Details</h5>
+                    <hr />
+                    <div class="form-row">
+                        <input type="hidden" id="CustomerId" />
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Ename
+                            </label>
+                            <input type="text" id="Ename" name="Ename" placeholder="Ename" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Aname
+                            </label>
+                            <input type="text" id="Aname" name="Aname" placeholder="Aname" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Description
+                            </label>
+                            <input type="text" id="Description" name="Description" placeholder="Description" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                NoOfDaies
+                            </label>
+                            <input type="text" id="NoOfDaies" name="NoOfDaies" placeholder="NoOfDaies" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                DegreeOfExcellenceId
+                            </label>
+                            <input type="text" id="DegreeOfExcellenceId" name="DegreeOfExcellenceId" placeholder="DegreeOfExcellenceId" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                AttachedId
+                            </label>
+                            <input type="text" id="AttachedId" name="AttachedId" placeholder="AttachedId" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Nots
+                            </label>
+                            <input type="text" id="Nots" name="Nots" placeholder="Nots" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                HaveItem
+                            </label>
+                            <div>
+                                @Html.CheckBox("HaveItem", true)
+                            </div>
+                            @*<input type="checkbox" checked="checked" value="" id="HaveItem" name="HaveItem" placeholder="HaveItem" class="form-control" />*@
+                        </div>
+
+                    </div>
+
+                    @*Construction Material Details*@
+                    <h5 style="margin-top:10px;color:#ff6347;font-weight:800">Construction Matrial Details</h5>
+                    <hr />
+                    <table id="detailsTable" class="table table-bordered table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>MaterialName</th>
+                                <th>MasuringUnit</th>
+                                <th>Length</th>
+                                <th>Width</th>
+                                <th>Price</th>
+                                <th>Brand</th>
+                                <th>Type</th>
+                                <th>effective</th>
+                                <th>ProcessingTime</th>
+                                <th>Specifications</th>
+                                <th>Notes</th>
+                                <th>Attachments</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <div class="form-row">
+                        <input type="hidden" id="OrderId" />
+                        <div class="col-md-4">
+
+                            <label class="control-label">
+                                Material Name
+                            </label>
+                            <input type="text" id="MaterialName" name="MaterialName" placeholder="Material Name" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Masuring Unit
+                            </label>
+                            <input type="text" id="MasuringUnit" name="MasuringUnit" placeholder="Masuring Unit" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Length
+                            </label>
+                            <input type="text" id="Length" name="Length" placeholder="Length" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Width
+                            </label>
+                            <input type="text" id="Width" name="Width" placeholder="Width" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Price
+                            </label>
+                            <input type="text" id="Price" name="Price" placeholder="Price" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Brand
+                            </label>
+                            <input type="text" id="Brand" name="Brand" placeholder="Brand" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Type
+                            </label>
+                            <input type="text" id="Type" name="Type" placeholder="Type" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                effective
+                            </label>
+                            @*<input type="checkbox" checked="checked" value="true" id="effective" name="effective" placeholder="effective" class="form-control" />*@
+                        <div>
+                            @Html.CheckBox("effective", true)
+                        </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                ProcessingTime
+                            </label>
+                            <input type="text" id="ProcessingTime" name="ProcessingTime" placeholder="ProcessingTime" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Specifications
+                            </label>
+                            <input type="text" id="Specifications" name="Specifications" placeholder="Specifications" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Notes
+                            </label>
+                            <input type="text" id="Notes" name="Notes" placeholder="Notes" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Attachments
+                            </label>
+                            <input type="text" id="Attachmentss" name="Attachmentss" placeholder="Attachmentss" class="form-control" />
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2 col-lg-offset-4">
+                                <a id="addToList" class="btn btn-default text-white">Add To List</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button id="saveItem" type="submit" class="btn btn-success">Save </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="EditModal">
+    <div class="modal-dialog modal-lg" style=" width: 900px !important;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h4>Edit Item</h4>
+            </div>
+            <form id="NewOrderForm">
+                <div class="modal-body">
+                    @*Main Item Details*@
+                    <h5 style="color:#ff6347;font-weight:800">Main Item Details</h5>
+                    <hr />
+                    <div class="form-row">
+                        <input type="hidden" id="MainItemID" />
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Ename
+                            </label>
+                            <input type="text" id="EditEname" name="EditEname" placeholder="Ename" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Aname
+                            </label>
+                            <input type="text" id="EditAname" name="EditAname" placeholder="Aname" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Description
+                            </label>
+                            <input type="text" id="EditDescription" name="EditDescription" placeholder="Description" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                NoOfDaies
+                            </label>
+                            <input type="text" id="EditNoOfDaies" name="EditNoOfDaies" placeholder="NoOfDaies" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                DegreeOfExcellenceId
+                            </label>
+                            <input type="text" id="EditDegreeOfExcellenceId" name="EditDegreeOfExcellenceId" placeholder="DegreeOfExcellenceId" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                AttachedId
+                            </label>
+                            <input type="text" id="EditAttachedId" name="EditAttachedId" placeholder="AttachedId" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Nots
+                            </label>
+                            <input type="text" id="EditNots" name="EditNots" placeholder="Nots" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                HaveItem
+                            </label>
+                            <div>
+                                @Html.CheckBox("EditHaveItem", true)
+                            </div>
+                            @*<input type="checkbox" checked="checked" value="" id="HaveItem" name="HaveItem" placeholder="HaveItem" class="form-control" />*@
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <a id="EditMainItem" class="btn btn-success btn-sm text-white">Apply Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                    @*Construction Material Details*@
+                    <h5 style="margin-top:10px;color:#ff6347;font-weight:800">Construction Matrial Details</h5>
+                    <hr />
+                    <table id="EditdetailsTable" class="table table-bordered table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>MaterialName</th>
+                                <th>MasuringUnit</th>
+                                <th>Length</th>
+                                <th>Width</th>
+                                <th>Price</th>
+                                <th>Brand</th>
+                                <th>Type</th>
+                                <th>effective</th>
+                                <th>ProcessingTime</th>
+                                <th>Specifications</th>
+                                <th>Notes</th>
+                                <th>Attachments</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <div class="form-row">
+                        <input type="hidden" id="EditMaterialId" />
+                        <div class="col-md-4">
+
+                            <label class="control-label">
+                                Material Name
+                            </label>
+                            <input type="text" id="EditMaterialName" name="EditMaterialName" placeholder="Material Name" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Masuring Unit
+                            </label>
+                            <input type="text" id="EditMasuringUnit" name="EditMasuringUnit" placeholder="Masuring Unit" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Length
+                            </label>
+                            <input type="text" id="EditLength" name="EditLength" placeholder="Length" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Width
+                            </label>
+                            <input type="text" id="EditWidth" name="EditWidth" placeholder="Width" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Price
+                            </label>
+                            <input type="text" id="EditPrice" name="EditPrice" placeholder="Price" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Brand
+                            </label>
+                            <input type="text" id="EditBrand" name="EditBrand" placeholder="Brand" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Type
+                            </label>
+                            <input type="text" id="EditType" name="EditType" placeholder="Type" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                effective
+                            </label>
+                            @*<input type="checkbox" checked="checked" value="true" id="effective" name="effective" placeholder="effective" class="form-control" />*@
+                            <div>
+                                @Html.CheckBox("Editeffective", true)
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                ProcessingTime
+                            </label>
+                            <input type="text" id="EditProcessingTime" name="EditProcessingTime" placeholder="ProcessingTime" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Specifications
+                            </label>
+                            <input type="text" id="EditSpecifications" name="EditSpecifications" placeholder="Specifications" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Notes
+                            </label>
+                            <input type="text" id="EditNotes" name="EditNotes" placeholder="Notes" class="form-control" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">
+                                Attachments
+                            </label>
+                            <input type="text" id="EditAttachmentss" name="EditAttachmentss" placeholder="Attachmentss" class="form-control" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-center m-5">
+                                <a id="addToEditList" class="btn btn-primary text-white btn-sm">Add New To List</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center m-5">
+                                <a id="applyEdit" class="btn btn-success text-white btn-sm">Apply Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<br /><br />
+<div class="">
+    <div class="row">
+        <div class="col-md-9">
+            <h2 class="panel-title pull-left" style="margin-left:10px;">
+                <strong>Main Items Master of Details</strong>
+            </h2>
+        </div>
+        <div class="col-md-3">
+            <button style="margin-right:10px" class="btn btn-primary pull-left" onclick="addNewItem()">Add New Item</button>
+        </div>
+    </div>
+</div>
+@*Receive All Database Data From Controller And Display Those Data In Client Side*@
+
+@if (Model.Count() != 0)
+{
+    foreach (var item in Model)
+    {
+        <table class="ItemsTable table table-striped table-responsive">
+            <tbody>
+                <tr>
+                    <td>Arabic Name : @item.Aname</td>
+                    <td>English Name : @item.Ename </td>
+                    <td>
+                        <a class="btn btn-danger btn-sm text-white"  id="Item-Delete-Btn" Item-ID="@item.Id">Delete</a>
+                        <a class="btn btn-success btn-sm text-white" id="Item-Edit-Btn" onclick="EditItem()" Item-ID="@item.Id">Edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>MaterialName</th>
+                                    <th>MasuringUnit</th>
+                                    <th>Length</th>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                    <th>Brand</th>
+                                    <th>Type</th>
+                                    <th>effective</th>
+                                    <th>ProcessingTime</th>
+                                    <th>Specifications</th>
+                                    <th>Notes</th>
+                                    <th>Attachments</th>
+                                </tr>
+                                @foreach (var matr in item.ConstructionMaterials)
+                                {
+                                    <tr>
+                                        <td>@matr.MaterialName</td>
+                                        <td>@matr.MasuringUnit</td>
+                                        <td>@matr.Length</td>
+                                        <td>@matr.Width</td>
+                                        <td>@matr.Price</td>
+                                        <td>@matr.Brand</td>
+                                        <td>@matr.Type</td>
+                                        <td>@matr.ProcessingTime</td>
+                                        <td>@matr.Specifications</td>
+                                        <td>@matr.Notes</td>
+                                        <td>@matr.Attachments</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+}
+else
+{
+    <h3 style="color:red;">Empty!</h3>
+}
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#applyEdit").addClass("disabled");
+        });
+
+        //Show Add Modal.
+        function addNewItem() {
+            $("#newOrderModal").modal();
+        }
+        //Show Edit Modal
+        function EditItem() {
+            $("#EditModal").modal();
+        }
+        //Add Multiple Construction Material.
+        $("#addToList").click(function (e) {
+            e.preventDefault();
+            //if ($.trim($("#MaterialName").val()) == ""
+            //    || $.trim($("#MasuringUnit").val()) == ""
+            //    || $.trim($("#Length").val()) == ""
+            //    || $.trim($("#Width").val()) == ""
+            //    || $.trim($("#Price").val()) == ""
+            //    || $.trim($("#Brand").val()) == ""
+            //    || $.trim($("#Type").val()) == ""
+            //    || $.trim($("#ProcessingTime").val()) == ""
+            //    || $.trim($("#Specifications").val()) == ""
+            //    || $.trim($("#Notes").val()) == ""
+            //    || $.trim($("#Attachments").val()) == ""
+            //) return;
+            var MaterialName = $("#MaterialName").val(),
+                MasuringUnit = $("#MasuringUnit").val(),
+                Length = $("#Length").val(),
+                Width = $("#Width").val(),
+                Price = $("#Price").val(),
+                Brand = $("#Brand").val(),
+                Type = $("#Type").val(),
+                effective = $("input[type='hidden'][name='effective']").val(),
+                ProcessingTime = $("#ProcessingTime").val(),
+                Specifications = $("#Specifications").val(),
+                Notes = $("#Notes").val(),
+                Attachments = $("#Attachmentss").val(),
+                detailsTableBody = $("#detailsTable tbody");
+
+            var Item = '<tr><td>' + MaterialName + '</td><td>' + MasuringUnit + '</td><td>' + Length + '</td><td>' + Width + '</td><td>' + Price + '</td><td>' + Brand + '</td><td>' + Type + '</td><td>' + effective + '</td><td>' + ProcessingTime + '</td><td>' + Specifications + '</td><td>' + Notes + '</td><td>' + Attachments + '</td><td>' + '</td><td><a data-itemId="0" href="#" class="deleteItem btn btn-sm btn-danger">Remove</a></td></tr>';
+            detailsTableBody.append(Item);
+            clearItem();
+        });
+        //Add New Construction Material in edit item
+        $("#addToEditList").click(function (e) {
+            e.preventDefault();
+            //if ($.trim($("#MaterialName").val()) == ""
+            //    || $.trim($("#MasuringUnit").val()) == ""
+            //    || $.trim($("#Length").val()) == ""
+            //    || $.trim($("#Width").val()) == ""
+            //    || $.trim($("#Price").val()) == ""
+            //    || $.trim($("#Brand").val()) == ""
+            //    || $.trim($("#Type").val()) == ""
+            //    || $.trim($("#ProcessingTime").val()) == ""
+            //    || $.trim($("#Specifications").val()) == ""
+            //    || $.trim($("#Notes").val()) == ""
+            //    || $.trim($("#Attachments").val()) == ""
+            //) return;
+            var MaterialName = $("#EditMaterialName").val(),
+                MasuringUnit = $("#EditMasuringUnit").val(),
+                Length = $("#EditLength").val(),
+                Width = $("#EditWidth").val(),
+                Price = $("#EditPrice").val(),
+                Brand = $("#EditBrand").val(),
+                Type = $("#EditType").val(),
+                effective = $("input[type='hidden'][name='Editeffective']").val(),
+                ProcessingTime = $("#EditProcessingTime").val(),
+                Specifications = $("#EditSpecifications").val(),
+                Notes = $("#EditNotes").val(),
+                Attachments = $("#EditAttachmentss").val(),
+                detailsTableBody = $("#EditdetailsTable tbody");
+
+            var data = JSON.stringify({
+                MainItemID: $("#MainItemID").val(),
+                MaterialName: $("#EditMaterialName").val(),
+                MasuringUnit: $("#EditMasuringUnit").val(),
+                Length: $("#EditLength").val(),
+                Width: $("#EditWidth").val(),
+                Price: $("#EditPrice").val(),
+                Brand: $("#EditBrand").val(),
+                ProcessingTime: $("#EditProcessingTime").val(),
+                Specifications: $("#EditSpecifications").val(),
+                Type: $("#EditType").val(),
+                effective: $("input[type='hidden'][name='effective']").val()
+            });
+
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/MianItems/AddNewCM",
+                data: data,
+                success: function (id) {
+                    if (id != null) {
+                        var Item = '<tr><td>' + MaterialName + '</td><td>' + MasuringUnit + '</td><td>' + Length + '</td><td>' + Width + '</td><td>' + Price + '</td><td>' + Brand + '</td><td>' + Type + '</td><td>' + effective + '</td><td>' + ProcessingTime + '</td><td>' + Specifications + '</td><td>' + Notes + '</td><td>' + Attachments + '</td><td>' + '</td><td><a data-itemId="' + id + '" href="#" class="deleteItemFroServer btn btn-sm btn-danger">Remove</a> <a data-itemId="' + id + '" href="#" class="editItemFroServer btn btn-sm btn-info">Edit</a></td></tr>';
+                        detailsTableBody.append(Item);
+                        EditclearItem();
+                        toastr["success"]("Success!", "Success");
+                    } else {
+                    toastr["error"]("error!", "Error");
+                    }
+                },
+                error: function () {
+                    toastr["error"]("error!", "Error");
+                }
+            });
+
+        });
+        //Edit Main Item
+        $("#EditMainItem").click(function () {
+            var Data = JSON.stringify({
+                ID: $("#MainItemID").val(),
+                Ename: $("#EditEname").val(),
+                Aname: $("#EditAname").val(),
+                Description: $("#EditDescription").val(),
+                NoOfDaies: $("#EditNoOfDaies").val(),
+                DegreeOfExcellenceId: $("#EditDegreeOfExcellenceId").val(),
+                AttachedId: $("#EditAttachedId").val(),
+                Nots: $("#EditNots").val(),
+                HaveItem: $("input[type='hidden'][name='EditHaveItem']").val(),
+            });
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/MianItems/EditMainItem",
+                data: Data,
+                success: function (result) {
+                    toastr["success"]("Success!", "Success");
+                },
+                error: function () {
+                    toastr["error"]("error!", "Error");
+                }
+            });
+        });
+        //After Add A New Construction Material In The List, Clear Clean The Form For Add More.
+        function clearItem() {
+            $("#MaterialName").val('');
+            $("#MasuringUnit").val('');
+            $("#Length").val('');
+            $("#Width").val('');
+            $("#Price").val('');
+            $("#Brand").val('');
+            $("#Type").val('');
+            $("#ProcessingTime").val('');
+            $("#Specifications").val('');
+            $("#Notes").val('');
+            $("#Attachmentss").val('');
+        }
+        //After Edit A New Construction Material In The List, Clear Clean The Form For Add More.
+        function EditclearItem() {
+            $("#EditMaterialName").val('');
+            $("#EditMasuringUnit").val('');
+            $("#EditLength").val('');
+            $("#EditWidth").val('');
+            $("#EditPrice").val('');
+            $("#EditBrand").val('');
+            $("#EditType").val('');
+            $("#EditProcessingTime").val('');
+            $("#EditSpecifications").val('');
+            $("#EditNotes").val('');
+            $("#EditAttachmentss").val('');
+            $("#applyEdit").addClass("disabled");
+
+        }
+        // After Add A New Construction Material In The List, If You Want, You Can Remove It.
+        $(document).on('click', 'a.deleteItem', function (e) {
+            e.preventDefault();
+            var $self = $(this);
+            if ($(this).attr('data-itemId') == "0") {
+                $(this).parents('tr').css("background-color", "red").fadeOut(800, function () {
+                    $(this).remove();
+                });
+            }
+        });
+        // After Click Edit Button Pass Get Item Data And Open It In Edit Modal
+        $(".ItemsTable").delegate("#Item-Edit-Btn", "click", function () {
+            var ID = $(this).attr('Item-ID');
+                $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/MianItems/GetItemData",
+                data: JSON.stringify({ID}),
+                success: function (R) {
+
+                    var mod = JSON.parse(R);
+
+                    $("#EditEname").val(mod.MainItem.Ename);
+                    $("#MainItemID").val(mod.MainItem.Id);
+                    $("#EditAname").val(mod.MainItem.Aname);
+                    $("#EditDescription").val(mod.MainItem.Description);
+                    $("#EditNoOfDaies").val(mod.MainItem.NoOfDaies);
+                    $("#EditDegreeOfExcellenceId").val(mod.MainItem.DegreeOfExcellenceId);
+                    $("#EditAttachedId").val(mod.MainItem.AttachedId);
+                    $("#EditNots").val(mod.MainItem.Nots);
+                    $("input[type='hidden'][name='EditHaveItem']").val(mod.MainItem.HaveItem);
+                    $("input[type='checkbox'][name='EditHaveItem']").val(mod.MainItem.HaveItem);
+
+                    CMPutInModalTbl(mod.MainItem.ConstructionMaterials);
+
+                },
+                error: function () {
+                    toastr["error"]("error!", "Error");
+                }
+            });
+        });
+        // Delete Item
+        $(".ItemsTable").delegate("#Item-Delete-Btn", "click", function () {
+            var ID = $(this).attr('Item-ID');
+            var x = $(this).closest('table[class^="ItemsTable"]');
+
+                $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/MianItems/DeleteItemData",
+                data: JSON.stringify({ID}),
+                    success: function (R) {
+                        toastr["success"]("Removed Successfully!", "Success");
+                        x.css("color", "red").fadeOut(500, function () {
+                            x.remove();
+                        });
+                },
+                error: function () {
+                    toastr["error"]("error!", "Error");
+                }
+            });
+        });
+        //Delete Construction Matrial
+        $("#EditdetailsTable").delegate(".deleteItemFroServer", "click", function () {
+            var ID = $(this).attr('data-itemid');
+            var x = $(this).parents('tr');
+                
+                $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/MianItems/DeleteConMat",
+                data: JSON.stringify({ID}),
+                    success: function (R) {
+                        toastr["success"]("Removed Successfully!", "Success");
+                        x.css("background-color", "red").fadeOut(500, function () {
+                            x.remove();
+                        });
+                },
+                error: function () {
+                    toastr["error"]("error!", "Error");
+                }
+            });
+        });
+        //Put Construction Materials Data in Edit Modal Table
+        function CMPutInModalTbl(Data) {
+            var Item;
+            var EditdetailsTable = $("#EditdetailsTable tbody");
+            EditdetailsTable.empty();
+            for (i = 0; i < Data.length; i++) {
+                console.log(Data[i]);
+                var Item = '<tr><td>' + Data[i].MaterialName + '</td><td>' + Data[i].MasuringUnit + '</td><td>' + Data[i].Length + '</td><td>' + Data[i].Width + '</td><td>' + Data[i].Price + '</td><td>' + Data[i].Brand + '</td><td>' + Data[i].Type + '</td><td>' + Data[i].effective + '</td><td>' + Data[i].ProcessingTime + '</td><td>' + Data[i].Specifications + '</td><td>' + Data[i].Notes + '</td><td>' + Data[i].Attachments + '</td><td>' + '</td><td><a data-itemId="' + Data[i].ID + '" href="#" class="deleteItemFroServer btn btn-sm btn-danger">Remove</a> <a data-itemId="' + Data[i].ID + '" href="#" class="editItemFroServer btn btn-sm btn-info">Edit</a></td></tr>';
+                EditdetailsTable.append(Item);
+
+            }
+        }
+        //After Click delete button in material table
+        $(document).on('click', 'a.deleteItem', function (e) {
+            e.preventDefault();
+            var $self = $(this);
+            if ($(this).attr('data-itemId') == "0") {
+                $(this).parents('tr').css("background-color", "#ff6347").fadeOut(800, function () {
+                    $(this).remove();
+                });
+            }
+        });
+        //After Click Edit button in materials edit table
+        $("#EditdetailsTable").delegate(".editItemFroServer", "click", function () {
+        var ID = $(this).attr('data-itemId');
+                $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/MianItems/GetMaterialData",
+                data: JSON.stringify({ID}),
+                success: function (R) {
+
+                    var mod = JSON.parse(R);
+
+                    $("#EditMaterialId").val(ID);
+                    $("#EditMaterialName").val(mod.MaterialName);
+                    $("#EditMasuringUnit").val(mod.MasuringUnit);
+                    $("#EditLength").val(mod.Length);
+                    $("#EditWidth").val(mod.Width);
+                    $("#EditPrice").val(mod.Price);
+                    $("#EditBrand").val(mod.Brand);
+                    $("#EditType").val(mod.Type);
+                    $("#EditProcessingTime").val(mod.ProcessingTime);
+                    $("#EditSpecifications").val(mod.Specifications);
+                    $("#EditNotes").val(mod.Notes);
+                    $("#EditAttachmentss").val(mod.Attachmentss);
+                    $("input[type='hidden'][name='Editeffective']").val(mod.effective);
+                    $("input[type='checkbox'][name='Editeffective']").val(mod.effective);
+
+                    $("#applyEdit").removeClass("disabled");
+                    $("#EditMaterialName").focus();
+                },
+                error: function () {
+                    toastr["error"]("error!", "Error");
+                }
+            });
+        });
+        //After Click Apply Edit button in edit Modal
+        $("#applyEdit").click(function (e) {
+            e.preventDefault();
+            //if ($.trim($("#MaterialName").val()) == ""
+            //    || $.trim($("#MasuringUnit").val()) == ""
+            //    || $.trim($("#Length").val()) == ""
+            //    || $.trim($("#Width").val()) == ""
+            //    || $.trim($("#Price").val()) == ""
+            //    || $.trim($("#Brand").val()) == ""
+            //    || $.trim($("#Type").val()) == ""
+            //    || $.trim($("#ProcessingTime").val()) == ""
+            //    || $.trim($("#Specifications").val()) == ""
+            //    || $.trim($("#Notes").val()) == ""
+            //    || $.trim($("#Attachments").val()) == ""
+            //) return;
+
+            var MaterialName = $("#EditMaterialName").val(),
+                ID = $("#EditMaterialId").val(),
+                MasuringUnit = $("#EditMasuringUnit").val(),
+                Length = $("#EditLength").val(),
+                Width = $("#EditWidth").val(),
+                Price = $("#EditPrice").val(),
+                Brand = $("#EditBrand").val(),
+                Type = $("#EditType").val(),
+                effective = $("input[type='hidden'][name='Editeffective']").val(),
+                ProcessingTime = $("#EditProcessingTime").val(),
+                Specifications = $("#EditSpecifications").val(),
+                Notes = $("#EditNotes").val(),
+                Attachments = $("#EditAttachmentss").val();
+
+            var data = JSON.stringify({
+                ID: $("#EditMaterialId").val(),
+                MaterialName: $("#EditMaterialName").val(),
+                MasuringUnit: $("#EditMasuringUnit").val(),
+                Length: $("#EditLength").val(),
+                Width: $("#EditWidth").val(),
+                Price: $("#EditPrice").val(),
+                Brand: $("#EditBrand").val(),
+                ProcessingTime: $("#EditProcessingTime").val(),
+                Specifications: $("#EditSpecifications").val(),
+                Type: $("#EditType").val(),
+                Notes: $("#EditNotes").val(),
+                effective: $("input[type='hidden'][name='effective']").val()
+            });
+
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/MianItems/EditCM",
+                data: data,
+                success: function (result) {
+                    if (result == true) {
+                        $('#EditdetailsTable tbody tr a[data-itemId="' + ID + '"]').closest('tr').remove();
+                        var Item = '<tr><td>' + MaterialName + '</td><td>' + MasuringUnit + '</td><td>' + Length + '</td><td>' + Width + '</td><td>' + Price + '</td><td>' + Brand + '</td><td>' + Type + '</td><td>' + effective + '</td><td>' + ProcessingTime + '</td><td>' + Specifications + '</td><td>' + Notes + '</td><td>' + Attachments + '</td><td>' + '</td><td><a data-itemId="' + ID + '" href="#" class="deleteItemFroServer btn btn-sm btn-danger">Remove</a> <a data-itemId="' + ID + '" href="#" class="editItemFroServer btn btn-sm btn-info">Edit</a></td></tr>';
+                        $("#EditdetailsTable tbody").append(Item);
+                        EditclearItem();
+                        toastr["success"]("success!", "Success");
+                    } else {
+                    toastr["error"]("error!", "Error");
+                    }
+                },
+                error: function () {
+                    toastr["error"]("error!", "Error");
+                }
+            });
+        });
+        //After Click Save Button Pass All Data View To Controller For Save Database editItemFroServer
+        function saveItem(data) {
+            return $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/MianItems/SaveItem",
+                data: data,
+                success: function (result) {
+                    $("#Ename").val("");
+                    $("#Aname").val("");
+                    $("#Description").val("");
+                    $("#NoOfDaies").val("");
+                    $("#DegreeOfExcellenceId").val("");
+                    $("#AttachedId").val("");
+                    $("#Nots").val("");
+
+                    toastr["success"]("success!", "Success");
+                },
+                error: function () {
+                    toastr["error"]("error!", "Error");
+                }
+            });
+        }
+        //Collect Multiple Construction matrials List For Pass To Controller
+        $("#saveItem").click(function (e) {
+            e.preventDefault();
+
+            var orderArr = [];
+            orderArr.length = 0;
+
+            $.each($("#detailsTable tbody tr"), function () {
+                orderArr.push({
+                    MaterialName: $(this).find('td:eq(0)').html(),
+                    MasuringUnit: $(this).find('td:eq(1)').html(),
+                    Length: $(this).find('td:eq(2)').html(),
+                    Width: $(this).find('td:eq(3)').html(),
+                    Price: $(this).find('td:eq(4)').html(),
+                    Brand: $(this).find('td:eq(5)').html(),
+                    Type: $(this).find('td:eq(6)').html(),
+                    effective: $(this).find('td:eq(7)').html(),
+                    ProcessingTime: $(this).find('td:eq(8)').html(),
+                    Specifications: $(this).find('td:eq(9)').html(),
+                    Notes: $(this).find('td:eq(10)').html(),
+                    Attachments: $(this).find('td:eq(11)').html()
+                });
+            });
+            var data = JSON.stringify({
+                Ename: $("#Ename").val(),
+                Aname: $("#Aname").val(),
+                Description: $("#Description").val(),
+                NoOfDaies: $("#NoOfDaies").val(),
+                DegreeOfExcellenceId: $("#DegreeOfExcellenceId").val(),
+                AttachedId: $("#AttachedId").val(),
+                Nots: $("#Nots").val(),
+                HaveItem: $("input[type='hidden'][name='HaveItem']").val(),
+                ConMat: orderArr
+            });
+
+            $.when(saveItem(data)).then(function (response) {
+                console.log(response);
+            }).fail(function (err) {
+                console.log(err);
+            });
+        });
+        
+
+    </script>
+}

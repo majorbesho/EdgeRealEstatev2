@@ -1,0 +1,42 @@
+﻿@model EdgeRealEstate.Entities.Message
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>View</h2>
+
+<div>
+    <h4>Message</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Message
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.MessageContent)
+        </dd>
+
+        <dt>
+            Sender
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SenderUsername)
+        </dd>
+
+
+        <dt>
+            Sent At
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SentAt)
+        </dd>
+
+    </dl>
+</div>
+<a class="btn btn-info btn-sm " href="/Messages/GetMessagesForUser/@Model.SenderId">View All From This User</a>
+

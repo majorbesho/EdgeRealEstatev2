@@ -1,0 +1,19 @@
+﻿@(Html.Kendo().ComboBox()
+       .Name("Stage")
+       .Placeholder("اختر")
+       //.DataTextField("barCodeUnv")
+       .DataTextField("Aname")
+       .Template("#= code # - #= Aname #")
+       .DataValueField("id")
+       .Filter("contains")
+       .MinLength(1)
+       //.Events(e => e.Change("onComboChange"))
+       .DataSource(source =>
+           {
+               source.Read(read =>
+               {
+                   read.Action("ServerFiltering_GetStage", "OrderJob");
+           })
+           .ServerFiltering(true);
+       })
+)

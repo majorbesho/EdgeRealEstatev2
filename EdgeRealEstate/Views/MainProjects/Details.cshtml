@@ -1,0 +1,92 @@
+﻿@model EdgeRealEstate.Entities.MainProject
+
+@{
+    ViewBag.Title = "Details";
+    ViewBag.current = "MainProjects";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MainProject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalLandSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalLandSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypesInvestment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypesInvestment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.attachedFileAndPic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.attachedFileAndPic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxLevelForContributions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxLevelForContributions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LandNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LandNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nots)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nots)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

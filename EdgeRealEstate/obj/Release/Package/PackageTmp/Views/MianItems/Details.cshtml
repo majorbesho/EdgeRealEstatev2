@@ -1,0 +1,84 @@
+﻿@model EdgeRealEstate.Entities.MianItems
+
+@{
+    ViewBag.Title = "Details";
+    ViewBag.current = "MianItems";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MianItems</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfDaies)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfDaies)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttachedId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttachedId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DegreeOfExcellenceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DegreeOfExcellenceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HaveItem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HaveItem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nots)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nots)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

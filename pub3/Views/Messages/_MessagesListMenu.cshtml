@@ -1,0 +1,13 @@
+﻿
+@foreach (var item in ViewBag.MSG)
+{
+    <a style="margin:5px;" class="dropdown-item seenMes @(item.Seen == false ?  "NotSeenBck" : "") " MSGID="@item.ID" seen ="@item.Seen" href="/Messages/View/@item.ID"> Send You Message <strong style="margin:0px 3px">@item.SenderUsername</strong> 
+    </a>
+
+}
+<hr />
+<a class="dropdown-item" href="/Messages/getmessages">See All Messages</a>
+<hr />
+<a class="dropdown-item" href="/Messages/create">Send New Message</a>
+
+

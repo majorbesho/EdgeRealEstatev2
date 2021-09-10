@@ -1,0 +1,162 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNet.Identity
+@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/heartbeat.ico">
+    <title>@ViewBag.Title - EDGE REAl STATE</title>
+    <link href="~//Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="~/Content/clockpicker.css" rel="stylesheet" />
+    <link href="~/Content/DataTables/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/DataTables/css/buttons.dataTables.css" rel="stylesheet" />
+    <link href="~/Content/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/css/morris.css" rel="stylesheet" />
+    <link href="~/Content/typeahead.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <link href="~/Content/css/nprogress.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/iCheck/flat/green.css" rel="stylesheet" />
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/core.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/resizable.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/selectable.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/accordion.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/autocomplete.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/button.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/dialog.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/slider.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/tabs.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/progressbar.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/theme.css" rel="stylesheet" />
+    <link href="~/Content/kendo/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/kendo.blueopal.min.css" rel="stylesheet" />
+    <link href="~/Content/Kendo/kendo.default.mobile.min.css" rel="stylesheet" />
+    <link href="~/Content/Kendo/kendo.rtl.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="~/Scripts/kendo/kendo.all.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/<version>/js/messages/kendo.messages.bg-BG.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.aspnetmvc.min.js"></script>
+    <script src="~/scripts/Kendo/ar-EG.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+    @*@Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/kendo/css")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/Kendo")
+        @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="/" class="site_title"><i class="fa fa-hospital-o"></i> <span>EDGE</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="~/Content/images/user.png" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            @{
+                                var identity = (ClaimsIdentity)User.Identity;
+                                var name = identity.FindFirstValue(ClaimTypes.GivenName) ?? identity.GetUserName();
+                            }
+                            <h2>@name</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            @Html.Partial("_AdminNav")
+                            @*@Html.Partial("_DoctorNav")*@
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="javascript:document.getElementById('logoutForm').submit()">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                        @Html.Partial("_LoginPartial")
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <div class="right_col" role="main">
+                <div class="">
+                    @RenderBody()
+                </div>
+            </div>
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    Developed by  <a href="#">EDGE EGYPT</a>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+
+        </div>
+    </div>
+    
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script src="~/Scripts/clockpicker.js"></script>
+    <script src="~/Scripts/custom.js"></script>
+    <script src="~/Scripts/DataTables/jquery.datatables.js"></script>
+    <script src="~/Scripts/DataTables/datatables.bootstrap.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.buttons.js"></script>
+    <script src="~/Scripts/DataTables/buttons.html5.js"></script>
+    <script src="~/Scripts/DataTables/buttons.print.js"></script>
+    <script src="~/Scripts/raphael.min.js"></script>
+    <script src="~/Scripts/bootbox.min.js"></script>
+    <script src="~/Scripts/typeahead.bundle.js"></script>
+    <script src="~/Scripts/toastr.js"></script>
+    <script src="~/Scripts/respond.js"></script>
+
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

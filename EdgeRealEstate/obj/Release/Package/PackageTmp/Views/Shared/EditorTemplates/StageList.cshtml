@@ -1,0 +1,8 @@
+﻿@model EdgeRealEstate.Models.ViewModels.StageListVM
+
+@(Html.Kendo().DropDownListFor(m => m)
+        .DataValueField("ID")
+        .DataTextField("Name")
+        .BindTo((System.Collections.IEnumerable)ViewData["Stages"])
+)
+

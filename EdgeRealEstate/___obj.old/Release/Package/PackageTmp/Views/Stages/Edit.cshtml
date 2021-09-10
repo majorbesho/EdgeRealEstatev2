@@ -1,0 +1,87 @@
+﻿@model EdgeRealEstate.Entities.StageMaster
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @(Html.HiddenFor(m => m.ID))
+
+    <div class=" col-md-6">
+        @Html.LabelFor(m => m.StageId, htmlAttributes: new { @class = "control-label " })
+        @Html.DropDownListFor(m => m.StageId, (IEnumerable<SelectListItem>)ViewBag.Stages, null, new { @class = "form-control" })
+    </div>
+    <div class=" col-md-6">
+        @Html.LabelFor(m => m.Duration, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(m => m.Duration, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.Duration, " ", new { @class = "text-danger" })
+    </div>
+    <div class=" col-md-6">
+        @Html.LabelFor(m => m.Cost, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(m => m.Cost, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.Cost, "", new { @class = "text-danger" })
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <br />
+            <br />
+
+            <h1>Project Stages</h1>
+        </div>
+    </div>
+    <br />
+    <script>
+        function getStageId() {
+            var ID = document.getElementById("ID").value;
+            console.log("ID = " + ID);
+            return { ID: ID };
+        }
+    </script>
+    @(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.ItemVM>()
+       .Name("Items")
+       .Columns(columns =>
+       {
+           columns.ForeignKey(t => t.MainID, (System.Collections.IEnumerable)ViewData["categories"], "ID", "Name").Width(100);
+           columns.Bound(t => t.Cost).Width(100);
+           columns.Bound(t => t.Duration).Width(100);
+           columns.Command(c => c.Edit().Text("تعديل")).Width(50);
+           columns.Command(d => d.Destroy().Text("حذف")).Width(50);
+       })
+        .Scrollable()
+        .Sortable()
+        .Filterable()
+        .DataSource(datasource => datasource
+        .Ajax()
+        .Model(m =>
+        {
+            m.Id(o => o.ID);
+            m.Field(f => f.ID).Editable(false);
+        })
+        .Read(read => read.Action("Items_Read", "Stages").Data("getStageId"))
+        .Update(upd => upd.Action("Items_Update", "Stages"))
+        .Destroy(dest => dest.Action("Items_Destroy", "Stages"))
+        .PageSize(5)
+        )
+        .Pageable()
+        .HtmlAttributes(new { @class = "k-rtl" })
+    )
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

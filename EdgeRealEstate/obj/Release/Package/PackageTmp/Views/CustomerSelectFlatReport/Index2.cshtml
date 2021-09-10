@@ -1,0 +1,101 @@
+﻿@model IEnumerable<EdgeRealEstate.Models.ViewModels.CustomerSelectFlatViewModel>
+
+@{
+    ViewBag.Title = "Index2";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2 style="text-align-last:center">تقرير مبيعات مشروع</h2>
+<br />
+<br />
+
+@using (Html.BeginForm("Index2", "CustomerSelectFlatReport"))
+{
+    <div>
+        <div class="form-horizontal" dir="rtl">
+            
+                @*<div class="col-md-6">
+                <div class="form-group">
+                    @Html.Label("toPro", "الى ", htmlAttributes: new { @class = "control-label" })
+
+                    <div class="col-md-4">
+                        @Html.DropDownList("ToProID", (IEnumerable<SelectListItem>)ViewBag.ProjectsTo, null, new { @id = "ToProID", @class = "form-control" })
+
+                    </div>
+                </div>
+            </div>*@
+            <div class="form-group">
+                <div class="col-md-12">
+
+                 @Html.Label("FromPro", "من ", htmlAttributes: new { @class = "control-label" })
+
+                    <div class="col-md-10">
+                        @Html.DropDownList("FromProID"@*model => model.Projectid*@, (IEnumerable<SelectListItem>)ViewBag.ProjectsFrom, null, new { @id = "FromProID", @class = "form-control" })
+                        @*@Html.ValidationMessageFor(model => model.Project_id, "", new { @class = "text-danger" })*@
+                    </div>
+                 </div>
+            </div>  
+            <div class="form-group bmd-form-group" dir="rtl">
+                <div class="col-md-6">
+                    <input type="submit" class="btn btn-primary fa fa-print" value="عرض" style="text-align:center;color: white;cursor: pointer;" />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <br />
+
+     
+    </div>
+}
+
+
+<table id="labsTypesTable" class="data table table-striped no-margin" dir="rtl">
+    <thead>
+        <tr>
+            <th>تاريخ البيع</th>
+            <th>رقم الوحدة</th>
+            <th>العمارة</th>
+            <th>المشروع</th>
+            <th>سعر البيع</th>
+            <th>اسم المشتري</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CurrntlyDate.Date</td>
+                <td>@item.Flatname</td>
+                <td>@item.BuildingCode</td>
+                <td>@item.ProjectName</td>
+                <td>@item.CostMony</td>
+                <td>@item.CustomerName</td>
+
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2"> الاجمالي</td>
+            <td>@Model.Count()</td>
+            <td> </td>
+            <td>@Model.Sum(i => i.CostMony)</td>
+            <td> </td>
+        </tr>
+    </tfoot>
+</table>
+@*@if (!Model.Any())
+{
+    <script type="text/javascript">
+        alert("Model empty");
+        $('#labsTypesTable').hide();
+    </script>
+}*@
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#labsTypesTable').DataTable();
+        });
+    </script>
+} 

@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.WarehouseWarrantDetailsViewModel>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+        columns.Bound(p => p.id).Visible(false);
+        columns.Bound(p => p.ConstructionMaterial).ClientTemplate("#=ConstructionMaterial.MaterialName#").Sortable(false).Width(180).ClientFooterTemplate("الاجمالى");
+        columns.Bound(p => p.Qu);
+        columns.Bound(p => p.price);
+        columns.Bound(p => p.rowTotal).Width(130).ClientFooterTemplate("#=sum#").Format("{0:n2}");
+    })
+    .Pageable()
+    .Sortable()
+    .Scrollable()
+    .HtmlAttributes(new { style = "height:200px;", @class = "k-rtl" })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Batch(true)
+        .ServerOperation(false)
+        //.Events(events => events.Change("onChange"))
+        .Model(model =>
+        {
+            model.Id(p => p.id);
+            model.Field(p => p.id).Editable(false);
+            model.Field(p => p.ConstructionMaterial).DefaultValue(
+                ViewData["defaultItems"] as EdgeRealEstate.Models.ViewModels.ConstructionMaterialViewModel);
+            model.Field(p => p.LKStore).DefaultValue(
+              ViewData["defaultStores"] as EdgeRealEstate.Models.ViewModels.LKStoreViewModel);
+        })
+        .PageSize(3)
+                                .Aggregates(aggregates =>
+                                {
+                                    aggregates.Add(p => p.rowTotal).Sum();
+                                })
+        .Read(read => read.Action("EditingCustom_ReadForIndex", "WarehouseWarrant"))
+    )
+)
+

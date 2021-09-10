@@ -1,0 +1,36 @@
+﻿@model EdgeRealEstate.Entities.Street
+
+@{
+    ViewBag.Title = "Details";
+    ViewBag.current = "Streets";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Street</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ename)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

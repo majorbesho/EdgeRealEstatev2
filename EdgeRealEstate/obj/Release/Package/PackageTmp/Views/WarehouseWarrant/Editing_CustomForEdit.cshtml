@@ -1,0 +1,250 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #icon {
+        padding-left: 10px;
+    }
+</style>
+<br />
+<h3 style="text-align:center">سند صرف مخزنى</h3>
+<div dir="rtl">
+    <button id="saveChanges" class="btn-primary" style="background-color: steelblue;color: white;cursor: pointer;"><i class="fa fa-save" id="icon"></i>   حفظ</button>
+    |
+    @Html.ActionLink("رجوع", "Index")
+    @*<button id="saveChanges" class="btn btn-primary"> <span class="glyphicon glyphicon-floppy-saved"></span>  حفظ </button>*@
+</div>
+<br />
+<div class="form-group" id="alertsuccess" hidden="hidden" dir="rtl">
+    <div class="alert alert-success alert-dismissable fade-in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>تم الحفظ بنجاح</strong>
+    </div>
+</div>
+@if (ViewBag.msgg == 1)
+{
+    <div class="form-group">
+        <div class="alert alert-success alert-dismissable fade-in" id="success-alert">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>تم الحفظ بنجاح</strong>
+        </div>
+    </div>
+}
+<div class="form-horizontal" dir="rtl">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.Hidden("id")
+    <div class="form-group">
+        <div class="col-md-2">
+            @Html.DropDownList("contractorId", (SelectList)ViewBag.contractor, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessage("contractorId", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("contractorId", "المقاول", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-2">
+            @(Html.Kendo().DatePicker().Name("addDate").Format("yyyy/MM/dd").HtmlAttributes(new { @class = "form-control" }))
+            @Html.ValidationMessage("addDate", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("addDate", "تاريخ السند", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-2">
+            @Html.DropDownList("EngenneringId", (SelectList)ViewBag.Engennerings, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessage("EngenneringId", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("EngenneringId", "المهندس", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-2">
+            @Html.DropDownList("empID", (SelectList)ViewBag.Employees, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessage("empID", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("empID", "الموظف مدخل البيانات", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-2">
+            @Html.TextBox("refNo", (string)ViewBag.refNo, new { @class = "form-control" })
+            @Html.ValidationMessage("refNo", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("refNo", "رقم مرجعى", new { @class = "control-label col-md-2" })
+        <div class="col-md-2">
+            @Html.TextBox("refType", (string)ViewBag.refType, new { @class = "form-control" })
+            @Html.ValidationMessage("refType", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("refType", "نوع المرجع", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+</div>
+
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.WarehouseWarrantDetailsViewModel>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.ConstructionMaterial).ClientTemplate("#=ConstructionMaterial.MaterialName#").Sortable(false).Width(180).ClientFooterTemplate("الاجمالى");
+            columns.Bound(p => p.Qu);
+            columns.Bound(p => p.price);
+            columns.Bound(p => p.rowTotal).ClientFooterTemplate("#=sum#").Format("{0:n2}");
+            columns.Command(command => command.Destroy().Text("حذف")).Width(150);
+        })
+.ToolBar(toolBar =>
+{
+    toolBar.Create().Text("اضافة صنف جديد");
+    //toolBar.Save().SaveText(" حفظ الفاتورة").CancelText("الغاء");
+})
+.Editable(editable => editable.Mode(GridEditMode.InCell))
+.Pageable()
+.Sortable()
+.Scrollable()
+.HtmlAttributes(new { style = "height:300px;", @class = "k-rtl" })
+//.Events(events => events
+//            .Change("onChange"))
+.DataSource(dataSource => dataSource
+.Ajax()
+.Batch(true)
+.ServerOperation(false)
+.Events(events => events.Error("error_handler").Change("onChange"))
+.Model(model =>
+{
+    model.Id(p => p.id);
+    model.Field(p => p.id).Editable(false);
+            model.Field(p => p.ConstructionMaterial).DefaultValue(
+                ViewData["defaultItems"] as EdgeRealEstate.Models.ViewModels.ConstructionMaterialViewModel);
+            model.Field(p => p.LKStore).DefaultValue(
+              ViewData["defaultStores"] as EdgeRealEstate.Models.ViewModels.LKStoreViewModel);
+})
+.PageSize(3)
+.Aggregates(aggregates =>
+{
+    aggregates.Add(p => p.rowTotal).Sum();
+})
+.Read(read => read.Action("EditingCustom_ReadForEdit", "WarehouseWarrant"))
+.Create(create => create.Action("EditingCustom_CreateForEdit", "WarehouseWarrant").Data("getmasterdata"))
+.Update(update => update.Action("EditingCustom_UpdateForEdit", "WarehouseWarrant").Data("getmasterdata"))
+.Destroy(destroy => destroy.Action("EditingCustom_DestroyForEdit", "WarehouseWarrant"))
+)
+)
+<div class="form-horizontal" dir="rtl" style="margin-top:20px;">
+
+    <div class="form-group" dir="rtl">
+        <label class="col-md-2" for="total" id="total"> @ViewBag.total </label>
+        @Html.Label("اجمالى الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+
+</div>
+<script>
+    function onChange(arg) {
+        var grid = $("#grid").data("kendoGrid");
+        var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+        $("#total").text(aggrrowTotal.sum);
+    }
+
+</script>
+<script type="text/javascript">
+
+        var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+        var ConstructionMaterialId;
+        var total_total = 0;
+
+        var rowTotal = 0;
+        function onComboChange(e) {
+            var dataItem = e.sender.dataItem();
+            ConstructionMaterialId = dataItem.ID;
+            var grid = $("#grid").data("kendoGrid");
+            var editedDataItem = grid.dataItem(".k-grid-edit-row");
+            editedDataItem.set("rowTotal", 0);
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("Getprice")',
+                data: { "ConstructionMaterialId": ConstructionMaterialId},
+                dataType: 'json',
+                success: function (data) {
+                    editedDataItem.set("price", data);
+                }
+            });
+        }
+
+        /**********************/
+             function Quchange() {
+                var grid = $("#grid").data("kendoGrid");
+                var editedDataItem = grid.dataItem(".k-grid-edit-row");
+                var price = editedDataItem.get("price");
+                var qu = editedDataItem.get("Qu");
+                var total = price * qu;
+                editedDataItem.set("rowTotal", total);
+                total_total = total_total + (total);
+    }
+
+</script>
+<script>
+    $("#saveChanges").kendoButton({
+        click: function (e) {
+            var grid = $("#grid").data("kendoGrid");
+            var vempID = $("#empID").val();
+            var vcontractorId = $("#contractorId").val();
+            var vrefNo = $("#refNo").val();
+            var vEngenneringId = $("#EngenneringId").val();
+            var vrefType = $("#refType").val();
+            var vaddDate = $("#addDate").val();
+            var vtotal = $("#total").text();
+            var vid = $("#id").val();
+            var check = $("#grid").data("kendoGrid").dataSource.hasChanges();
+            if (check == false) {
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("Edit")',
+                    data: {
+                        "empID": vempID, "contractorId": vcontractorId, "refNo": vrefNo, "EngenneringId": vEngenneringId,
+                        "refType": vrefType, "addDate": vaddDate, "id": vid,
+                        "total": vtotal
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                    },
+                    error: function () {
+                    }
+                });
+            }
+            grid.saveChanges();
+            $("#alertsuccess").show();
+            $("#alertsuccess").fadeTo(2000, 500).slideUp(500, function () {
+                $("#alertsuccess").slideUp(500);
+
+            });
+        }
+    })
+
+</script>
+
+<script type="text/javascript">
+    function error_handler(e) {
+        if (e.errors) {
+            var message = "Errors:\n";
+            $.each(e.errors, function (key, value) {
+                if ('errors' in value) {
+                    $.each(value.errors, function () {
+                        message += this + "\n";
+                    });
+                }
+            });
+            alert(message);
+        }
+    }
+</script>
+
+<script>
+
+    function getmasterdata() {
+
+        var vempID = $("#empID").val();
+        var vcontractorId = $("#contractorId").val();
+        var vrefNo = $("#refNo").val();
+        var vEngenneringId = $("#EngenneringId").val();
+        var vrefType = $("#refType").val();
+        var vaddDate = $("#addDate").val();
+        var vtotal = $("#total").text();
+        var vid = $("#id").val();
+
+        return {
+            empID: vempID, contractorId: vcontractorId, refNo: vrefNo, EngenneringId: vEngenneringId,
+            refType: vrefType, addDate: vaddDate, total: vtotal, id: vid
+        };
+    }
+</script>

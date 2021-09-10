@@ -1,0 +1,140 @@
+﻿@model EdgeRealEstate.Entities.Employee
+@{
+    ViewBag.Title = "Details Employee";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<br />
+<h3 style="text-align:center">الموظفين </h3>
+<div class="form-horizontal" dir="rtl">
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الاسم العربى", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الكود", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.LKNationality.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الجنسية", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.ENName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الاسم الانجليزى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.RadioButtonFor(model => model.isFemale, false)ذكر
+            @Html.RadioButtonFor(model => model.isFemale, true)انثى
+        </div>
+        @Html.LabelFor(model => model.isFemale, "الجنس", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.religion, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الديانة", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Degree, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الدرجة العلمية", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.SocStatus, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الحالة الاجتماعية", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.age, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("العمر", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.DOB, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("تاريخ الميلاد", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.tele, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("تليفون", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.nearTele, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("اقرب تليفون", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.address, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("العنوان", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.nationalTele, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("التليفون المحلى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.section, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("القطاع", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.LKBranch.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الفرع", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.ContractDur, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("مدة العقد", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.LKTitle.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("المسمى الوظيفى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.salary, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("المرتب", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Housingallowance, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("بدل سكن", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.startDate, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("بداية من", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.POB, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("تاريخ الالتحاق", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("ملاحظات", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.isActive)
+        </div>
+        @Html.Label("نشط", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+
+</div>
+    <div dir="rtl">
+        @Html.ActionLink("رجوع", "Index")
+    </div>
+
+

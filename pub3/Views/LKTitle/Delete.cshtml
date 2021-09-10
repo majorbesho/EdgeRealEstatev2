@@ -1,0 +1,43 @@
+﻿@model EdgeRealEstate.Entities.LKTitle
+@{
+    ViewBag.Title = "Delete LKTitle";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<br />
+<h3 style="text-align:center">المسمى الوظيفى </h3>
+<h4 dir="rtl">هل أنت متأكد من أنك تريد حذف هذا المسمى الوظيفى؟</h4>
+<div class="form-horizontal" dir="rtl">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.ARName)
+        </div>
+        @Html.LabelFor(model => model.ARName, "الاسم العربى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.ENName)
+        </div>
+        @Html.LabelFor(model => model.ENName, "الاسم الانجليزى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.Description)
+        </div>
+        @Html.LabelFor(model => model.Description, "ملاحظات", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-primary" /> |
+            @Html.ActionLink("رجوع", "Index")
+        </div>
+    }
+</div>
+
+
+
+

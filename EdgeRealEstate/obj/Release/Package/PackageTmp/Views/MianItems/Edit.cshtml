@@ -1,0 +1,138 @@
+﻿@model EdgeRealEstate.Entities.MianItems
+
+@{
+    ViewBag.Title = "Edit";
+    ViewBag.current = "Projects";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="form-horizontal">
+        <h4>MianItems</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.Aname, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Aname, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.Ename, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.Ename, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Ename, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.NoOfDaies, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.NoOfDaies, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.NoOfDaies, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.AttachedId, htmlAttributes: new { @class = "control-label " })
+            @(Html.Kendo().Upload()
+            .Name("Files")
+            .HtmlAttributes(new { aria_label = "Files" })
+            .Multiple(true)
+            )
+            @Html.ValidationMessageFor(model => model.AttachedId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.DegreeOfExcellenceId, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.DegreeOfExcellenceId, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.DegreeOfExcellenceId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.HaveItem, htmlAttributes: new { @class = "control-label " })
+            <div class="checkbox">
+                @Html.EditorFor(model => model.HaveItem)
+                @Html.ValidationMessageFor(model => model.HaveItem, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.Nots, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.Nots, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Nots, "", new { @class = "text-danger" })
+        </div>
+
+
+        <h1>MainItem Materials</h1>
+        <script>
+
+            function getMianItemId() {
+                var ID = document.getElementById("Id").value;
+                return { ID: ID };
+            }
+        </script>
+        @(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.MaterialVM>()
+           .Name("Materials")
+           .Columns(columns =>
+           {
+
+               columns.Bound(p => p.Brand);
+               columns.Bound(p => p.effective);
+               columns.Bound(p => p.Image);
+               columns.Bound(p => p.Length);
+               columns.Bound(p => p.MasuringUnit);
+               columns.Bound(p => p.MaterialName);
+               columns.Bound(p => p.Notes);
+               columns.Bound(p => p.ProcessingTime);
+               columns.Bound(p => p.Price);
+               columns.Bound(p => p.Quantity);
+               columns.Bound(p => p.Specifications);
+               columns.Bound(p => p.Total);
+               columns.Bound(p => p.Type);
+               columns.Bound(p => p.Width);
+               columns.Command(c => c.Edit()).Width(50);
+               columns.Command(d => d.Destroy()).Width(50);
+           })
+           .Scrollable()
+           .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+           .DataSource(datasource => datasource
+           .Ajax()
+           .Model(m =>
+           {
+               m.Id(o => o.ID);
+               m.Field(f => f.ID).Editable(false);
+
+           })
+                   .Read(read => read.Action("Materials_Read", "MianItems").Data("getMianItemId"))
+                   .Update(upd => upd.Action("Materials_Update", "MianItems"))
+                   .Destroy(dest => dest.Action("Materials_Destroy", "MianItems"))
+                   .PageSize(5)
+                   )
+                   .Pageable()
+        )
+
+    </div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="col-md-12">
+    @Html.ActionLink("Back to List", "Index")
+</div>

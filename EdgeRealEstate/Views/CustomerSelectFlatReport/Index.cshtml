@@ -1,0 +1,138 @@
+﻿@*@model EdgeRealEstate.Models.ViewModels.CustomerSelectFlatViewModel*@
+@model IEnumerable<EdgeRealEstate.Models.ViewModels.CustomerSelectFlatViewModel>
+@using Kendo.Mvc
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("ReadingData", "CustomerSelectFlatReport"))
+{
+    <div>
+        <div class="form-horizontal" dir="rtl">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.Label("toPro", "الى ", htmlAttributes: new { @class = "control-label" })
+
+                        <div class="col-md-4">
+                            @Html.DropDownList("ToProID"@*model => model.Projectid*@, (IEnumerable<SelectListItem>)ViewBag.ProjectsTo, "اختر", new { @id = "ToProID", @class = "form-control" })
+                            @*@Html.ValidationMessageFor(model => model.Project_id, "", new { @class = "text-danger" })*@
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.Label("FromPro", "من ", htmlAttributes: new { @class = "control-label" })
+
+                        <div class="col-md-4">
+                            @Html.DropDownList("FromProID"@*model => model.Projectid*@, (IEnumerable<SelectListItem>)ViewBag.ProjectsFrom, "اختر", new { @id = "FromProID", @class = "form-control" })
+                            @*@Html.ValidationMessageFor(model => model.Project_id, "", new { @class = "text-danger" })*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br />
+
+        <div class="form-group bmd-form-group" dir="rtl">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-primary fa fa-print" value="طباعة التقرير" style="text-align:center;color: white;cursor: pointer;" />
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+}
+@*<div class="x_content">
+    <table id="labsTypesTable" class="data table table-striped no-margin">
+        <thead>
+            <tr>
+                <th>Type. No.</th>
+                <th>Type Name 1</th>
+                <th>Type Name 2</th>
+                <th>Action</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CurrntlyDate</td>
+                    <td>@item.Flatname</td>
+                    <th>@item.ProjectName</th>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", "ClincTypes", new { theCode = item.indexCode }, new { @class = "btn1 btn-primary" })
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("Delete", "ClincTypes", new { theCode = item.indexCode }))
+                        {
+                            <input type="submit" value="Delete" class="btn1 btn-warning"
+                                   onclick="return confirm('Are you sure to delete @item.TypeName1 ')" />
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>*@
+
+@*@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.CustomerSelectFlatViewModel>()
+            .Name("grid")
+            .Columns(columns =>
+            {
+                columns.Bound(e => e.CurrntlyDate).Width(50);
+                columns.Bound(e => e.Flatname).Width(50);
+                columns.Bound(e => e.).Width(50);
+                columns.Bound(e => e.CostMony).Width(50);
+                columns.Bound(e => e.CustomerName).Width(250);
+                columns.Bound(e => e.ProjectName).Width(250);
+                //columns.Bound(e => e.Project).Width(50);
+                //columns.Bound(e => e.SpecialNote).Width(50);
+                //columns.Bound(e => e.Note).Width(50);
+
+            })
+            .HtmlAttributes(new { @class = "k-rtl" })
+            .Sortable()
+            .Pageable()
+            .Scrollable()
+            .Filterable()
+            .ClientDetailTemplateId("OrderJobDetailstemplate")
+            .HtmlAttributes(new { style = "height:600px;" })
+            .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(12)
+                .Read(read => read.Action("ReadingData", "CustomerSelectFlatReport").Data("GetMaterData"))
+
+                )
+            .Events(events => events.DataBound("dataBound"))
+            .Resizable(resize => resize.Columns(true))
+            .Reorderable(order => order.Columns(true))
+            .ColumnMenu()
+    )*@
+@*<script>
+        $('#ProjectName').change(function () {
+            console.log("in");
+            $("#grid").data("kendoGrid").dataSource.read(read => read.Action("ReadingData", "CustomerSelectFlatReport").Data("getmasterdata"));
+            $("#grid").css("display", "block");
+        });
+
+        function GetMaterData() {
+
+          // var vCode = $("#Code").val();
+            var vProject = $("#ProjectName").val();
+          //  var vSalesMan = $("#SalesMan").val();
+          //  var vCust = $("#Cust").val();
+
+            return {
+          //      "Code": vCode,
+                "Project": vProjectName,
+           //     "SalesMan": vSalesMan,
+            //    "Cust": vCust,
+            };
+        }
+    </script>*@

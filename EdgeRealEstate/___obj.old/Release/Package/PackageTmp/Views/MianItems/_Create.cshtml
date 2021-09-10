@@ -1,0 +1,108 @@
+﻿@model EdgeRealEstate.Models.ViewModels.MainItmsVM
+
+@{
+    ViewBag.Title = "Create";
+    ViewBag.current = "MianItems";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<style>
+            .bootstrap-select > .dropdown-toggle.bs-placeholder,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:active 
+        {
+            color: #fff;
+        }
+</style>
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>MianItems</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MianItems.Aname, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MianItems.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MianItems.Aname, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MianItems.Ename, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MianItems.Ename, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MianItems.Ename, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MianItems.NoOfDaies, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MianItems.NoOfDaies, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MianItems.NoOfDaies, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MianItems.Description, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MianItems.Description, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MianItems.Description, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MianItems.AttachedId, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MianItems.AttachedId, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MianItems.AttachedId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MianItems.DegreeOfExcellenceId, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MianItems.DegreeOfExcellenceId, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MianItems.DegreeOfExcellenceId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MianItems.HaveItem, htmlAttributes: new { @class = "control-label " })
+            <div class="checkbox">
+                @Html.EditorFor(model => model.MianItems.HaveItem)
+                @Html.ValidationMessageFor(model => model.MianItems.HaveItem, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.MianItems.Nots, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(model => model.MianItems.Nots, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MianItems.Nots, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group col-md-6">
+        </div>
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.SelectedMatrialsIds, htmlAttributes: new { @class = "control-label " })
+            @*@Html.EditorFor(model => model.MianItems.SelectedMatrialsIds, new SelectList(model.MianItems.SelectedMatrials, "ID", "Name"), new { @class = "form-control chosen-selector", data_placeholder = "Select Main Item", @multiple = "multiple" })*@
+            @Html.DropDownListFor(x => x.SelectedMatrialsIds, new SelectList(ViewBag.Matrials, "ID", "MaterialName"), htmlAttributes: new { @class = "form-control", @multiple = "multiple", data_live_search = "true" })
+        </div>
+    </div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="col-md-12">
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section Scripts
+{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+    <script>
+        $('select').selectpicker();
+
+    </script>
+}

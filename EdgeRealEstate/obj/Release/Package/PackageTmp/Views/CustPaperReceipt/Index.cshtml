@@ -1,0 +1,94 @@
+﻿@model PagedList.IPagedList<EdgeRealEstate.Entities.CustPaperReceipt>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Index PaperReceipt";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<br />
+
+<h3 style="text-align:center">سند استلام نقدية عميل</h3>
+
+<p>
+    <a href="@Url.Action("Create", "CustPaperReceipt")" class="btn btn-primary">
+        <span class="glyphicon glyphicon-plus"></span> اضافة جديد
+    </a>
+</p>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            الكود
+        </th>
+        <th>
+            العميل - المورد
+        </th>
+        <th>
+            الموظف مدخل البيانات
+        </th>
+        <th>
+            المندوب
+        </th>
+        <th>
+            طريقة الدفع
+        </th>
+        <th>
+            المدفوع
+        </th>
+        <th>
+            نوع المرجع
+        </th>
+        <th>
+            فى تاريخ
+        </th>
+        <th>
+            ملاحظات
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customer.ARName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.ARName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee1.ARName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.paidMethod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.paid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.refType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.indate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.notes)
+            </td>
+            <td>
+                <a href="@Url.Action("Edit", "CustPaperReceipt", new { id = item.id })" class="btn btn-success">
+                    <span class="glyphicon glyphicon-edit"></span>
+                </a>
+                <a href="@Url.Action("Delete", "CustPaperReceipt", new { id = item.id })" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </a>
+            </td>
+        </tr>
+    }
+
+</table>
+<div class="text-center">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>

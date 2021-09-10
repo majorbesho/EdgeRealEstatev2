@@ -1,0 +1,180 @@
+﻿@model EdgeRealEstate.Entities.Engennering
+
+@{
+    ViewBag.Title = "Details";
+    ViewBag.current = "Engennerings";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Engennering</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResEmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResEmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tele1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tele1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tele2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tele2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LikeNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LikeNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngCV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngCV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.limitation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.limitation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.limitationTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.limitationTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CrruntyCompletionRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CrruntyCompletionRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imgLogo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imgLogo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccount1Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccount1Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccount1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccount1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccountName2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccountName2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccount2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccount2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccountName3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccountName3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccount3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccount3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nots)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nots)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

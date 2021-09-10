@@ -1,0 +1,125 @@
+﻿@model EdgeRealEstate.Entities.EmployeeSales
+
+@{
+    ViewBag.Title = "create EmployeeSales";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<!-- include summernote css/js -->
+<link href="~/Content/summernote.css" rel="stylesheet">
+<script src="~/scripts/summernote.min.js"></script>
+<br />
+<h3 style="text-align:center">مبيعات المندوب</h3>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal" dir="rtl">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.EmpId, (SelectList)ViewBag.Employees, "اختر", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.EmpId, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.EmpId, "المندوب", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.CustId, (SelectList)ViewBag.Customers, "اختر", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CustId, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.CustId, "العميل", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ProjectId, (SelectList)ViewBag.Project, "اختر", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ProjectId, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.ProjectId, "المشروع", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.FlatId, (SelectList)ViewBag.Flat, "اختر", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.FlatId, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.FlatId, "الشقة", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.VillaId, (SelectList)ViewBag.Villa, "اختر", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.VillaId, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.VillaId, "الفيلا", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.PaymentSystemId, (SelectList)ViewBag.PaymentSystems, "اختر", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.PaymentSystemId, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.PaymentSystemId, "نظام السداد", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Paid, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Paid, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.Paid, "المبلغ", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.AdvancePayment, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.AdvancePayment, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.AdvancePayment, "دفعة مقدمة", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsPrint)
+                @Html.ValidationMessageFor(model => model.IsPrint, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.IsPrint, "طباعة", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Note, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Note, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.Note, "ملاحظات", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Details)
+                @Html.ValidationMessageFor(model => model.Details, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.Details, "تفاصيل", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-primary" /> |
+                @Html.ActionLink("رجوع", "Index")
+            </div>
+        </div>
+        @if (ViewBag.msgg == 1)
+        {
+            <div class="form-group">
+                <div class="alert alert-success alert-dismissable fade-in" id="success-alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>تم الحفظ بنجاح</strong>
+                </div>
+            </div>
+        }
+    </div>
+}
+<script>
+    $("#success-alert").fadeTo(2000, 500).slideUp(500, function () {
+        $("#success-alert").slideUp(500);
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#Details').summernote();
+    });
+</script>
+
+
+

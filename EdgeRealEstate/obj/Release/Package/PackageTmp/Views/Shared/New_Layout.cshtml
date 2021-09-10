@@ -1,0 +1,781 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @*@Styles.Render("~/Content/css")*@
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Content/css/main.css">
+    <link rel="stylesheet" href="~/Content/css/material-dashboard.min.css">
+    <link rel="stylesheet" href="~/Content/css/all.css">
+    <link rel="stylesheet" href="~/Content/css/brands.css">
+    <link rel="stylesheet" href="~/Content/css/fontawesome.css">
+    <link rel="stylesheet" href="~/Content/css/regular.css">
+    <link rel="stylesheet" href="~/Content/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+
+    @Styles.Render("~/Content/kendo/css")
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="~/Scripts/JS/main-dashboard.js"></script>
+    <script src="~/Scripts/JS/all.js"></script>
+    <script src="~/Scripts/JS/brands.js"></script>
+    <script src="~/Scripts/JS/fontawesome.js"></script>
+    <script src="~/Scripts/JS/regular.js"></script>
+    <script src="~/Scripts/JS/solid.js"></script>
+    @*@Scripts.Render("~/bundles/jquery")*@
+
+    @Scripts.Render("~/bundles/Kendo")
+
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="wrapper ">
+        <!--Start Sidebar -->
+        <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+
+            <div class="logo">
+                <a href="#" class="simple-text logo-normal">
+                    Edge
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav pr-0">
+                    <li class=" nav-item @(ViewBag.current == "Cities" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample2" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample1">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Cities
+                            </p>
+                            <i class="material-icons">location_city</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Cities" ?  "show" : "")" id="multiCollapseExample2">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <h6 class="dropdown-header  font-weight-bold text-primary">Cities</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Cities/Create">Add New City</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Cities/">View All Cities</a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Degree Of Excellences</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/DegreeOfExcellences/Create">Add Degree Of Excellences </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/DegreeOfExcellences/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Project Status</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectStatus/Create">Add Project Status </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectStatus/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Project Text Description</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectTextDescriptions/Create">Add Project Description </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectTextDescriptions/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Districts</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Districts/Create">Add New District</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Districts/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Streets</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Streets/Create">Add New Street</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Streets/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Stages</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Stages/Create">Add New Stage</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Stages/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    @*<li class="nav-item @(ViewBag.current == "DegreeOfExcellences" ?  "active" : "")">
+                            <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample3" role="button"
+                               aria-expanded="false" aria-controls="multiCollapseExample3">
+                                <span class="caret"></span>
+                                <p class=" d-md-block text-right">
+                                    Degree Of Excellences
+                                </p>
+                                <i class="material-icons">timeline</i>
+                            </a>
+                            <div class="collapse multi-collapse @(ViewBag.current == "DegreeOfExcellences" ?  "show" : "")" id="multiCollapseExample3">
+                                <div class="card card-body p-0 m-0">
+                                    <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item @(ViewBag.current == "Districts" ?  "active" : "")">
+                            <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample4" role="button"
+                               aria-expanded="false" aria-controls="multiCollapseExample4">
+                                <span class="caret"></span>
+                                <p class=" d-md-block text-right">
+                                    Districts
+                                </p>
+                                <i class="material-icons">home</i>
+                            </a>
+                            <div class="collapse multi-collapse @(ViewBag.current == "Districts" ?  "show" : "")" id="multiCollapseExample4">
+                                <div class="card card-body p-0 m-0">
+
+                                    <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>*@
+                    <li class="nav-item  @(ViewBag.current == "Engennerings" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample5" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample5">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Engennerings
+                            </p>
+                            <i class="material-icons">person</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Engennerings" ?  "show" : "")" id="multiCollapseExample5">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Engennerings/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Engennerings/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "Flats" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample6" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample6">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Flats
+                            </p>
+                            <i class="material-icons">dashboard</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Flats" ?  "show" : "")" id="multiCollapseExample6">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Flats/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Flats/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "Items" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample7" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample7">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Items
+                            </p>
+                            <i class="material-icons">view_agenda</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Items" ?  "show" : "")" id="multiCollapseExample7">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Items/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Items/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "MainLands" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample8" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample8">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                MainLands
+                            </p>
+                            <i class="material-icons">landscape</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "MainLands" ?  "show" : "")" id="multiCollapseExample8">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MainLands/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MainLands/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "MainProjects" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample9" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample9">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                MainProjects
+                            </p>
+                            <i class="material-icons">work</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "MainProjects" ?  "show" : "")" id="multiCollapseExample9">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MainProjects/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MainProjects/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "MianItems" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample10" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample10">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Mian Items
+                            </p>
+                            <i class="material-icons">view_carousel</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "MianItems" ?  "show" : "")" id="multiCollapseExample10">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MianItems/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MianItems/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "Projects" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample11" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample11">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Projects
+                            </p>
+                            <i class="material-icons">work</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Projects" ?  "show" : "")" id="multiCollapseExample11">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Projects/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Projects/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    @*<li class="nav-item  @(ViewBag.current == "ProjectStatus" ?  "active" : "")">
+                            <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample12" role="button"
+                               aria-expanded="false" aria-controls="multiCollapseExample12">
+                                <span class="caret"></span>
+                                <p class=" d-md-block text-right">
+                                    ProjectStatus
+                                </p>
+                                <i class="material-icons">swap_horiz</i>
+                            </a>
+                            <div class="collapse multi-collapse @(ViewBag.current == "ProjectStatus" ?  "show" : "")" id="multiCollapseExample12">
+                                <div class="card card-body p-0 m-0">
+                                    <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>*@
+                    <li class="nav-item  @(ViewBag.current == "ProjectTextDescriptions" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample13" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample13">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ProjectTextDescriptions
+                            </p>
+                            <i class="material-icons">format_size</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "ProjectTextDescriptions" ?  "show" : "")" id="multiCollapseExample13">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectTextDescriptions/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectTextDescriptions/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    @*<li class="nav-item  @(ViewBag.current == "Stages" ?  "active" : "")">
+                            <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample14" role="button"
+                               aria-expanded="false" aria-controls="multiCollapseExample14">
+                                <span class="caret"></span>
+                                <p class=" d-md-block text-right">
+                                    Stages
+                                </p>
+                                <i class="material-icons">business</i>
+                            </a>
+                            <div class="collapse multi-collapse @(ViewBag.current == "Stages" ?  "show" : "")" id="multiCollapseExample14">
+                                <div class="card card-body p-0 m-0">
+                                    <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                        <li class="list-group-item p-0 m-0 text-right">
+                                            <a class="nav-link p-1 m-1" href="/Stages/Create">Add New </a>
+                                        </li>
+                                        <li class="list-group-item p-0 m-0 text-right">
+                                            <a class="nav-link p-1 m-1" href="/Stages/">View All </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item  @(ViewBag.current == "Streets" ?  "active" : "")">
+                            <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample15" role="button"
+                               aria-expanded="false" aria-controls="multiCollapseExample15">
+                                <span class="caret"></span>
+                                <p class=" d-md-block text-right">
+                                    Streets
+                                </p>
+                                <i class="material-icons">streetview</i>
+                            </a>
+                            <div class="collapse multi-collapse @(ViewBag.current == "Streets" ?  "show" : "")" id="multiCollapseExample15">
+                                <div class="card card-body p-0 m-0">
+                                    <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>*@
+                    <li class="nav-item  @(ViewBag.current == "Suppliers" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample16" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Suppliers
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample16">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Suppliers/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Suppliers/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "Villas" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample17" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample17">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Villas
+                            </p>
+                            <i class="material-icons">account_balance</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Villas" ?  "show" : "")" id="multiCollapseExample17">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Villas/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Villas/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--End Sidebar -->
+        <div class="main-panel" style="
+                background-color: #FFF;
+            ">
+            <!-- Navbar -->
+            @Html.Partial("_LoginPartial")
+            <!-- End Navbar -->
+            <!-- Start Content -->
+            <div class="content">
+                <div class="container" style="width:80%;direction:rtl;">
+
+                    @RenderBody()
+
+                </div>
+            </div>
+            <!-- End Content -->
+            <!-- Start Footer -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="float-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Edge
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright float-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>, made with
+                        <i class="material-icons">favorite</i> by
+                        <a href="#">Edge</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+        </div>
+    </div>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-center",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+            GetMessagesNumber();
+            GetMessagesMenuList();
+            function GetMessagesMenuList() {
+                console.log("asdasd");
+                $.ajax({
+                    type: "POST",
+                    url: "/Messages/GetMessagesMenu",
+                    //contentType: 'application/json; charset=utf-8',UnSeenMessagesNum
+                    success: function (data) {
+                        $("#MessagesDropDown").html(data);
+                    },
+                    error: function () {
+                        //alert("Error occured!!")
+                    }
+                });
+            }
+            function GetMessagesNumber() {
+                console.log("asdasd");
+                $.ajax({
+                    type: "POST",
+                    url: "/Messages/GetMessagesNumber",
+                    //contentType: 'application/json; charset=utf-8',UnSeenMessagesNum seenMes
+                    success: function (data) {
+                        $("#UnSeenMessagesNum").text(data.Number);
+                    },
+                    error: function () {
+                        //alert("Error occured!!")
+                    }
+                });
+            }
+            $("#MessagesDropDown").on("click", ".seenMes", function () {
+
+                var Link = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: "/Messages/MarkAsSeen",
+                    data: JSON.stringify({ ID: Link.attr("MSGID") }),
+                    cache: false,
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        //$("#UnSeenMessagesNum").text(data.Number);
+                        if (data.status) {
+                            Link.css("background-color", "#FFF");
+                        }
+                    },
+                    error: function () {
+                        //alert("Error occured!!")
+                    }
+                });
+
+            });
+            $("#MessagesList").on("click", ".ViewMSG", function () {
+
+                var Link = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: "/Messages/MarkAsSeen",
+                    data: JSON.stringify({ ID: Link.attr("MSGID") }),
+                    cache: false,
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        //$("#UnSeenMessagesNum").text(data.Number);
+                        if (data.status) {
+                            Link.closest('.Messageitem').css("background-color", "#FFF");
+                        }
+                    },
+                    error: function () {
+                        //alert("Error occured!!")
+                    }
+                });
+
+            });
+            $().ready(function () {
+                $sidebar = $('.sidebar');
+
+                $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+                $full_page = $('.full-page');
+
+                $sidebar_responsive = $('body > .navbar-collapse');
+
+                window_width = $(window).width();
+
+                fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+                if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+                    if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+                        $('.fixed-plugin .dropdown').addClass('open');
+                    }
+
+                }
+
+                $('.fixed-plugin a').click(function (event) {
+                    // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+                    if ($(this).hasClass('switch-trigger')) {
+                        if (event.stopPropagation) {
+                            event.stopPropagation();
+                        } else if (window.event) {
+                            window.event.cancelBubble = true;
+                        }
+                    }
+                });
+
+                $('.fixed-plugin .active-color span').click(function () {
+                    $full_page_background = $('.full-page-background');
+
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+
+                    var new_color = $(this).data('color');
+
+                    if ($sidebar.length != 0) {
+                        $sidebar.attr('data-color', new_color);
+                    }
+
+                    if ($full_page.length != 0) {
+                        $full_page.attr('filter-color', new_color);
+                    }
+
+                    if ($sidebar_responsive.length != 0) {
+                        $sidebar_responsive.attr('data-color', new_color);
+                    }
+                });
+
+                $('.fixed-plugin .background-color .badge').click(function () {
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+
+                    var new_color = $(this).data('background-color');
+
+                    if ($sidebar.length != 0) {
+                        $sidebar.attr('data-background-color', new_color);
+                    }
+                });
+
+                $('.fixed-plugin .img-holder').click(function () {
+                    $full_page_background = $('.full-page-background');
+
+                    $(this).parent('li').siblings().removeClass('active');
+                    $(this).parent('li').addClass('active');
+
+
+                    var new_image = $(this).find("img").attr('src');
+
+                    if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                        $sidebar_img_container.fadeOut('fast', function () {
+                            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                            $sidebar_img_container.fadeIn('fast');
+                        });
+                    }
+
+                    if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                        var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                        $full_page_background.fadeOut('fast', function () {
+                            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                            $full_page_background.fadeIn('fast');
+                        });
+                    }
+
+                    if ($('.switch-sidebar-image input:checked').length == 0) {
+                        var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+                        var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                        $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                        $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                    }
+
+                    if ($sidebar_responsive.length != 0) {
+                        $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+                    }
+                });
+
+                $('.switch-sidebar-image input').change(function () {
+                    $full_page_background = $('.full-page-background');
+
+                    $input = $(this);
+
+                    if ($input.is(':checked')) {
+                        if ($sidebar_img_container.length != 0) {
+                            $sidebar_img_container.fadeIn('fast');
+                            $sidebar.attr('data-image', '#');
+                        }
+
+                        if ($full_page_background.length != 0) {
+                            $full_page_background.fadeIn('fast');
+                            $full_page.attr('data-image', '#');
+                        }
+
+                        background_image = true;
+                    } else {
+                        if ($sidebar_img_container.length != 0) {
+                            $sidebar.removeAttr('data-image');
+                            $sidebar_img_container.fadeOut('fast');
+                        }
+
+                        if ($full_page_background.length != 0) {
+                            $full_page.removeAttr('data-image', '#');
+                            $full_page_background.fadeOut('fast');
+                        }
+
+                        background_image = false;
+                    }
+                });
+
+                $('.switch-sidebar-mini input').change(function () {
+                    $body = $('body');
+
+                    $input = $(this);
+
+                    if (md.misc.sidebar_mini_active == true) {
+                        $('body').removeClass('sidebar-mini');
+                        md.misc.sidebar_mini_active = false;
+
+                        $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+                    } else {
+
+                        $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+
+                        setTimeout(function () {
+                            $('body').addClass('sidebar-mini');
+
+                            md.misc.sidebar_mini_active = true;
+                        }, 300);
+                    }
+
+                    // we simulate the window Resize so the charts will get updated in realtime.
+                    var simulateWindowResize = setInterval(function () {
+                        window.dispatchEvent(new Event('resize'));
+                    }, 180);
+
+                    // we stop the simulation of Window Resize after the animations are completed
+                    setTimeout(function () {
+                        clearInterval(simulateWindowResize);
+                    }, 1000);
+
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker({
+                format: 'mm/dd/yyyy'
+            });
+            // Javascript method's body can be found in assets/js/demos.js
+            md.initDashboardPageCharts();
+
+        });
+    </script>
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

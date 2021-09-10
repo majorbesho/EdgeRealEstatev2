@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Main Items";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6"><h2>All Main Items</h2> </div>
+    <div class="col-md-6"><a class="btn btn-primary" href="/MianItems/Create">Creat New Main Item</a></div>
+</div>
+
+<div class="container-fluid">
+    @(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.MItemVM>()
+                    .Name("grid")
+                    .Columns(columns =>
+                    {
+                        columns.Bound(e => e.Aname).Width(80);
+                        columns.Bound(e => e.Ename).Width(80);
+                        columns.Bound(e => e.HaveItem).Width(80);
+                        columns.Bound(e => e.NoOfDaies).Width(80);
+
+                        columns.Bound(e => e.Id).Title("Edit").ClientTemplate("<a class='btn btn-primary btn-sm' href='/MianItems/Edit/#=Id#'><span class='k-icon k-i-edit'></span>  Edit</a>").Width(60);
+
+
+                        columns.Command(d => d.Destroy()).Width(60);
+                    })
+                    .Pageable(pager => pager.AlwaysVisible(true).PageSizes(new List<object> { 1, 2, 5, 10, 20, 100 }))
+                    .Sortable()
+                    .Scrollable()
+                    .Filterable()
+                    .DataSource(dataSource => dataSource
+                        .Ajax()
+                        .Model(m =>
+                        {
+                            m.Id(o => o.Id);
+                            m.Field(f => f.Id).Editable(false);
+
+                        })
+                        .Read(read => read.Action("MainItems_Read", "MianItems"))
+                        .Update(upd => upd.Action("MainItems_Update", "MianItems"))
+                        .Destroy(dest => dest.Action("MainItems_Destroy", "MianItems"))
+                    )
+                    .Events(e => e.Edit("onEdit"))
+    )
+</div>
+<script>
+    function onEdit(e) {
+        e.container.find("[data-role='grid']").data("kendoGrid").resize(true);
+        console.log(e.container.find("[data-role='grid']").data("kendoGrid"));
+    }
+</script>
+<style>
+    #grid .k-grid-content {
+        min-height: 400px;
+        max-height: 800px;
+    }
+
+    .k-edit-form-container {
+        width: 1000px;
+        padding: 30px;
+    }
+
+    /*
+        Expand the edit textboxes and any other Kendo UI widgets.
+        In case of unexpected side effects, use widget-specific classes, instead of .k-widget.
+    */
+    .k-popup-edit-form .k-edit-field > .k-textbox,
+    .k-popup-edit-form .k-edit-field > .k-widget:not(.k-tooltip) {
+        width: 98%;
+    }
+</style>

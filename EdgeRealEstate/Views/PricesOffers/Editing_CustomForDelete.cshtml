@@ -1,0 +1,201 @@
+﻿@{
+    Layout = null;
+}
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.PricesOffersDetailsViewModel>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+        columns.Bound(p => p.id).Visible(false);
+        columns.Bound(p => p.ConstructionMaterial).ClientTemplate("#=ConstructionMaterial.MaterialName#").Sortable(false).Width(180);
+        columns.Bound(p => p.Qu);
+        columns.Bound(p => p.price);
+        columns.Bound(p => p.disPer);
+        columns.Bound(p => p.disNo);
+        columns.Bound(p => p.rowTotal).Width(130);
+        columns.Command(command => command.Destroy()).Width(150);
+    })
+    .ToolBar(toolBar =>
+    {
+         toolBar.Save().SaveText("حفظ").CancelText("الغاء");
+    })
+    .Editable(editable => editable.Mode(GridEditMode.InCell))
+    .Pageable()
+    .Sortable()
+    .Scrollable()
+    .HtmlAttributes(new { style = "height:300px;", @class = "k-rtl" })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Batch(true)
+        .ServerOperation(false)
+        .Events(events => events.Error("error_handler"))
+        .Model(model =>
+        {
+            model.Id(p => p.id);
+            model.Field(p => p.id).Editable(false);
+            model.Field(p => p.ConstructionMaterial).DefaultValue(
+                ViewData["defaultItems"] as EdgeRealEstate.Models.ViewModels.ConstructionMaterialViewModel);
+            model.Field(p => p.LKStore).DefaultValue(
+              ViewData["defaultStores"] as EdgeRealEstate.Models.ViewModels.LKStoreViewModel);
+        })
+        .PageSize(20)
+        .Read(read => read.Action("EditingCustom_ReadForDelete", "PricesOffers"))
+        .Update(update => update.Action("EditingCustom_UpdateForDelete", "PricesOffers"))
+        .Destroy(destroy => destroy.Action("EditingCustom_DestroyForDelete", "PricesOffers"))
+    )
+)
+
+<script type="text/javascript">
+    function error_handler(e) {    
+        if (e.errors) {
+            var message = "Errors:\n";
+            $.each(e.errors, function (key, value) {
+                if ('errors' in value) {
+                    $.each(value.errors, function() {
+                        message += this + "\n";
+                    });
+                }
+            });        
+            alert(message);
+        }
+    }
+</script>
+<script>
+
+    function change() {
+
+        var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+        var itmId = editedDataItem.get("itmId");
+        var tax = editedDataItem.get("tax");
+      
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetItemForIndex")',
+            data: { "itmId": itmId },
+            dataType: 'json',
+            success: function (data) {
+                editedDataItem.set("Items.arName", data.arName);                
+                //$('#id').text(emp.employee.Id);
+                //$('#firstName').text(emp.employee.FirstName);
+                //$('#lastName').text(emp.employee.LastName);
+            },
+            error: function () {
+                alert('error');
+            }
+        });
+
+               $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetpriceForIndex")',
+            data: {"itmId":itmId},
+            dataType: 'json',
+            success: function (data) {
+                editedDataItem.set("price",data);
+                //$('#id').text(emp.employee.Id);
+                //$('#firstName').text(emp.employee.FirstName);
+                //$('#lastName').text(emp.employee.LastName);
+                 //var price = editedDataItem.get("price");
+        //var qu = editedDataItem.get("Qu");
+        //var total = data * qu;
+        //editedDataItem.set("rowTotal", (total/100) * tax);
+            },
+            error: function (emp) {
+                alert('error');
+            }
+                });       
+        }
+    </script>
+
+<script>
+     function taxchange() {
+         var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+        var itmId = editedDataItem.get("itmId");
+            var tax = editedDataItem.get("tax");
+           $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetpriceForIndex")',
+            data: {"itmId":itmId},
+            dataType: 'json',
+            success: function (data) {
+                editedDataItem.set("price",data);
+                //$('#id').text(emp.employee.Id);
+                //$('#firstName').text(emp.employee.FirstName);
+                //$('#lastName').text(emp.employee.LastName);
+                 //var price = editedDataItem.get("price");
+        var qu = editedDataItem.get("Qu");
+                var total = data * qu;
+                var taxvalue = (total / 100) * tax;
+                editedDataItem.set("rowTotal", total + taxvalue);
+            },
+            error: function (emp) {
+                alert('error');
+            }
+                }); 
+        }
+</script>
+
+<script>
+     function disPerchange() {
+        var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+        var itmId = editedDataItem.get("itmId");
+         var tax = editedDataItem.get("tax");
+         var disPer = editedDataItem.get("disPer");
+           $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetpriceForIndex")',
+            data: {"itmId":itmId},
+            dataType: 'json',
+            success: function (data) {
+                editedDataItem.set("price",data);
+                //$('#id').text(emp.employee.Id);
+                //$('#firstName').text(emp.employee.FirstName);
+                //$('#lastName').text(emp.employee.LastName);
+                 //var price = editedDataItem.get("price");
+                var qu = editedDataItem.get("Qu");
+                var total = data * qu;
+                var taxvalue = (total / 100) * tax;
+                var totalPlusTax = total + taxvalue;
+                var disNo = (totalPlusTax / 100) * disPer;
+                editedDataItem.set("disNo",disNo);
+                editedDataItem.set("rowTotal",totalPlusTax - disNo );
+            },
+            error: function (emp) {
+                alert('error');
+            }
+                });
+        }
+</script>
+<script>
+     function disNochange() {
+        var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+        var itmId = editedDataItem.get("itmId");
+         var tax = editedDataItem.get("tax");
+         var disNo = editedDataItem.get("disNo");
+           $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetpriceForIndex")',
+            data: {"itmId":itmId},
+            dataType: 'json',
+            success: function (data) {
+                editedDataItem.set("price",data);
+                //$('#id').text(emp.employee.Id);
+                //$('#firstName').text(emp.employee.FirstName);
+                //$('#lastName').text(emp.employee.LastName);
+                 //var price = editedDataItem.get("price");
+                var qu = editedDataItem.get("Qu");
+                var total = data * qu;
+                var taxvalue = (total / 100) * tax;
+                var totalPlusTax = total + taxvalue;
+                var disPer = (disNo / totalPlusTax) * 100;
+                editedDataItem.set("disPer",disPer);
+                editedDataItem.set("rowTotal",totalPlusTax - disNo );
+            },
+            error: function (emp) {
+                alert('error');
+            }
+                });
+        }
+</script>

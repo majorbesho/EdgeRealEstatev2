@@ -1,0 +1,19 @@
+﻿@(Html.Kendo().ComboBox()
+       .Name("ConstructionMaterial")
+       .Placeholder("اختر")
+       //.DataTextField("barCodeUnv")
+       .DataTextField("MaterialName")
+       //.Template("#= barCodeUnv # - #= MaterialName #")
+       .DataValueField("ID")
+       .Filter("contains")
+       .MinLength(1)
+       .Events(e => e.Change("onComboChange"))
+       .DataSource(source =>
+           {
+               source.Read(read =>
+               {
+                   read.Action("ServerFiltering_GetItems", "BillPurchases");
+           })
+           .ServerFiltering(true);
+       })
+)

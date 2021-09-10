@@ -1,0 +1,153 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.Engennering>
+
+@{
+    ViewBag.Title = "Index";
+    ViewBag.current = "Engennerings";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Aname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResEmp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tele1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tele2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LikeNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EngCV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.limitation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.limitationTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrruntyCompletionRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.imgLogo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BankAccount1Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BankAccount1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BankAccountName2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BankAccount2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BankAccountName3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BankAccount3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nots)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ename)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ResEmp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tele1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tele2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LikeNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EngCV)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.limitation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.limitationTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CrruntyCompletionRate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.imgLogo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BankAccount1Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BankAccount1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BankAccountName2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BankAccount2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BankAccountName3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BankAccount3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nots)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>

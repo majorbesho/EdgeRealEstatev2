@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "EditProjects";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6"><h2>All Projects</h2> </div>
+    <div class="col-md-6"><a class="btn btn-primary" href="/Projects/Create">Creat New Project</a></div>
+</div>
+
+<div class="container-fluid">
+    @(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.ProjectVM>()
+                    .Name("grid")
+                    .Columns(columns =>
+                    {
+                        columns.Bound(e => e.Aname).Width(80);
+                        columns.Bound(e => e.Ename).Width(80);
+                        columns.Bound(e => e.BeginDateAcutely).Format("{0:dd/MM/yyyy}").Width(120);
+                        columns.Bound(e => e.EndDateAcutely).Format("{0:dd/MM/yyyy}").Width(120);
+                        columns.Bound(e => e.ID).Title("Edit").ClientTemplate("<a class='btn btn-primary btn-sm' href='/Projects/Edit/#=ID#'><span class='k-icon k-i-edit'></span>  Edit</a>").Width(60);
+
+                        //columns.Command(c => c.Edit()).Width(60);
+
+                        columns.Command(d => d.Destroy()).Width(60);
+                    })
+                    .Pageable(pager => pager.AlwaysVisible(true).PageSizes(new List<object> {1,2, 5, 10, 20, 100 }))
+                    .Sortable()
+                    .Scrollable()
+                    .Filterable()
+                    .DataSource(dataSource => dataSource
+                        .Ajax()
+                        .Model(m =>
+                        {
+                            m.Id(o => o.ID);
+                            m.Field(f => f.ID).Editable(false);
+
+                        })
+                        .Read(read => read.Action("Projects_Read", "Projects"))
+                        .Update(upd => upd.Action("Projects_Update", "Projects"))
+                        .Destroy(dest => dest.Action("Projects_Destroy", "Projects"))
+                    )
+                    .Events(e => e.Edit("onEdit"))
+    )
+</div>
+<script>
+    function onEdit(e) {
+        e.container.find("[data-role='grid']").data("kendoGrid").resize(true);
+        console.log(e.container.find("[data-role='grid']").data("kendoGrid"));
+    }
+</script>
+<style>
+    #grid .k-grid-content
+    {
+        min-height: 400px;
+        max-height: 800px;
+    }
+    .k-edit-form-container {
+        width: 1000px;
+        padding: 30px;
+    }
+
+    /*
+        Expand the edit textboxes and any other Kendo UI widgets.
+        In case of unexpected side effects, use widget-specific classes, instead of .k-widget.
+    */
+    .k-popup-edit-form .k-edit-field > .k-textbox,
+    .k-popup-edit-form .k-edit-field > .k-widget:not(.k-tooltip) {
+        width: 98%;
+    }
+</style>

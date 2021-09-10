@@ -1,0 +1,91 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.MainLand>
+
+@{
+    ViewBag.Title = "Index";
+    ViewBag.current = "MainLands";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2 class="text-center">الاراضى الرئيسية</h2>
+
+<p>
+    <a href="@Url.Action("Create", "MainLands")" class="btn btn-primary">
+        <span class="glyphicon glyphicon-plus"></span> اضافة جديد
+    </a>
+</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Cities.Aname)*@
+                    اسم المدينة
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.District.Aname)*@
+                    اسم الحى
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Aname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ename)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StreetID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypesInvestmentTag)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LandNo)
+                </th>
+                <th></th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cities.Aname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.District.Aname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Aname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ename)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StreetID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TypesInvestmentTag)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LandNo)
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Edit", "MainLands", new { id = item.id })" class="btn btn-success">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>                        
+                        
+                        <a href="@Url.Action("Details", "MainLands", new { id = item.id })" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                        </a>
+
+                        <a href="@Url.Action("Delete", "MainLands", new { id = item.id })" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</div>

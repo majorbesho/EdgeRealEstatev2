@@ -1,0 +1,104 @@
+﻿@model EdgeRealEstate.Entities.Customer
+<style>
+    .form-control {
+        height: 15px;
+    }
+</style>
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.managerName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.managerName, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.managerName, "المدير المسؤل", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.DropDownListFor(model => model.AccountId, (SelectList)ViewBag.Accounts, "اختر", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.AccountId, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.AccountId, "الحساب", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.timeLimit, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.managerName, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.managerName, "حد الائتمان وقت", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.moneyLimit, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.managerName, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.managerName, "حد الائتمان فلوس", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.intialValue, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.managerName, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.managerName, "الرصيد الافتتاحى", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.currentValue, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.managerName, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.managerName, "الرصيد الحالى", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.isCredit)
+            @Html.ValidationMessageFor(model => model.isCredit, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.isCredit, "يسمح بالاجل", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.discountPer, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.managerName, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.managerName, "نسبة الخصم", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.autoDiscount)
+            @Html.ValidationMessageFor(model => model.autoDiscount, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.autoDiscount, "يضاف الخصم تلقائي", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.DropDownListFor(model => model.pricePlanId, new List<SelectListItem> {
+           new SelectListItem{Text="سعر 1",Value="1"} ,
+           new SelectListItem{ Text="سعر 2",Value="2"},
+         new SelectListItem{Text="سعر 3",Value="3"} ,
+           new SelectListItem{ Text="سعر 4",Value="4"},
+         new SelectListItem{Text="سعر 5",Value="5"} }, "اختر", new { @class = "form-control" })
+            @*@Html.ValidationMessageFor(model => model.pricePlanId, "", new { @class = "text-danger" })*@
+        </div>
+        @Html.LabelFor(model => model.pricePlanId, "نظام التسعير", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.isActive)
+            @Html.ValidationMessageFor(model => model.isActive, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.isActive, "نشط – موقوف", htmlAttributes: new { @class = "control-label col-md-1" })
+
+        <div class="col-md-4">
+            @Html.TextAreaFor(model => model.Notes, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Notes, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.Notes, "ملاحظات", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    @*<div class="form-group">
+            <div class="col-sm-8">
+                @Html.CheckBoxFor(model => model.isActive)
+                @Html.ValidationMessageFor(model => model.isActive, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.isActive, "نشط – موقوف", htmlAttributes: new { @class = "control-label col-sm-2" })
+        </div>*@
+    @*@if (ViewBag.msgg == 1)
+        {
+            <div class="form-group">
+                <div class="alert alert-success alert-dismissable fade-in" id="success-alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>تم الحفظ بنجاح</strong>
+                </div>
+            </div>
+        }*@
+</div>
+

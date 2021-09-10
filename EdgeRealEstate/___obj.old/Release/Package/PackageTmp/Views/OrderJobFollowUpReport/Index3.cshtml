@@ -1,0 +1,186 @@
+﻿
+@{
+    ViewBag.Title = "Index3";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<div class="text-center">
+    <h2>تقارير متابعة امر الشغل</h2>
+</div>
+
+<div class="form-horizontal" dir="rtl">
+    <div class="form-group">
+        <div class="col-md-2">
+            @(Html.Kendo().ComboBox()
+               .Name("Project")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("Aname")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetMainProject", "OrderJobFollowUpReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("Project", " مشروع :", htmlAttributes: new { @class = "control-label col-md-1" })
+
+        <div class="col-md-2">
+            @(Html.Kendo().ComboBox()
+               .Name("Cust")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("ARName")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("Id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetCustomers", "OrderJobFollowUpReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("Cust", "  مقاول :", htmlAttributes: new { @class = "control-label col-md-1" })
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-2">
+            @(Html.Kendo().ComboBox()
+               .Name("SalesMan")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("ARName")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("Id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetSalesMan", "OrderJobFollowUpReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("SalesMan", " مهندس :", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+</div>
+<br />
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.OrderJobFUVM>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(e => e.Id).Width(50);
+            columns.Bound(e => e.Code).Width(50);
+            columns.Bound(e => e.Contractor).Width(50);
+            columns.Bound(e => e.MainProject).Width(50);
+            columns.Bound(e => e.ReceiptEngennering).Width(50);
+            columns.Bound(e => e.SupervisorEngennering).Width(50);
+            columns.Bound(e => e.Project).Width(50);
+            columns.Bound(e => e.SpecialNote).Width(50);
+            columns.Bound(e => e.Note).Width(50);
+
+        })
+        .HtmlAttributes(new { @class = "k-rtl" })
+        .Sortable()
+        .Pageable()
+        .Scrollable()
+        .Filterable()
+        .ClientDetailTemplateId("OrderJobDetailstemplate")
+        .HtmlAttributes(new { style = "height:600px;" })
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .PageSize(12)
+            .Read(read => read.Action("HierarchyBinding_OrderJob", "OrderJobFollowUpReport").Data("GetMaterData"))
+
+            )
+        .Events(events => events.DataBound("dataBound"))
+        .Resizable(resize => resize.Columns(true))
+        .Reorderable(order => order.Columns(true))
+        .ColumnMenu()
+)
+<script id="OrderJobDetailstemplate" type="text/kendo-tmpl">
+    @(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.OrderJobDetailsGridVM>()
+                .Name("grid_#=Id#") // template expression, to be evaluated in the master context
+                .Columns(columns =>
+                {
+                    //columns.Bound(p => p.Stage).ClientTemplate("#=Stage.Aname#").Sortable(false).Width(100);
+                    //columns.Bound(p => p.MianItems).ClientTemplate("#=MianItems.Name#").Sortable(false).Width(100);
+                    columns.Bound(p => p.MainIttemName);
+                    columns.Bound(p => p.StageName);
+                    columns.Bound(p => p.Cost);
+                    columns.Bound(p => p.BeginDateExpected);
+                    columns.Bound(p => p.EndDateExpected);
+                    columns.Bound(p => p.BeginDateAcutely);
+                    columns.Bound(p => p.EndDateAcutely);
+                    //columns.Bound(p => p.EndDateExpected).ClientTemplate("#= kendo.toString(kendo.parseDate(Startdate,'dd/MM/yyyy'), '" + "dd-MM-yyyy" + "')");
+                    //columns.Bound(p => p.BeginDateAcutely).ClientTemplate("#= kendo.toString(BeginDateAcutely, \"dd/MM/yyyy\") #");
+                    //columns.Bound(p => p.EndDateAcutely).ClientTemplate("#= kendo.toString(EndDateAcutely, \"dd/MM/yyyy\") #");
+                    columns.Bound(p => p.ExecutionTime).Width(100);
+                    columns.Bound(p => p.CompletionRate).Width(100);
+                    columns.Bound(p => p.Note);
+                })
+                .DataSource(dataSource => dataSource
+                    .Ajax()
+                    .PageSize(10)
+                    .Read(read => read.Action("HierarchyBinding_OrderJobFollow", "OrderJobFollowUpReport", new { Id = "#=Id#" }))
+                )
+                .Resizable(resize => resize.Columns(true))
+                .Reorderable(order => order.Columns(true))
+                .ColumnMenu()
+                .Pageable()
+                .Sortable()
+                .HtmlAttributes(new { @class = "k-rtl" })
+                .Filterable()
+                .ToClientTemplate()
+
+    )
+</script>
+
+<script>
+    function dataBound() {
+        this.expandRow(this.tbody.find("tr.k-master-row").first());
+    }
+</script>
+
+<script>
+    $('#Code, #Project, #SalesMan, #Cust').change(function () {
+        console.log("in");
+        $("#grid").data("kendoGrid").dataSource.read(read => read.Action("HierarchyBinding_OrderJob", "OrderJobFollowUpReport").Data("getmasterdata"));
+        $("#grid").css("display", "block");
+    });
+
+    function GetMaterData() {
+
+        var vCode = $("#Code").val();
+        var vProject = $("#Project").val();
+        var vSalesMan = $("#SalesMan").val();
+        var vCust = $("#Cust").val();
+
+        return {
+            "Code": vCode,
+            "Project": vProject,
+            "SalesMan": vSalesMan,
+            "Cust": vCust,
+        };
+    }
+</script>

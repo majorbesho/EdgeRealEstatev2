@@ -1,0 +1,92 @@
+﻿@model EdgeRealEstate.Models.ViewModels.StageMainItemMasterVM
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+
+@using (Html.BeginForm("Save", "Stages"))
+{
+    <div class="form-horizontal">
+        <h4>Create Stage</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="form-group col-md-6">
+        @*@Html.LabelFor(model => model.Stage.StageId)*@
+        @Html.LabelFor(model => model.Stage.StageId)
+
+        @Html.DropDownListFor(model => model.Stage.StageId, (IEnumerable<SelectListItem>)ViewBag.Stages, null, new { @class = "form-control" })
+
+
+    </div> 
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Stage.Cost, htmlAttributes: new { @class = "control-label " })
+
+        @Html.EditorFor(model => model.Stage.Cost, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Stage.Cost, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Stage.Duration, htmlAttributes: new { @class = "control-label " })
+
+        @Html.EditorFor(model => model.Stage.Duration, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Stage.Duration, "", new { @class = "text-danger" })
+    </div>
+
+        <div class="form-group col-md-12">
+                    @(Html.Kendo().Grid(Model.Items)
+                                    .Name("Items")
+                                    .ToolBar(tools => tools.Create().Text("اضافة بند جديد"))
+                                    .Editable(editable => editable.Mode(GridEditMode.InCell).CreateAt(GridInsertRowPosition.Bottom))
+                                    .Columns(columns =>
+                                    {
+                                        //columns.Bound(p => p.MainItemID).Hidden().ClientTemplate("#= mainItemId #" +
+                                        //"<input type='hidden' name='Items[#= index(data)#].mainItemId' value='#= mainItemId #' />");
+
+                                        columns.ForeignKey(p => p.MainID, (System.Collections.IEnumerable)ViewData["categories"], "ID", "Name").ClientTemplate("#= MainID #" +
+                                        "<input type='hidden' name='Items[#= index(data)#].MainID' value='#= MainID #' />");
+
+                                        //columns.Bound(p => p.Main);
+
+                                        columns.Bound(p => p.Cost).ClientTemplate("#= Cost #" +
+                                        "<input type='hidden' name='Items[#= index(data)#].Cost' value='#= Cost #' />");
+
+                                        columns.Bound(p => p.Duration).ClientTemplate("#= Duration #" +
+                                        "<input type='hidden' name='Items[#= index(data)#].Duration' value='#= Duration #' />"); ;
+
+                                        columns.Command(command => command.Destroy());
+                                            })
+                                                    .DataSource(dataSource => dataSource.Ajax()
+                                                        .Model(model =>
+                                                        {
+                                                            model.Id(p => p.ID);
+                                                            model.Field(p => p.ID).Editable(false);
+                                                            model.Field(p => p.MainID).DefaultValue(0);
+                                                //model.Field(p => p.MainItem).DefaultValue(
+                                                //ViewData["defaultCategory"] as EdgeRealEstate.Models.ViewModels.MainItemViewModel);
+                                            })
+                                            .ServerOperation(false)
+                                                    ).HtmlAttributes(new { @class = "k-rtl" })
+        )
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-12">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+
+    </div>
+        }
+        <script>
+
+            function index(dataItem) {
+                var data = $("#Items").data("kendoGrid").dataSource.data();
+
+                return data.indexOf(dataItem);
+            }
+
+        </script>

@@ -1,0 +1,88 @@
+﻿@model IEnumerable<EdgeRealEstate.Models.ViewModels.CustomerSelectFlatViewModel>
+
+@{
+    ViewBag.Title = "CustomerFlatReport";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>CustomerFlatReport</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FlatId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flatname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Projectid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrntlyDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CostMony)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FlatId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flatname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Projectid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrntlyDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CostMony)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

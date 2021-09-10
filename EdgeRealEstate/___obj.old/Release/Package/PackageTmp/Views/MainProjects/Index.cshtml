@@ -1,0 +1,91 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.MainProject>
+
+@{
+    ViewBag.Title = "Index";
+    ViewBag.current = "MainProjects";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2 class="text-center">المشاريع الرئيسية</h2>
+
+<p>
+    <a href="@Url.Action("Create", "MainProjects")" class="btn btn-primary">
+        <span class="glyphicon glyphicon-plus"></span> اضافة جديد
+    </a>
+</p>
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Aname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalLandSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypesInvestment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.attachedFileAndPic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaxLevelForContributions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LandNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nots)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ename)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalLandSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypesInvestment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.attachedFileAndPic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxLevelForContributions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LandNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nots)
+        </td>
+        <td>
+            <a href="@Url.Action("Edit", "MainProjects", new { id = item.id })" class="btn btn-success">
+                <span class="glyphicon glyphicon-edit"></span>
+            </a>
+
+            <a href="@Url.Action("Details", "MainProjects", new { id = item.id })" class="btn btn-primary">
+                <span class="glyphicon glyphicon-eye-open"></span>
+            </a>
+
+            <a href="@Url.Action("Delete", "MainProjects", new { id = item.id })" class="btn btn-danger">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </td>
+    </tr>
+        }
+
+    </table>
+
+</div>

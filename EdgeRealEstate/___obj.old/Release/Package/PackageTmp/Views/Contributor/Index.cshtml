@@ -1,0 +1,72 @@
+﻿@model PagedList.IPagedList<EdgeRealEstate.Entities.Contributor>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Index Employee";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<br />
+<h3 style="text-align:center">المساهمين </h3>
+
+    <p dir="rtl">
+        <a href="@Url.Action("Create", "Contributor")" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus"></span>
+            <strong style="font-size:16px"> جديد  </strong>
+        </a>
+    </p>
+    <table class="table table-bordered" dir="rtl">
+        <tr>
+            <th class="text-right">
+                @Html.DisplayName("الاسم العربى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الاسم الانجليزى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("العنوان")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الحساب البنكى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("التقييم")
+            </th>          
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ARName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ENName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BankAccount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Evaluation)
+                </td>
+                <td>
+                    <a href="@Url.Action("Details","Contributor",new { id = item.id })" style="padding-left:20px;">
+                        <span class="glyphicon glyphicon-info-sign" style="font-size:18px;" title="تفاصيل"></span>
+                    </a>
+                        <a href="@Url.Action("Edit","Contributor",new { id = item.id })" style="padding-left:20px;">
+                            <span class="glyphicon glyphicon-edit" style="font-size:18px;" title="تعديل"></span>
+                        </a>
+                        <a href="@Url.Action("Delete","Contributor",new { id = item.id })" style="padding-left:20px;">
+                            <span class="glyphicon glyphicon-trash" style="font-size:18px;" title="حذف"></span>
+                        </a>
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div style="text-align:center">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </div>

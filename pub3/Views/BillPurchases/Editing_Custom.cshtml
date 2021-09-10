@@ -1,0 +1,505 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #icon{
+        padding-left:10px;
+    }
+</style>
+@*<br />*@
+<h3 style="text-align:center">فاتورة شراء</h3>
+<div dir="rtl">
+    <button id="saveChanges" class="btn-primary" style="background-color: steelblue;color: white;cursor: pointer;"><i class="fa fa-save" id="icon"></i>   حفظ</button>
+    |
+    @Html.ActionLink("رجوع", "Index")
+    @*<button id="saveChanges" class="btn btn-primary"> <span class="glyphicon glyphicon-floppy-saved"></span>  حفظ </button>*@
+</div>
+@*<br />*@
+            <div class="form-group" id="alertsuccess" hidden="hidden" dir="rtl">
+                <div class="alert alert-success alert-dismissable fade-in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>تم الحفظ بنجاح</strong>
+                </div>
+            </div>
+            <div class="form-horizontal" dir="rtl">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="col-md-10">
+            @(Html.Kendo().NumericTextBox().Name("PriceOfferId").HtmlAttributes(new { @class = "form-control" }))
+
+                        @*@(Html.Kendo().ComboBox()
+                           .Name("PriceOfferId")
+                           .Placeholder("اختر")
+                           //.DataTextField("barCodeUnv")
+                           .DataTextField("id")
+                           //.Template("#= barCodeUnv # - #= arName #")
+                           .DataValueField("id")
+                           .Filter("contains")
+                           .MinLength(1)
+                           .HtmlAttributes(new { style = "padding-bottom:10px;" })
+                           //.Events(e => e.Change("onComboChange"))
+                           .DataSource(source =>
+                           {
+                               source.Read(read =>
+                               {
+                                   read.Action("ServerFiltering_GetPriceOfferId", "BillPurchases");
+                               })
+                           .ServerFiltering(true);
+                           })
+                        )*@
+                    </div>
+                    @Html.Label("Code", "رقم عرض السعر:", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2">
+                        @Html.DropDownList("customersId", (SelectList)ViewBag.Customers, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("customersId", "", new { @class = "text-danger" })
+                        @*<label for="customersIdLable" id="customersIdLable" hidden="hidden"></label>*@
+                        <label for="customersIdLable" id="customersIdLable"></label>
+                    </div>
+                    @Html.Label("customersId", "المورد", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @(Html.Kendo().DatePicker().Name("addDate").Format("yyyy/MM/dd").HtmlAttributes(new { @class = "form-control" }))
+                        @Html.ValidationMessage("addDate", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("addDate", "تاريخ الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.DropDownList("billType", new List<SelectListItem> {
+                       new SelectListItem{ Text="اجل",Value="اجل"},
+                       new SelectListItem{ Text="نقدى",Value="نقدى"}}, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("billType", "", new { @class = "text-danger" })
+                        <label for="billTypeCredit" id="billTypeCredit" hidden="hidden"></label>
+                    </div>
+                    @Html.Label("billType", "نوع الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @*<div class="col-md-4">
+                @Html.TextBox("id", " ", new { @class = "form-control" })
+                @Html.ValidationMessage("id", "", new { @class = "text-danger" })
+            </div>
+            @Html.Label("id", "رقم الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })*@
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2">
+                        @Html.DropDownList("paidType", new List<SelectListItem> {
+                         new SelectListItem{ Text="كاش",Value="كاش"},
+                         new SelectListItem{ Text="شيك",Value="شيك"} ,
+                   new SelectListItem{ Text="حوالة بنكية",Value="حوالة بنكية"}}, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("paidType", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("paidType", "طريقة الدفع", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.DropDownList("salesManId", (SelectList)ViewBag.SalesMans, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("salesManId", "", new { @class = "text-danger" })
+                        <label for="salesManIdLable" id="salesManIdIdLable"></label>
+                    </div>
+                    @Html.Label("salesManId", "المندوب", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-2">
+                    @Html.DropDownList("empID", (SelectList)ViewBag.Employees, "اختر", new { @class = "form-control" })
+                    @Html.ValidationMessage("empID", "", new { @class = "text-danger" })
+                    <label for="empIDLable" id="empIDLable"></label>
+                </div>
+                    @Html.Label("empID", "الموظف مدخل البيانات", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2">
+                        @Html.CheckBox("isApproval")
+                    </div>
+                    @Html.Label("الاعتماد", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.TextBox("refNo", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("refNo", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("refNo", "رقم مرجعى", new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.TextBox("refType", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("refType", "", new { @class = "text-danger" })
+                    </div>
+                    @Html.Label("refType", "نوع المرجع", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+
+            </div>
+
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.BillPurchasesDetailsViewModel>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.ConstructionMaterial).ClientTemplate("#=ConstructionMaterial.MaterialName#").Sortable(false).Width(180).ClientFooterTemplate("الاجمالى");
+            columns.Bound(p => p.price);
+            columns.Bound(p => p.Qu);
+            columns.Bound(p => p.disPer).Format("{0:n2}")/*.ClientFooterTemplate("#=sum#")*/;
+            columns.Bound(p => p.disNo).ClientFooterTemplate("#=sum#");
+            //columns.Bound(p => p.tax).ClientFooterTemplate("#=sum#");
+            columns.Bound(p => p.rowTotal).Width(130).ClientFooterTemplate("#=sum#");
+            columns.Command(command => command.Destroy().Text("حذف")).Width(150);
+        })
+        .ToolBar(toolBar =>
+        {
+            toolBar.Create().Text("اضافة صنف جديد");
+            //toolBar.Save().SaveText(" حفظ الفاتورة").CancelText("الغاء");
+        })
+        .Editable(editable => editable.Mode(GridEditMode.InCell))
+        .Pageable()
+        .Sortable()
+        .Scrollable()
+        .HtmlAttributes(new { style = "height:300px;", @class = "k-rtl" })
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .Batch(true)
+            .ServerOperation(false)
+            .Events(events => events.Error("error_handler").Change("onChange"))
+            .Model(model =>
+            {
+                model.Id(p => p.id);
+                model.Field(p => p.id).Editable(false);
+                model.Field(p => p.ConstructionMaterial).DefaultValue(
+                    ViewData["defaultItems"] as EdgeRealEstate.Models.ViewModels.ConstructionMaterialViewModel);
+            })
+            .PageSize(3)
+                        .Aggregates(aggregates =>
+                        {
+                            aggregates.Add(p => p.disNo).Sum();
+                            aggregates.Add(p => p.rowTotal).Sum();
+                        })
+            .Read(read => read.Action("EditingCustom_Read", "BillPurchases").Data("getmasterdata2"))
+            .Create(create => create.Action("EditingCustom_Create", "BillPurchases").Data("getmasterdata"))
+            .Update(update => update.Action("EditingCustom_Update", "BillPurchases"))
+            .Destroy(destroy => destroy.Action("EditingCustom_Destroy", "BillPurchases"))
+        )
+)
+<div class="form-horizontal" dir="rtl" style="margin-top:20px;">
+    <div class="form-group">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-2">
+            @Html.TextBox("paid", (decimal?)ViewBag.paid, new { @class = "form-control" })
+            @Html.ValidationMessage("paid", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("paid", "المدفوع", new { @class = "control-label col-md-2" })
+        @*<div class="col-md-2">
+            @Html.TextBox("disPerM", " ", new { @class = "form-control" })
+            @Html.ValidationMessage("disPer", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("disPerM", "نسبة الخصم", new { @class = "control-label col-md-2" })*@
+        <div class="col-md-2">
+            @Html.TextBox("disMoney", " ", new { @class = "form-control" })
+            @Html.ValidationMessage("disMoney", "", new { @class = "text-danger" })
+        </div>
+        @Html.Label("disMoney", "قيمة الخصم", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group" dir="rtl">
+        <label class="col-md-2" for="dif" id="dif"> @ViewBag.net </label>
+        @Html.Label("الباقى", htmlAttributes: new { @class = "control-label col-md-2" })
+        <label class="col-md-2" for="net" id="net"> @ViewBag.net </label>
+        @Html.Label("صافى الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+        <label class="col-md-2" for="total" id="total"> @ViewBag.total </label>
+        @Html.Label("اجمالى الفاتورة", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+
+</div>
+    <script>
+        function onChange(arg) {
+
+            var grid = $("#grid").data("kendoGrid");
+            var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+            $("#total").text(aggrrowTotal.sum);
+            var disMoney = $("#disMoney").val();
+            $("#net").text((aggrrowTotal.sum) - disMoney);
+
+        }
+        $("#disPerM").blur(function () {
+            var disPerM = $("#disPerM").val();
+            var grid = $("#grid").data("kendoGrid");
+            var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+            var tt = ((aggrrowTotal.sum) / 100) * disPerM;
+            $("#disMoney").val(tt);
+            var disMoney = $("#disMoney").val();
+            $("#net").text((aggrrowTotal.sum) - disMoney);
+        });
+
+        $("#disMoney").blur(function () {
+            var disMoney = $("#disMoney").val();
+            var grid = $("#grid").data("kendoGrid");
+            var aggrrowTotal = grid.dataSource.aggregates().rowTotal;
+            var tt = (disMoney / (aggrrowTotal.sum)) * 100;
+            $("#disPerM").val(tt);
+            var disMoney = $("#disMoney").val();
+            $("#net").text((aggrrowTotal.sum) - disMoney);
+        });
+
+        $("#customersId").blur(function () {
+            var vcustomersId = $("#customersId").val();
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetIsCredit")',
+                data: { "customersId": vcustomersId },
+                dataType: 'json',
+                success: function (data) {
+                    if (data == false) {
+                        $("#billType").hide();
+                        $("#billTypeCredit").text("نقدى");
+                        $("#billTypeCredit").show();
+                    } else {
+                        $("#billType").show();
+                        $("#billTypeCredit").text("");
+                        $("#billTypeCredit").hide();
+                    }                     
+                }            
+                 });
+           
+        });
+                $("#paid").blur(function () {
+            var net = $("#net").text();
+            var paid = $("#paid").val();
+            $("#dif").text(net - paid);
+        });
+    </script>
+    <script type="text/javascript">
+
+        var ConstructionMaterialId;
+        var total_disPer = 0;
+        var total_disNo = 0;
+        var total_total = 0;
+        var net = 0;
+        var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+        var rowTotal = 0;
+        function onComboChange(e) {
+            var dataItem = e.sender.dataItem();
+            ConstructionMaterialId = dataItem.ID;
+            var grid = $("#grid").data("kendoGrid");
+            var editedDataItem = grid.dataItem(".k-grid-edit-row");
+            editedDataItem.set("rowTotal", 0);
+            editedDataItem.set("Qu", 0);
+            editedDataItem.set("disPer", 0);
+            editedDataItem.set("disNo", 0);
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("Getprice")',
+                data: { "ConstructionMaterialId": ConstructionMaterialId },
+                dataType: 'json',
+                success: function (data) {
+                    editedDataItem.set("price", data);
+                }
+            });
+        }
+
+        /**********************/
+             function Quchange() {
+                var grid = $("#grid").data("kendoGrid");
+                var editedDataItem = grid.dataItem(".k-grid-edit-row");
+                var price = editedDataItem.get("price");
+                var qu = editedDataItem.get("Qu");
+                var total = price * qu;
+                editedDataItem.set("rowTotal", total);
+                editedDataItem.set("disNo", 0);
+                editedDataItem.set("disPer", 0);
+            }
+
+     //$("#tax").val() = taxvalue;
+     function disPerchange() {
+        var grid = $("#grid").data("kendoGrid");
+         var editedDataItem = grid.dataItem(".k-grid-edit-row");
+         var price = editedDataItem.get("price");
+         var disPer = editedDataItem.get("disPer");
+                var qu = editedDataItem.get("Qu");
+                var total = price * qu;
+                var disNo = (total / 100) * disPer;
+                total_disPer = total_disPer + disPer;
+                $("#disPer").text(total_disPer.toFixed(2));
+                total_disNo = total_disNo + disNo;
+                $("#disNo").text(total_disNo.toFixed(2));
+                editedDataItem.set("disNo", disNo);
+                editedDataItem.set("rowTotal",total - disNo);
+            }
+
+     function disNochange() {
+        var grid = $("#grid").data("kendoGrid");
+        var editedDataItem = grid.dataItem(".k-grid-edit-row");
+         var price = editedDataItem.get("price");
+         var disNo = editedDataItem.get("disNo");
+                var qu = editedDataItem.get("Qu");
+                var total = price * qu;
+                var disPer = (disNo / total) * 100;
+                total_disPer = total_disPer + disPer;
+                $("#disPer").text(total_disPer.toFixed(2));
+                total_disNo = total_disNo + disNo;
+                $("#disNo").text(total_disNo.toFixed(2));
+                editedDataItem.set("disPer", disPer.toFixed(2));
+                var rowTotal_before = editedDataItem.get("rowTotal");
+                editedDataItem.set("rowTotal", total - disNo);
+        }
+    </script>
+
+    <script type="text/javascript">
+        function error_handler(e) {
+            if (e.errors) {
+                var message = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            message += this + "\n";
+                        });
+                    }
+                });
+                alert(message);
+            }
+        }
+    </script>
+    <script>
+    $("#saveChanges").kendoButton({
+        click: function (e) {
+            var grid = $("#grid").data("kendoGrid");
+            //var vempID = $("#empID").val();
+            var vcustomersId = $("#customersId").val();
+            //var vrefNo = $("#refNo").val();
+            //var vsalesManId = $("#salesManId").val();
+            //var vbillType = $("#billType").val();
+            //var vrefType = $("#refType").val();
+            //var vpaidType = $("#paidType").val();
+            //var vaddDate = $("#addDate").val();
+            //var visApproval = $("#isApproval").prop('checked');
+            //var vtax = $("#tax").text();
+            //var vdisPer = $("#disPerM").val();
+            //var vdisNo = $("#disMoney").val();
+            //var vtotal = $("#total").text();
+            var vpaid = $("#paid").val();
+            var vnet = $("#net").text();
+            var vbillTypeCredit = $("#billTypeCredit").text();
+            var aggrdisNo = grid.dataSource.aggregates().disNo;
+            //var disNosum = aggrdisNo.sum;
+            
+            @*$.ajax({
+                type: 'POST',
+                url: '@Url.Action("Create")',
+                data: {
+                    "empID": vempID, "customersId": vcustomersId, "refNo": vrefNo, "salesManId": vsalesManId, "billType": vbillType,
+                    "refType": vrefType, "paidType": vpaidType, "addDate": vaddDate, "isApproval": visApproval, "tax": vtax, "disPer": vdisPer,
+                    "disMoney": vdisNo, "total": vtotal, "paid": vpaid, "net": vnet,"billTypeCredit":vbillTypeCredit
+                    ,"disNosum": disNosum
+                },
+                dataType: 'json',
+                success: function (data) {
+                },
+                error: function () {
+                }
+            });*@
+            if ((vbillTypeCredit != "" && vpaid == vnet) || vbillTypeCredit == "") {
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("getMoneyLimitCheck")',
+                    data: {
+                        "customersId": vcustomersId, "net": vnet
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data == true) {
+                            grid.saveChanges();
+                            $("#alertsuccess").show();
+                            $("#alertsuccess").fadeTo(2000, 500).slideUp(500, function () {
+                                $("#alertsuccess").slideUp(500);
+
+                            });
+                        }
+                        else {
+                            alert("خطأ .. حد الائتمان لا يسمح");
+                        }
+                    },
+                    error: function () {
+                    }
+                });
+            }else {
+                alert("خطأ .. المدفوع لا يساوى  قيمة الفاتورة");
+            }
+            }
+    })
+
+    </script>
+
+    <script>
+
+    function getmasterdata() {
+
+       var grid = $("#grid").data("kendoGrid");
+            var vempID = $("#empID").val();
+            var vcustomersId = $("#customersId").val();
+            var vrefNo = $("#refNo").val();
+            var vsalesManId = $("#salesManId").val();
+            var vbillType = $("#billType").val();
+            var vrefType = $("#refType").val();
+            var vpaidType = $("#paidType").val();
+            var vaddDate = $("#addDate").val();
+            var visApproval = $("#isApproval").prop('checked');      
+            var vdisPer = $("#disPerM").val();
+            var vdisNo = $("#disMoney").val();
+            var vtotal = $("#total").text();
+            var vpaid = $("#paid").val();
+            var vnet = $("#net").text();
+            var vbillTypeCredit = $("#billTypeCredit").text();
+            var aggrdisNo = grid.dataSource.aggregates().disNo;
+        var disNosum = aggrdisNo.sum;
+        var vPriceOfferId = $("#PriceOfferId").val();
+
+        return {
+                    empID : vempID, customersId : vcustomersId, refNo : vrefNo, salesManId : vsalesManId, billType : vbillType,
+                    refType : vrefType, paidType : vpaidType, addDate : vaddDate, isApproval : visApproval, disPer : vdisPer,
+                    disMoney : vdisNo, total : vtotal, paid : vpaid, net : vnet, billTypeCredit :vbillTypeCredit
+                    , disNosum : disNosum,PriceOfferId : vPriceOfferId
+        };
+        }
+    </script>
+<script>
+    $('#PriceOfferId').change(function () {
+        var vPriceOfferId = $("#PriceOfferId").val();
+                  $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetcustomersId")',
+                data: { "PriceOfferId": vPriceOfferId },
+                dataType: 'json',
+                      success: function (data) {
+                          $("#customersId").hide();
+                          $("#customersId").val(data.customersId);
+                      $("#customersIdLable").text(data.ARName);
+                      $("#customersIdLable").show();                  
+                }            
+                  });
+
+                  $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetsalesManId")',
+                data: { "PriceOfferId": vPriceOfferId },
+                dataType: 'json',
+                      success: function (data) {
+                          $("#salesManId").hide();
+                           $("#salesManId").val(data.Id);
+                      $("#salesManIdLable").text(data.ARName);
+                      $("#salesManIdLable").show();                  
+                }            
+                  });
+
+                  $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetempID")',
+                data: { "PriceOfferId": vPriceOfferId },
+                dataType: 'json',
+                      success: function (data) {
+                          $("#empID").hide();
+                           $("#empID").val(data.Id);
+                      $("#empIDLable").text(data.ARName);
+                      $("#empIDLable").show();                  
+                    }            
+                  });
+
+        $("#grid").data("kendoGrid").dataSource.read(read => read.Action("EditingCustom_Read", "BillPurchases").Data("getmasterdata2"));
+        $("#grid").css("display", "block");
+    });
+  
+    function getmasterdata2() {
+
+        var vPriceOfferId = $("#PriceOfferId").val();
+
+        return {
+            "PriceOfferId": vPriceOfferId
+        };
+    }
+</script>

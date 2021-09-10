@@ -1,0 +1,173 @@
+﻿@model IEnumerable<EdgeRealEstate.Models.ViewModels.ProjectsFlatViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2 style="text-align-last:center">تقرير موقف مشروع</h2>
+<br />
+<br />
+
+@using (Html.BeginForm("Index", "ProjectsFlatReport"))
+{
+    <div>
+        <div class="form-horizontal" dir="rtl">
+            
+                <div class="form-group" dir="rtl" >
+                    
+                    <div class="col-md-6" dir="rtl">
+                        <div class="col-md-5">
+                            @Html.DropDownList("ToProID", (IEnumerable<SelectListItem>)ViewBag.ProjectsTo, null, new { @id = "ToProID", @class = "form-control" })
+                        </div>
+                        @Html.Label("toPro", "الى ", htmlAttributes: new { @class = "control-label col-md-1" })
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="col-md-5">
+                            @Html.DropDownList("FromProID", (IEnumerable<SelectListItem>)ViewBag.ProjectsFrom, null, new { @id = "FromProID", @class = "form-control" })
+                        </div>
+                        @Html.Label("FromPro", "من ", htmlAttributes: new { @class = "control-label col-md-1" })
+                    </div>
+                </div>
+           
+            <div class="form-group bmd-form-group" dir="rtl">
+                <div class="col-md-6">
+                    <input type="submit" class="btn btn-primary fa fa-print" value="عرض" style="text-align:center;color: white;cursor: pointer;" />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <br />
+
+
+    </div>
+}
+
+<table id="labsTypesTable" class="data table table-striped no-margin" dir="rtl">
+    <thead>
+        <tr>
+            <th>المشروع</th>
+            <th>تاريخ البدأ </th>
+            <th>تاريخ الانتهاء </th>
+            <th>إجمالي الشقق</th>
+            <th>تحت التجهيز</th>
+            <th>جاهز للبيع</th>
+            <th>محجوز</th>
+            <th>مباع</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.ProjectName</td>
+            <td>@item.BeginDateAcutely</td>
+            <td>@item.EndDateAcutely</td>
+            <td>@item.TotalFlatNO</td>
+            <td>@item.UnderpreparingFlat</td>
+            <td>@item.ReadyFlat</td>
+            <td>@item.BookedFlat</td>
+            <td>@item.SoledFlat</td>
+        </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"> الاجمالي</td>
+            
+            <td>@Model.Sum(i => i.TotalFlatNO)</td>
+            <td>@Model.Sum(i => i.UnderpreparingFlat)</td>
+            <td>@Model.Sum(i => i.ReadyFlat)</td>
+            <td>@Model.Sum(i => i.BookedFlat)</td>
+            <td>@Model.Sum(i => i.SoledFlat)</td>
+        </tr>
+    </tfoot>
+</table>
+@*@if (!Model.Any())
+    {
+        <script type="text/javascript">
+            alert("Model empty");
+            $('#labsTypesTable').hide();
+        </script>
+    }*@
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#labsTypesTable').DataTable();
+        });
+    </script>
+}
+
+@*<table class="table">
+<tr>
+    <th>
+        @Html.DisplayNameFor(model => model.ProjectID)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.ProjectName)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.BeginDateAcutely)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.EndDateAcutely)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.TotalFlatNO)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.UnderpreparingFlat)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.BookedFlat)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.SoledFlat)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.ReadyFlat)
+    </th>
+    <th></th>
+</tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BeginDateAcutely)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndDateAcutely)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalFlatNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnderpreparingFlat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookedFlat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoledFlat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReadyFlat)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id })
+        </td>
+    </tr>
+}
+
+</table>*@

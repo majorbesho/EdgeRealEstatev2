@@ -1,0 +1,51 @@
+﻿@model EdgeRealEstate.Entities.CustomerSelectFlat
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CustomerSelectFlat</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Flat.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flat.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrntlyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrntlyDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerPaiedId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerPaiedId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

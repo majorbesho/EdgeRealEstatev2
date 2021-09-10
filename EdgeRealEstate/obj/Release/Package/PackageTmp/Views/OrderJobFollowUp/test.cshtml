@@ -1,0 +1,314 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<h3 style="text-align:center"> متابعة امر الشغل</h3>
+
+<div class="form-horizontal" dir="rtl">
+    <div class="form-group">
+        <div class="col-md-10">
+            @(Html.Kendo().ComboBox()
+               .Name("Code")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("OrderJobCode")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("Id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetOrderJobCode", "OrderJobFollowUp");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("Code", "كود امر الشغل:", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    @*<div class="form-group">
+        <div class="col-md-10">
+            @(Html.Kendo().ComboBox()
+               .Name("Project")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("Aname")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetMainProject", "OrderJobReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("Project", "  مشروع :", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @(Html.Kendo().ComboBox()
+               .Name("SalesMan")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("ARName")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("Id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetSalesMan", "OrderJobReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("SalesMan", " مهندس :", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @(Html.Kendo().ComboBox()
+               .Name("Cust")
+               .Placeholder("اختر")
+               //.DataTextField("barCodeUnv")
+               .DataTextField("ARName")
+               //.Template("#= barCodeUnv # - #= arName #")
+               .DataValueField("Id")
+               .Filter("contains")
+               .MinLength(1)
+               .HtmlAttributes(new { style = "padding-bottom:10px;" })
+               //.Events(e => e.Change("onComboChange"))
+               .DataSource(source =>
+               {
+                   source.Read(read =>
+                   {
+                       read.Action("ServerFiltering_GetCustomers", "OrderJobReport");
+                   })
+               .ServerFiltering(true);
+               })
+            )
+        </div>
+        @Html.Label("Cust", "  مقاول :", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>*@
+</div>
+<br />
+
+<div class="form-horizontal" dir="rtl">
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="contractorId" id="contractorId"></label>
+                @*@Html.Display("contractorId", new { htmlAttributes = new { @class = "form-control" } })*@
+            </div>
+            @Html.Label("المقاول", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="MainProjectId" id="MainProjectId"></label>
+                @*@Html.Display("MainProjectId", new { htmlAttributes = new { @class = "form-control" } })*@
+            </div>
+            @Html.Label("المشروع الرئيسى", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="receiptEngenneringId" id="receiptEngenneringId"></label>
+                @*@Html.Display("receiptEngenneringId", new { htmlAttributes = new { @class = "form-control" } })*@
+            </div>
+            @Html.Label("المهندس القائم بالاستلام", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="SupervisorEngenneringId" id="SupervisorEngenneringId"></label>
+                @*@Html.Display("SupervisorEngenneringId", new { htmlAttributes = new { @class = "form-control" } })*@
+            </div>
+            @Html.Label("المهندس القائم بالاشراف", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="ProjectsId" id="ProjectsId"></label>
+                @*@Html.Display("ProjectsId", new { htmlAttributes = new { @class = "form-control" } })*@
+            </div>
+            @Html.Label("المشروع الفرعى", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="SpecialNote" id="SpecialNote"></label>
+                @*@Html.Display("SpecialNote", new { htmlAttributes = new { @class = "form-control" } })*@
+            </div>
+            @Html.Label("مواصفات خاصة", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="Note" id="Note"></label>
+                @*@Html.Label("Note", new { htmlAttributes = new { @class = "form-control" } })*@
+            </div>
+            @Html.Label("ملاحظات", htmlAttributes: new { @class = "control-label col-md-2" })
+        </div>
+    </div>
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.OrderJobDetailsViewModel>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.Stage).ClientTemplate("#=Stage.Aname#").Sortable(false).Width(100);
+            columns.Bound(p => p.MianItems).ClientTemplate("#=MianItems.Name#").Sortable(false).Width(100);
+            columns.Bound(p => p.Cost);
+            columns.Bound(p => p.BeginDateExpected).ClientTemplate("#= kendo.toString(BeginDateExpected, \"dd/MM/yyyy\") #");
+            columns.Bound(p => p.EndDateExpected).ClientTemplate("#= kendo.toString(EndDateExpected, \"dd/MM/yyyy\") #");
+            columns.Bound(p => p.BeginDateAcutely).ClientTemplate("#= kendo.toString(BeginDateAcutely, \"dd/MM/yyyy\") #");
+            columns.Bound(p => p.EndDateAcutely).ClientTemplate("#= kendo.toString(EndDateAcutely, \"dd/MM/yyyy\") #");
+            columns.Bound(p => p.ExecutionTime).Width(100);
+            columns.Bound(p => p.CompletionRate).Width(100);
+            columns.Bound(p => p.Note);
+            // columns.Command(command => command.Destroy().Text("حذف")).Width(150);
+        })
+.ToolBar(toolBar =>
+{
+    //toolBar.Create().Text("اضافة جديد");
+    toolBar.Save().SaveText("حفظ").CancelText("الغاء");
+})
+.Editable(editable => editable.Mode(GridEditMode.InCell))
+.Pageable()
+.Sortable()
+.Scrollable()
+.HtmlAttributes(new { style = "height:300px;", @class = "k-rtl" })
+//.Events(events => events
+//            .Change("onChange"))
+.DataSource(dataSource => dataSource
+.Ajax()
+.Batch(true)
+.ServerOperation(false)
+.Events(events => events.Error("error_handler")/*.Change("onChange")*/)
+.Model(model =>
+{
+    model.Id(p => p.Id);
+    model.Field(p => p.Id).Editable(false);
+    model.Field(p => p.Stage).Editable(false);
+    model.Field(p => p.MianItems).Editable(false);
+    model.Field(p => p.Cost).Editable(false);
+    model.Field(p => p.BeginDateExpected).Editable(false);
+    model.Field(p => p.EndDateExpected).Editable(false);
+    model.Field(p => p.BeginDateAcutely).Editable(false);
+    model.Field(p => p.EndDateAcutely).Editable(false);
+    model.Field(p => p.ExecutionTime).Editable(false);
+    model.Field(p => p.Stage).DefaultValue(
+                  ViewData["defaultStage"] as EdgeRealEstate.Models.ViewModels.StageVM);
+    model.Field(p => p.MianItems).DefaultValue(
+       ViewData["defaultMainItems"] as EdgeRealEstate.Models.ViewModels.MainItemViewModel);
+})
+.PageSize(3)
+.Read(read => read.Action("EditingCustom_ReadForEdit", "OrderJobFollowUp").Data("getmasterdata"))
+.Create(create => create.Action("EditingCustom_CreateForEdit", "OrderJobFollowUp")/*.Data("getmasterdata")*/)
+.Update(update => update.Action("EditingCustom_UpdateForEdit", "OrderJobFollowUp").Data("getmasterdata"))
+.Destroy(destroy => destroy.Action("EditingCustom_DestroyForEdit", "OrderJobFollowUp"))
+)
+)
+<script>
+    $('#Code, #Project, #SalesMan, #Cust').change(function () {
+        console.log("in");
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetMasterData")',
+                data: getmasterdata(),
+                dataType: 'json',
+                success: function (data) {
+                    $("#Note").text(data.Note); 
+                    $("#SpecialNote").text(data.SpecialNote); 
+                    $("#ProjectsId").text(data.Aname); 
+                    $("#MainProjectId").text(data.MainProjectAname); 
+                }            
+            });
+          $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetMainProject")',
+                data: getmasterdata(),
+                dataType: 'json',
+                success: function (data) {
+                    $("#MainProjectId").text(data); 
+                }            
+          });
+
+           $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetreceiptEngennering")',
+                data: getmasterdata(),
+                dataType: 'json',
+                success: function (data) {
+                    $("#receiptEngenneringId").text(data); 
+                }            
+           });
+
+               $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetSupervisorEngennering")',
+                data: getmasterdata(),
+                dataType: 'json',
+                success: function (data) {
+                    $("#SupervisorEngenneringId").text(data); 
+                }            
+           });
+           $.ajax({
+                type: 'GET',
+                url: '@Url.Action("Getcontractor")',
+                data: getmasterdata(),
+                dataType: 'json',
+                success: function (data) {
+                    $("#contractorId").text(data); 
+                }            
+           });
+
+        $("#grid").data("kendoGrid").dataSource.read(read => read.Action("EditingCustom_ReadForEdit", "OrderJobFollowUp").Data("getmasterdata"));
+        $("#grid").css("display", "block");
+    });
+  
+    function getmasterdata() {
+
+        var vCode = $("#Code").val();
+        var vProject = $("#Project").val();
+        var vSalesMan = $("#SalesMan").val();
+        var vCust = $("#Cust").val();
+
+        return {
+            "Code": vCode,
+            "Project": vProject,
+            "SalesMan": vSalesMan,
+            "Cust": vCust,
+        };
+    }
+</script>
+
+
+<script type="text/javascript">
+    function error_handler(e) {
+        if (e.errors) {
+            var message = "Errors:\n";
+            $.each(e.errors, function (key, value) {
+                if ('errors' in value) {
+                    $.each(value.errors, function () {
+                        message += this + "\n";
+                    });
+                }
+            });
+            //alert(message);
+        }
+    }
+</script>

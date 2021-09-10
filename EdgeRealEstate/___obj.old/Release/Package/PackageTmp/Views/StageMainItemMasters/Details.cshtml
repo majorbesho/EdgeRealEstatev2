@@ -1,0 +1,51 @@
+﻿@model EdgeRealEstate.Entities.StageMainItemMaster
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StageMainItemMaster</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MianItems.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MianItems.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stage.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stage.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.Message>
+
+@{
+    ViewBag.Title = "ReceivedMessages";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+     
+
+}
+
+<h2>Received Messages From @ViewBag.SenderName</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<div class="MessagesList">
+    @foreach (var item in Model)
+    {
+    <div class="Messageitem">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div style="margin:10px 0px" class="col-md-12"> <span style="font-weight:700"> Sender : </span>@item.SenderUsername</div>
+                    <div style="margin:10px 0px" class="col-md-12"> <span style="font-weight:700"> Sent At : </span>@item.SentAt.ToShortDateString() || @item.SentAt.ToShortTimeString()</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-success btn-sm ViewMSG" href="/Messages/View/@item.ID">View</a>
+                @*<a class="btn btn-info btn-sm ViewMSG" href="/Messages/GetMessagesForUser/@item.SenderId">All Messages</a>*@
+                <a class="btn btn-primary btn-sm ViewMSG" href="/Messages/Create/">Send Him Message</a>
+            </div>
+            <div class="col-md-6">
+                @Html.Raw(item.MessageContent.Length > 150 ? item.MessageContent.Substring(0, 150) : item.MessageContent) ...
+            </div>
+        </div>
+    </div>
+    }
+</div>
+

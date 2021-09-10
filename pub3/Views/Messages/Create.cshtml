@@ -1,0 +1,76 @@
+﻿@model EdgeRealEstate.Entities.Message
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<form>
+
+
+    @*@Html.AntiForgeryToken()*@
+
+    <div class="form-horizontal">
+        @*<h4>Message</h4>*@
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                @Html.LabelFor(model => model.ReceiverId, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownList("ReceiverId", new SelectList(ViewBag.Users, "ID", "UserName"), new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ReceiverId, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group col-md-12">
+                @Html.LabelFor(model => model.MessageContent, htmlAttributes: new { @class = "control-label" })
+                @Html.TextAreaFor(model => model.MessageContent, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MessageContent, "", new { @class = "text-danger" })
+            </div>
+
+            <script>
+                $('#MessageContent').summernote({
+                    toolbar: [
+                        // [groupName, [list of button]]
+                        ['style', ['bold', 'italic', 'underline', 'clear']],
+
+                        ['fontsize', ['fontsize']],
+                        //['color', ['color']],
+                        ['para', [/*'ul', 'ol',*/ 'paragraph']],
+
+                    ]
+                });
+            </script>
+        </div>
+        <div class="form-group">
+            <div class="col-md-12">
+                <input type="submit" value="Send" class="btn btn-primary" id="btnSubmit" />
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@section Scripts {
+    <script>
+        $('#btnSubmit').click(function (event) {
+            var message = {
+                MessageContent: $('#MessageContent').val(),
+                ReceiverId: $("#ReceiverId option:selected").val(),
+            };
+            $.ajax({
+                type: "POST",
+                url: "/Messages/Add",
+                data: JSON.stringify(message),
+                dataType: "Json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (data) {
+                    alert(data.msg);
+                },
+                error: function () {
+                    alert("Error occured!!")
+                }
+            });
+            return false;
+        });
+
+    </script>
+}

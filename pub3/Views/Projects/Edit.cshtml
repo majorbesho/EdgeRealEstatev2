@@ -1,0 +1,227 @@
+﻿@model EdgeRealEstate.Entities.Projects
+
+@{
+    ViewBag.Title = "Edit";
+    ViewBag.current = "Projects";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Projects</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.id)
+    <div class="form-row">
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.MainProjectId, htmlAttributes: new { @class = "control-label " })
+            @Html.DropDownListFor(m => m.MainProjectId, (IEnumerable<SelectListItem>)ViewBag.MainProjects, null, new { @class = "form-control" })
+        </div>
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.Ename, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.Ename, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.Ename, "", new { @class = "text-danger" })
+        </div>
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.Aname, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.Aname, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.Aname, "", new { @class = "text-danger" })
+        </div>
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.LandNo, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.LandNo, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.LandNo, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.LandSize, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.LandSize, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.LandSize, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.attachedFileAndPic, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.attachedFileAndPic, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.attachedFileAndPic, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.MaxLevelForContributions, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.MaxLevelForContributions, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.MaxLevelForContributions, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.ImgURL, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.ImgURL, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.ImgURL, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.BeginDateAcutely, htmlAttributes: new { @class = "control-label " })
+            @(Html.Kendo().DateTimePicker()
+            .Name("BeginDateAcutely")
+            )
+            @Html.ValidationMessageFor(m => m.BeginDateAcutely, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.BeginDateExpected, htmlAttributes: new { @class = "control-label " })
+            @(Html.Kendo().DateTimePicker()
+            .Name("BeginDateExpected")
+            )
+            @Html.ValidationMessageFor(m => m.BeginDateExpected, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.EndDateAcutely, htmlAttributes: new { @class = "control-label " })
+            @(Html.Kendo().DateTimePicker()
+            .Name("EndDateAcutely")
+            )
+            @Html.ValidationMessageFor(m => m.EndDateAcutely, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.EndDateExpected, htmlAttributes: new { @class = "control-label " })
+            @(Html.Kendo().DateTimePicker()
+            .Name("EndDateExpected")
+            )
+            @Html.ValidationMessageFor(m => m.EndDateExpected, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.IsExtand, htmlAttributes: new { @class = "control-label " })
+            <div class="checkbox">
+                @Html.EditorFor(m => m.IsExtand)
+                @Html.ValidationMessageFor(m => m.IsExtand, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.FlatNO, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.FlatNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.FlatNO, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.RoveNO, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.RoveNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.RoveNO, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.ShopNO, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.ShopNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.ShopNO, "", new { @class = "text-danger" })
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.LevelNO, htmlAttributes: new { @class = "control-label " })
+            @Html.EditorFor(m => m.LevelNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.LevelNO, "", new { @class = "text-danger" })
+
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.VellaNO, htmlAttributes: new { @class = "control-label " })
+
+            @Html.EditorFor(m => m.VellaNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.VellaNO, "", new { @class = "text-danger" })
+
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.AdminstrationLevelNO, htmlAttributes: new { @class = "control-label " })
+
+            @Html.EditorFor(m => m.AdminstrationLevelNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.AdminstrationLevelNO, "", new { @class = "text-danger" })
+
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.ProjectDescriptionID, htmlAttributes: new { @class = "control-label " })
+
+            @Html.EditorFor(m => m.ProjectDescriptionID, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.ProjectDescriptionID, "", new { @class = "text-danger" })
+
+        </div>
+
+        <div class=" col-md-6">
+            @Html.LabelFor(m => m.nots, htmlAttributes: new { @class = "control-label " })
+
+            @Html.EditorFor(m => m.nots, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.nots, "", new { @class = "text-danger" })
+
+        </div>
+
+    </div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <br />
+        <br />
+
+        <h1>Project Stages</h1>
+    </div>
+</div>
+    <br />
+
+    <script>
+
+        function getProjectId() {
+            var ID = document.getElementById("id").value;
+            console.log("ID = " + ID);
+            return { ID: ID };
+        }
+    </script>
+    @(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.StageGrid>()
+       .Name("Stage")
+       .Columns(columns =>
+       {
+
+           columns.ForeignKey(p => p.StageID, (System.Collections.IEnumerable)ViewData["Stages"], "StageID", "StageName").Width(100);
+           //columns.Bound(d => d.Stage).ClientTemplate("#=Stage.Name#");
+           columns.Bound(d => d.StartDate).Width(100).Format("{0:dd/MM/yyyy}");
+           columns.Bound(d => d.Duration).Width(100);
+           columns.Bound(d => d.EndDate).Width(100).Format("{0:dd/MM/yyyy}");
+           columns.Command(c => c.Edit().Text("تعديل")).Width(50);
+           columns.Command(d => d.Destroy().Text("حذف")).Width(50);
+       })
+       .Scrollable()
+       .Filterable()
+       .DataSource(datasource => datasource
+       .Ajax()
+       .Model(m =>
+       {
+           m.Id(o => o.ID);
+           m.Field(f => f.ID).Editable(false);
+           m.Field(p => p.StageID);
+           //m.Field(p => p.Stage).DefaultValue(
+           //ViewData["defaultStage"] as EdgeRealEstate.Models.ViewModels.StageListVM);
+       })
+               .Read(read => read.Action("Stages_Read", "Projects").Data("getProjectId"))
+               .Update(upd => upd.Action("Stages_Update", "Projects"))
+               .Destroy(dest => dest.Action("Stages_Destroy", "Projects"))
+               .PageSize(5)
+               )
+               .Pageable()
+               .HtmlAttributes(new { @class = "k-rtl" })
+    )
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+
+<div class="col-md-12">
+    @Html.ActionLink("Back to List", "Index")
+</div>

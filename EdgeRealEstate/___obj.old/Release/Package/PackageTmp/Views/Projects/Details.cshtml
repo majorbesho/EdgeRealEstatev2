@@ -1,0 +1,187 @@
+﻿@model EdgeRealEstate.Entities.Projects
+
+@{
+    ViewBag.Title = "Details";
+    ViewBag.current = "Projects";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Projects</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MainProject.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MainProject.Aname)</dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LandNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LandNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LandSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LandSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.attachedFileAndPic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.attachedFileAndPic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxLevelForContributions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxLevelForContributions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeginDateAcutely)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeginDateAcutely)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeginDateExpected)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeginDateExpected)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDateAcutely)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDateAcutely)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDateExpected)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDateExpected)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsExtand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsExtand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlatNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlatNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoveNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoveNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShopNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShopNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LevelNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VellaNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VellaNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminstrationLevelNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminstrationLevelNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectDescriptionID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectDescriptionID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nots)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nots)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

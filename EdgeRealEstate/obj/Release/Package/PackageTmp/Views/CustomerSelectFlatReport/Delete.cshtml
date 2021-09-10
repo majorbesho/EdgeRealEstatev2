@@ -1,0 +1,105 @@
+﻿@model EdgeRealEstate.Models.ViewModels.CustomerSelectFlatViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CustomerSelectFlatViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlatId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlatId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flatname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flatname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Projectid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Projectid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrntlyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrntlyDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CostMony)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CostMony)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

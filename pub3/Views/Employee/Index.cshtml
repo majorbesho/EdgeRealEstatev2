@@ -1,0 +1,104 @@
+﻿@model PagedList.IPagedList<EdgeRealEstate.Entities.Employee>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Index Employee";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<br />
+<h3 style="text-align:center">الموظفين </h3>
+
+    <p dir="rtl">
+        <a href="@Url.Action("Create", "Employee")" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus"></span>
+            <strong style="font-size:16px"> جديد  </strong>
+        </a>
+    </p>
+    <table class="table table-bordered" dir="rtl">
+        <tr>
+            <th class="text-right">
+                @Html.DisplayName("الاسم العربى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الاسم الانجليزى")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الجنسية")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الديانة")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("نشط")
+            </th>
+
+            <th class="text-right">
+                @Html.DisplayName("الجنس")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("الفرع")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("القطاع")
+            </th>
+            <th class="text-right">
+                @Html.DisplayName("ملاحظات")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ARName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ENName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LKNationality.ARName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.religion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.isActive)
+                </td>
+                <td>
+                    @if (item.isFemale == false)
+                    {
+                        @Html.Label("ذكر", new { htmlAttributes = new { @class = "form-control" } })
+                    }
+                    else
+                    {
+                        @Html.Label("انثى", new { htmlAttributes = new { @class = "form-control" } })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LKBranch.ARName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.section)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    <a href="@Url.Action("Details","Employee",new { id = item.Id })" style="padding-left:20px;">
+                        <span class="glyphicon glyphicon-info-sign" style="font-size:18px;" title="تفاصيل"></span>
+                    </a>
+                        <a href="@Url.Action("Edit","Employee",new { id = item.Id })" style="padding-left:20px;">
+                            <span class="glyphicon glyphicon-edit" style="font-size:18px;" title="تعديل"></span>
+                        </a>
+                        <a href="@Url.Action("Delete","Employee",new { id = item.Id })" style="padding-left:20px;">
+                            <span class="glyphicon glyphicon-trash" style="font-size:18px;" title="حذف"></span>
+                        </a>
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div style="text-align:center">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </div>

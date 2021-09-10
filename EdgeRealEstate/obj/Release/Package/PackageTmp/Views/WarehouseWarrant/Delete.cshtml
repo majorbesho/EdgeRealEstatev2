@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+@model EdgeRealEstate.Entities.WarehouseWarrantMaster
+
+<br />
+<h3 style="text-align:center">سند صرف مخزنى</h3>
+<h4 dir="rtl">هل أنت متأكد من أنك تريد حذف هذا السند ؟</h4>
+<div class="form-horizontal" dir="rtl">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.contractor.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("المقاول", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.id, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الكود", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Engennering.Aname, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("المهندس", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Employee.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الموظف مدخل البيانات", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.refType, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("نوع المرجع", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.refNo, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("رقم مرجعى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.addDate, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("تاريخ السند", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.total, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الاجمالى", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-primary" /> |
+            @Html.ActionLink("رجوع", "Index", "WarehouseWarrant", null, null)
+        </div>
+    }
+</div>
+
+<div id="partial">@{Html.RenderAction("Editing_CustomForDelete");}</div>
+
+

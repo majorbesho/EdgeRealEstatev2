@@ -1,0 +1,7 @@
+﻿@model EdgeRealEstate.Models.ViewModels.MainItemViewModel
+
+@(Html.Kendo().DropDownListFor(m => m)
+        .DataValueField("ID")
+        .DataTextField("Name")
+        .BindTo((System.Collections.IEnumerable)ViewData["categories"])
+)

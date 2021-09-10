@@ -1,0 +1,8 @@
+﻿
+@model EdgeRealEstate.Models.ViewModels.BillPurchasesDetailsViewModel
+
+@(Html.Kendo().NumericTextBox()
+        .Name("disPer")
+        .Events(e => e
+             .Change("disPerchange")
+        ))

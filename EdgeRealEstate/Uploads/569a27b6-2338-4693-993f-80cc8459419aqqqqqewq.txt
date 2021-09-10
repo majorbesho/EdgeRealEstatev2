@@ -1,0 +1,5 @@
+C:\Users\dev4\Source\Repos\32ary\EdgeRealEstate\EdgeRealEstate.csproj : error 
+ : The imported project file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\
+Roslyn\Microsoft.CSharp.Core.targets" could not be loaded. '', hexadecimal value 0x13, is an invalid character. 
+Line 1, position 1.  C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\
+Microsoft.CSharp.CurrentVersion.targets

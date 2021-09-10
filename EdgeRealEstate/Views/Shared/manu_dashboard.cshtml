@@ -1,0 +1,1501 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - EdgeSC</title>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    @*
+        <link href="~/Content/font-awesome.min.css" rel="stylesheet" />*@
+    <link href="~/Content/Kendo/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/Kendo/kendo.blueopal.min.css" rel="stylesheet" />
+    <link href="~/Content/Kendo/kendo.rtl.min.css" rel="stylesheet" />
+    @*<link href="~/Content/material-dashboard.min.css" rel="stylesheet" />*@
+    @*<script src="~/Scripts/jquery-3.4.1.min.js"></script>*@
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.all.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.aspnetmvc.min.js"></script>
+    <script src="~/Scripts/menu-dashboard.js"></script>
+    <link href="~/Content/main-style-dashboard.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="~/Content/material-dashboard.min.css" rel="stylesheet" />
+    <link href="~/Content/demo.css" rel="stylesheet" />
+    <link href="~/Content/css-arabic/material-dashboard.css" rel="stylesheet" />
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+
+    <link href="~/Content/bootstrap-datepicker.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+
+    <style>
+        .form-control, .is-focused .form-control {
+            border: 3px solid #8c8c8c;
+            border-radius: 25px;
+            min-height: 50px;
+            background-image: none;
+            padding: 5px 15px;
+        }
+
+            .form-control:read-only {
+                background-image: none;
+            }
+
+        label {
+            color: #2d2d2d;
+            font-weight: 700;
+        }
+
+        .pagination {
+            display: inline-block;
+            padding-left: 0;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+            .pagination > li {
+                display: inline;
+            }
+
+                .pagination > li > a,
+                .pagination > li > span {
+                    position: relative;
+                    float: left;
+                    padding: 6px 12px;
+                    margin-left: -1px;
+                    line-height: 1.42857143;
+                    color: #337ab7;
+                    text-decoration: none;
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                }
+
+                    .pagination > li > a:hover,
+                    .pagination > li > span:hover,
+                    .pagination > li > a:focus,
+                    .pagination > li > span:focus {
+                        z-index: 2;
+                        color: #23527c;
+                        background-color: #eeeeee;
+                        border-color: #ddd;
+                    }
+
+                .pagination > li:first-child > a,
+                .pagination > li:first-child > span {
+                    margin-left: 0;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+
+                .pagination > li:last-child > a,
+                .pagination > li:last-child > span {
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+
+            .pagination > .active > a,
+            .pagination > .active > span,
+            .pagination > .active > a:hover,
+            .pagination > .active > span:hover,
+            .pagination > .active > a:focus,
+            .pagination > .active > span:focus {
+                z-index: 3;
+                color: #fff;
+                cursor: default;
+                background-color: #9c27b0;
+                border-color: #9c27b0;
+            }
+
+            .pagination > .disabled > span,
+            .pagination > .disabled > span:hover,
+            .pagination > .disabled > span:focus,
+            .pagination > .disabled > a,
+            .pagination > .disabled > a:hover,
+            .pagination > .disabled > a:focus {
+                color: #777777;
+                cursor: not-allowed;
+                background-color: #fff;
+                border-color: #ddd;
+            }
+
+        .pagination-lg > li > a,
+        .pagination-lg > li > span {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+        }
+
+        .pagination-lg > li:first-child > a,
+        .pagination-lg > li:first-child > span {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        .pagination-lg > li:last-child > a,
+        .pagination-lg > li:last-child > span {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        .pagination-sm > li > a,
+        .pagination-sm > li > span {
+            padding: 5px 10px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .pagination-sm > li:first-child > a,
+        .pagination-sm > li:first-child > span {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .pagination-sm > li:last-child > a,
+        .pagination-sm > li:last-child > span {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        .pagination-container {
+            text-align: center;
+        }
+
+        .sidebar .nav .caret {
+            margin-top: 12px;
+        }
+
+        .k-input-modify {
+            border: 3px solid #DDD;
+            border-radius: 25px;
+            max-height: 50px;
+            width: 245px;
+            background-image: none;
+            padding: 8px 13px;
+            background-color: #ffffff00;
+        }
+
+            .k-input-modify .k-picker-wrap {
+                border: none;
+                background-color: #ffffff00;
+            }
+
+            .k-input-modify:hover {
+                background-color: #ffffff00;
+            }
+
+        .MessagesList .Messageitem {
+            padding: 30px 25px;
+            border-radius: 25px;
+            margin: 20px 5px;
+            -webkit-box-shadow: 0px 0px 22px -6px rgba(137,204,245,1);
+            -moz-box-shadow: 0px 0px 22px -6px rgba(137,204,245,1);
+            box-shadow: 0px 0px 22px -6px rgba(137,204,245,1);
+        }
+
+        .NotSeenBck {
+            background-color: #dcefff;
+        }
+
+        .seenMes.NotSeenBck:hover {
+            box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+            background-color: #9c27b0;
+            color: #FFF;
+        }
+    </style>
+    <script>
+        function myFunctionTranslate() {
+            var t = document.getElementById("translate");
+            if (t.innerHTML === "English") {
+                t.innerHTML = "Arabic";
+            } else {
+                t.innerHTML = "English";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="MenuDashboard" class="sidebarManuDashboard">
+        <a href="javascript:void(0)" class="closebtn-manu-dashboard" onclick="closeNavAndIconMAtrial()">×</a>
+        <h3 class="text-center">Edge</h3>
+        <div class="row">
+            <div class="col-md-12 media-phone-nav-item">
+                <ul class="main-dashbord-menu">
+                    <li class="main-dashbord-menu-item item-search">
+                        <button><i class="fas fa-search"></i></button>
+                        <div class="search-effect-group">
+                            <input type="text" name="" id="" placeholder="Search....">
+                            <span class="search-effect-group-border-effect"></span>
+                        </div>
+
+                    </li>
+                    <li class="main-dashbord-menu-item ">
+                        <a href="#">
+                            <i class="fas fa-grip-horizontal"></i>
+                            <p>Stats</p>
+                        </a>
+                    </li>
+                    <li class="main-dashbord-menu-item ">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <p>User Profile</p>
+                        </a>
+                    </li>
+                    <li class="main-dashbord-menu-item  item-notifications">
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                            <span class="notifications-alert">5</span>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="col-md-12">
+
+                <ul class="nav pr-0">
+                    <li class=" nav-item @(ViewBag.current == "Cities" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample2" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample1">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Cities
+                            </p>
+                            <i class="material-icons">location_city</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Cities" ?  "show" : "")" id="multiCollapseExample2">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <h6 class="dropdown-header  font-weight-bold text-primary">Cities</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Cities/Create">Add New City</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Cities/">View All Cities</a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Degree Of Excellences</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/DegreeOfExcellences/Create">Add Degree Of Excellences </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/DegreeOfExcellences/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Project Status</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectStatus/Create">Add Project Status </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectStatus/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Project Text Description</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectTextDescriptions/Create">Add Project Description </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectTextDescriptions/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Districts</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Districts/Create">Add New District</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Districts/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Streets</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Streets/Create">Add New Street</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Streets/">View All </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-bold text-primary">Stages</h6>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Stages/Create">Add New Stage</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Stages/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item  @(ViewBag.current == "Engennerings" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample5" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample5">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Engennerings
+                            </p>
+                            <i class="material-icons">person</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Engennerings" ?  "show" : "")" id="multiCollapseExample5">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Engennerings/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Engennerings/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "Flats" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample6" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample6">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Flats
+                            </p>
+                            <i class="material-icons">dashboard</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Flats" ?  "show" : "")" id="multiCollapseExample6">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Flats/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Flats/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item  @(ViewBag.current == "MainLands" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample8" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample8">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                MainLands
+                            </p>
+                            <i class="material-icons">landscape</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "MainLands" ?  "show" : "")" id="multiCollapseExample8">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MainLands/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MainLands/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "MainProjects" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample9" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample9">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                MainProjects
+                            </p>
+                            <i class="material-icons">work</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "MainProjects" ?  "show" : "")" id="multiCollapseExample9">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MainProjects/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MainProjects/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "MianItems" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample10" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample10">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Mian Items
+                            </p>
+                            <i class="material-icons">view_carousel</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "MianItems" ?  "show" : "")" id="multiCollapseExample10">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MianItems/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MianItems/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "Projects" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample11" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample11">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Projects
+                            </p>
+                            <i class="material-icons">work</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Projects" ?  "show" : "")" id="multiCollapseExample11">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Projects/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Projects/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item  @(ViewBag.current == "ProjectTextDescriptions" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample13" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample13">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ProjectTextDescriptions
+                            </p>
+                            <i class="material-icons">format_size</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "ProjectTextDescriptions" ?  "show" : "")" id="multiCollapseExample13">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectTextDescriptions/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectTextDescriptions/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item  @(ViewBag.current == "Suppliers" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample16" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Suppliers
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample16">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Suppliers/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Suppliers/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "Villas" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample17" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample17">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Villas
+                            </p>
+                            <i class="material-icons">account_balance</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Villas" ?  "show" : "")" id="multiCollapseExample17">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Villas/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Villas/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample18" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Main Items
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "" ?  "show" : "")" id="multiCollapseExample18">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MianItems/Masterdetails">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/MianItems/Masterdetails">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample19" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Stages
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "" ?  "show" : "")" id="multiCollapseExample19">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Stages/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Stages/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample20" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Projects
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample20">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Projects/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Projects/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample21" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Bill Purchases
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample21">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/BillPurchases/Editing_Custom">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/BillPurchases/">View All </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/BillPurchases/Editing_CustomForEdit">Custom For Edit </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample22" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ConstructionMaterials
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample22">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ConstructionMaterials/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ConstructionMaterials/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample24" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ContPaperPayment
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample24">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ContPaperPayment/Create">Add New </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ContPaperPayment/">View All </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample25" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ContPaperPaymentReport
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample25">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ContPaperPaymentReport/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample26" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ContPaperReceipt
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample26">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ContPaperReceipt/">View </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ContPaperReceipt/Create">add </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample27" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ContPaperReceiptReport
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample27">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ContPaperReceiptReport/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample28" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                contractor
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample28">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/contractor/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/contractor/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample29" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                contractorPaperPayment
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample29">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/contractorPaperPayment/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/contractorPaperPayment/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample30" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ContractorPaperPaymentRe
+
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample30">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ContractorPaperPaymentReport/">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/contractorPaperPayment/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample31" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Contributor
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample31">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Contributor/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Contributor/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample311" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Customer
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample311">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Customer/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Customer/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample32" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                CustPaperPayment
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample32">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/CustPaperPayment/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/CustPaperPayment/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample33" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                CustPaperPaymentReport
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample33">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/CustPaperPaymentReport/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample34" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                CustPaperReceipt
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample34">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/CustPaperReceipt/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/CustPaperReceipt/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample35" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                CustPaperReceiptReport
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample35">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/CustPaperReceiptReport/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/CustPaperReceiptReport/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample36" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                DegreeOfExcellences
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample36">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/DegreeOfExcellences/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/DegreeOfExcellences/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample37" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Districts
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample37">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Districts/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Districts/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample38" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                EmloyeeTarget
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample38">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/EmloyeeTarget/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/EmloyeeTarget/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample39" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Employee
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample39">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Employee/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Employee/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample40" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                EmployeeSales
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample40">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/EmployeeSales/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/EmployeeSales/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample41" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                Engennerings
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample41">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Engennerings/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/Engennerings/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample42" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                LKAccount
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample42">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKAccount/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKAccount/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample43" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                LKBranch
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample43">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKBranch/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKBranch/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample44" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                LKCountry
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample44">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKCountry/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKCountry/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample45" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                LKNationality
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample45">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKNationality/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKNationality/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample46" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                LKStore
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample46">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKStore/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKStore/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample47" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                LKTitle
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample47">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKTitle/create">Add </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/LKTitle/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample48" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                OrderJob
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample48">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/OrderJob/Editing_Custom">Editing </a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/OrderJob/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample49" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                OrderJobFollowUp
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample49">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/OrderJobFollowUp/test">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample50" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                OrderJobFollowUpReport
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample50">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/OrderJobFollowUpReport/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample51" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                OrderJobReport
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample51">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/OrderJobReport/">View </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample52" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                PaymentSystems
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample52">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/PaymentSystems/Create">Create</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/PaymentSystems/">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample53" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                PricesOffers
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample53">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/PricesOffers/Editing_Custom">Editing</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/PricesOffers/">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample54" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                PricesOffersReport
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample54">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/PricesOffers/">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample55" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                ProjectStatus
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample55">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectStatus/Create">add</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/ProjectStatus/">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample56" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                PurchaseReport
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample56">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/PurchaseReport/Create">add</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/PurchaseReport/">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample57" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                StoreTransaction
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample57">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/StoreTransaction/Create">add</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/StoreTransaction/">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  @(ViewBag.current == "" ?  "active" : "")">
+                        <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample58" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample16">
+                            <span class="caret"></span>
+                            <p class=" d-md-block text-right">
+                                WarehouseWarrant
+                            </p>
+                            <i class="material-icons">person_pin</i>
+                        </a>
+
+                        <div class="collapse multi-collapse @(ViewBag.current == "Suppliers" ?  "show" : "")" id="multiCollapseExample58">
+                            <div class="card card-body p-0 m-0">
+                                <ul class="list-group border-right border-primary edite-background-list pr-0 ">
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/WarehouseWarrant/Editing_Custom">Editing_Custom</a>
+                                    </li>
+                                    <li class="list-group-item p-0 m-0 text-right">
+                                        <a class="nav-link p-1 m-1" href="/WarehouseWarrant/">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+   
+    <div id="mainPageDashboard">
+        <nav>
+            <button id="openbtn-manu-dashboard" class="openbtn-manu-dashboard" onclick="openNavAndIconMAtrial()">☰</button>
+            <ul class="header-alert-and-setings">
+                <li class="header-alert-and-setings-item">
+                    <a href="#"><i class="fas fa-user"></i></a>
+                </li>
+                <li class="header-alert-and-setings-item item-notifications">
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <span class="notifications-alert">5</span>
+                </li>
+                <li class="header-alert-and-setings-item">
+                    <a href="#"><i class="fas fa-grip-horizontal"></i></a>
+                </li>
+                <li class="header-alert-and-setings-item item-search">
+                    <button><i class="fas fa-search"></i></button>
+                    <div class="search-effect-group">
+                        <input type="text" name="" id="" placeholder="Search....">
+                        <span class="search-effect-group-border-effect"></span>
+                    </div>
+                </li>
+            </ul>
+            <h2 class="main-title-dashboard">Dashboard</h2>
+        </nav>
+         @RenderBody()
+    </div>
+</body>
+
+</html>

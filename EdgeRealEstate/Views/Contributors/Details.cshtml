@@ -1,0 +1,101 @@
+﻿@model EdgeRealEstate.Entities.Contributor
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Contributor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ARName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ARName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Evaluation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Evaluation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salesManID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salesManID)
+        </dd>
+
+       
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tele1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tele1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tele2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tele2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WebSite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WebSite)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

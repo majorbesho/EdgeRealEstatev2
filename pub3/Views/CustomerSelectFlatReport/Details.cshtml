@@ -1,0 +1,99 @@
+﻿@model EdgeRealEstate.Models.ViewModels.CustomerSelectFlatViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CustomerSelectFlatViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlatId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlatId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flatname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flatname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Projectid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Projectid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrntlyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrntlyDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CostMony)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CostMony)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

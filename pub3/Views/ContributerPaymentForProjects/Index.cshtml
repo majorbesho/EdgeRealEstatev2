@@ -1,0 +1,88 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.ContributerPaymentForProject>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ContributorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Actuallypaid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salesManId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.indate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.empId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paidMethod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salesManName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContributorId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Actuallypaid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.notes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salesManId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.indate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.empId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paidMethod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salesManName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,80 @@
+﻿@model EdgeRealEstate.Entities.EmloyeeTarget
+@{
+    ViewBag.Title = "Edit EmloyeeTarget";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<br />
+<h3 style="text-align:center">هدف الموظفينسس</h3>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal" dir="rtl">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.id)
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.salesManId, (SelectList)ViewBag.Employees, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.salesManId, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.salesManId, "الموظف", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.typeOfOperation, new List<SelectListItem> {
+                    new SelectListItem{ Text="عملية 1" ,Value = "عملية 1"},
+                new SelectListItem{ Text="عملية 2",Value="عملية 2"} }, "اختر", new { @class = "form-control" } )
+        </div>
+        @Html.Label("نوع العملية", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.typeOfCommission, new List<SelectListItem> {
+                    new SelectListItem{ Text="خصم 1" ,Value = "خصم 1"},
+                new SelectListItem{ Text="خصم 2",Value="خصم 2"} }, "اختر",new { @class = "form-control" })
+        </div>
+        @Html.Label("نوع الخصم", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.precent, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.precent, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.precent, "نسبة الخصم", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.fromMoney, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.fromMoney, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.fromMoney, "من مال", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.toMoney, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.toMoney, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.toMoney, "الى مال", htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="حفظ" class="btn btn-primary" /> |
+            @Html.ActionLink("رجوع", "Index")
+        </div>
+    </div>
+    @if (ViewBag.msgg == 1)
+    {
+        <div class="form-group">
+            <div class="alert alert-success alert-dismissable fade-in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>تم الحفظ بنجاح</strong>
+            </div>
+        </div>
+    }
+</div>
+}
+
+
+

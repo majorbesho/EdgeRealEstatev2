@@ -1,0 +1,242 @@
+﻿@model EdgeRealEstate.Models.ViewModels.ProjectStageMaster
+@{
+    ViewBag.Title = "Master";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+@using (Html.BeginForm("Save", "Projects", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+{    <div class="form-horizontal">
+    <h4>Create Project</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.MainProjectId,"المشروع الرئيسي", htmlAttributes: new { @class = "control-label " })
+        @Html.DropDownListFor(model => model.Project.MainProjectId, (IEnumerable<SelectListItem>)ViewBag.MainProjects, null, new { @class = "form-control" })
+    </div>
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.Ename, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.Ename, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.Ename, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.Aname,"الاسم عربى", htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.Aname, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.Aname, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.LandNo, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.LandNo, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.LandNo, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.LandSize, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.LandSize, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.LandSize, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.attachedFileAndPic, htmlAttributes: new { @class = "control-label " })
+        @*@Html.EditorFor(model => model.Project.attachedFileAndPic, new { htmlAttributes = new { @class = "form-control" } })*@
+        @(Html.Kendo().Upload()
+        .Name("Files")
+        .HtmlAttributes(new { aria_label = "Files" })
+        .Multiple(true)
+        //.Validation(validation => validation.AllowedExtensions(new string[] { ".gif", ".jpg", ".png" }))
+        )
+        @Html.ValidationMessageFor(model => model.Project.attachedFileAndPic, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.MaxLevelForContributions, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.MaxLevelForContributions, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.MaxLevelForContributions, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.ImgURL, htmlAttributes: new { @class = "control-label " })
+        @*@Html.EditorFor(model => model.Project.ImgURL, new { htmlAttributes = new { @class = "form-control" } })*@
+        @(Html.Kendo().Upload()
+        .Name("Image")
+        .HtmlAttributes(new { aria_label = "Image" })
+        .Multiple(false)
+        .Validation(validation => validation.AllowedExtensions(new string[] { ".gif", ".jpg", ".png" }))
+        )
+        <div class="demo-hint">You can only upload <strong>GIF</strong>, <strong>JPG</strong>, <strong>PNG</strong> files.</div>
+        @Html.ValidationMessageFor(model => model.Project.ImgURL, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.BeginDateAcutely, htmlAttributes: new { @class = "control-label " })
+        @(Html.Kendo().DatePicker()
+        .Name("Project.BeginDateAcutely")
+        .Value(DateTime.Now)
+        .Format("yyyy/MM/dd")
+        .HtmlAttributes(new { @class = "form-control" })
+        )
+        @Html.ValidationMessageFor(model => model.Project.BeginDateAcutely, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.BeginDateExpected, htmlAttributes: new { @class = "control-label " })
+        @(Html.Kendo().DatePicker()
+        .Name("Project.BeginDateExpected")
+        .Value(DateTime.Now)
+        .Format("yyyy/MM/dd")
+        .HtmlAttributes(new { @class = "form-control" })
+        )
+        @Html.ValidationMessageFor(model => model.Project.BeginDateExpected, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.EndDateAcutely, htmlAttributes: new { @class = "control-label " })
+        @(Html.Kendo().DatePicker()
+        .Name("Project.EndDateAcutely")
+        .Value(DateTime.Now)
+        .Format("yyyy/MM/dd")
+        .HtmlAttributes(new { @class = "form-control" })
+        )
+        @Html.ValidationMessageFor(model => model.Project.EndDateAcutely, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.EndDateExpected, htmlAttributes: new { @class = "control-label " })
+        @(Html.Kendo().DatePicker()
+        .Name("Project.EndDateExpected")
+        .Value(DateTime.Now)
+        .Format("yyyy/MM/dd")
+        .HtmlAttributes(new { @class = "form-control" })
+        )
+        @Html.ValidationMessageFor(model => model.Project.EndDateExpected, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.IsExtand, htmlAttributes: new { @class = "control-label " })
+        <div class="checkbox">
+            @Html.EditorFor(model => model.Project.IsExtand)
+            @Html.ValidationMessageFor(model => model.Project.IsExtand, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.FlatNO, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.FlatNO, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.FlatNO, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.RoveNO, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.RoveNO, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.RoveNO, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.ShopNO, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.ShopNO, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.ShopNO, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.LevelNO, htmlAttributes: new { @class = "control-label " })
+        @Html.EditorFor(model => model.Project.LevelNO, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.LevelNO, "", new { @class = "text-danger" })
+
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.VellaNO, htmlAttributes: new { @class = "control-label " })
+
+        @Html.EditorFor(model => model.Project.VellaNO, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.VellaNO, "", new { @class = "text-danger" })
+
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.AdminstrationLevelNO, htmlAttributes: new { @class = "control-label " })
+
+        @Html.EditorFor(model => model.Project.AdminstrationLevelNO, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.AdminstrationLevelNO, "", new { @class = "text-danger" })
+
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.ProjectDescriptionID, htmlAttributes: new { @class = "control-label " })
+
+        @Html.EditorFor(model => model.Project.ProjectDescriptionID, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.ProjectDescriptionID, "", new { @class = "text-danger" })
+
+    </div>
+
+    <div class="form-group col-md-6">
+        @Html.LabelFor(model => model.Project.nots, htmlAttributes: new { @class = "control-label " })
+
+        @Html.EditorFor(model => model.Project.nots, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Project.nots, "", new { @class = "text-danger" })
+
+    </div>
+
+
+    <div class="form-group col-md-12">
+        @(Html.Kendo().Grid(Model.Stages)
+    .Name("Stages")
+    .ToolBar(tools => tools.Create().Text("اضف مرحلة جديدة"))
+    .Editable(editable => editable.Mode(GridEditMode.InCell).CreateAt(GridInsertRowPosition.Bottom))
+    .Columns(columns =>
+    {
+        //columns.Bound(p => p.MainItemID).Hidden().ClientTemplate("#= mainItemId #" +
+        //"<input type='hidden' name='Stages[#= index(data)#].mainItemId' value='#= mainItemId #' />");
+
+        columns.ForeignKey(p => p.StageID, (System.Collections.IEnumerable)ViewData["Stages"], "StageID", "StageName").ClientTemplate("#= StageID #" +
+        "<input type='hidden' name='Stages[#= index(data)#].StageID' value='#= StageID #' />");
+
+        //columns.Bound(p => p.Stage).ClientTemplate("#=Stage.Name#").Width(180);
+
+        columns.Bound(p => p.StartDate).Format("{0:dd/MM/yyyy}").ClientTemplate("#= StartDate #" +
+        "<input type='hidden' name='Stages[#= index(data)#].StartDate' value='#= StartDate #' />");
+
+        columns.Bound(p => p.Duration).ClientTemplate("#= Duration #" +
+        "<input type='hidden' name='Stages[#= index(data)#].Duration' value='#= Duration #' />");
+
+        columns.Bound(p => p.EndDate).Format("{0:dd/MM/yyyy}").ClientTemplate("#= EndDate #" +
+        "<input type='hidden' name='Stages[#= index(data)#].EndDate' value='#= EndDate #' />");
+
+        columns.Command(command => command.Destroy().Text("حذف"));
+
+    })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Batch(true)
+        .Model(model =>
+        {
+            model.Id(p => p.ID);
+            model.Field(p => p.ID).Editable(false);
+            model.Field(p => p.StageID).DefaultValue(1);
+            //model.Field(p => p.Stage).DefaultValue(
+            //ViewData["defaultStage"] as EdgeRealEstate.Models.ViewModels.StageListVM);
+        })
+    .ServerOperation(false)
+    ).HtmlAttributes(new { @class = "k-rtl" })
+        )
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </div>
+
+</div>
+}
+<script>
+
+    function index(dataItem) {
+        var data = $("#Stages").data("kendoGrid").dataSource.data();
+
+        return data.indexOf(dataItem);
+    }
+
+    kendo.culture("es-ES");
+</script>

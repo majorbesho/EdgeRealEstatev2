@@ -1,0 +1,67 @@
+﻿@model EdgeRealEstate.Entities.Customer
+<style>
+    .form-control {
+        height: 15px;
+    }
+</style>
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.managerName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("المدير المسؤل", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.LKAccount.ARName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الحساب", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.timeLimit, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("حد الائتمان وقت", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.moneyLimit, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("حد الائتمان فلوس", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.intialValue, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الرصيد الافتتاحى", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.currentValue, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("الرصيد الحالى", htmlAttributes: new { @class = "control-label col-md-1" })
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.isCredit)
+            @Html.ValidationMessageFor(model => model.isCredit, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.isCredit, "يسمح بالاجل", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.discountPer, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.Label("نسبة الخصم", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.autoDiscount)
+            @Html.ValidationMessageFor(model => model.autoDiscount, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.autoDiscount, "يضاف الخصم تلقائي", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.DisplayFor(model => model.Notes)
+        </div>
+        @Html.LabelFor(model => model.Notes, "ملاحظات", htmlAttributes: new { @class = "control-label col-md-1" })
+        <div class="col-md-4">
+            @Html.CheckBoxFor(model => model.isActive)
+            @Html.ValidationMessageFor(model => model.isActive, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.isActive, "نشط – موقوف", htmlAttributes: new { @class = "control-label col-md-1" })
+    </div>
+</div>

@@ -1,0 +1,126 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.Villa>
+
+@{
+    ViewBag.Title = "Index";
+    ViewBag.current = "Villas";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Aname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlotSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BeginDateAcutely)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BeginDateExpected)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDateAcutely)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDateExpected)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttachedId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DegreeOfExcellenceId)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BedroomNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.resptionNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nots)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ename)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlotSize)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BeginDateAcutely)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BeginDateExpected)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDateAcutely)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDateExpected)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImgUrl)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AttachedId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DegreeOfExcellenceId)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProjectId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BedroomNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.resptionNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nots)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>

@@ -1,0 +1,192 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #icon{
+        padding-left:10px;
+    }
+</style>
+@*<br />*@
+<h3 style="text-align:center">أمر شغل</h3>
+<div dir="rtl">
+    <button id="saveChanges" class="btn-primary" style="background-color: steelblue;color: white;cursor: pointer;"><i class="fa fa-save" id="icon"></i>   حفظ</button>
+    |
+    @Html.ActionLink("رجوع", "Index")
+    @*<button id="saveChanges" class="btn btn-primary"> <span class="glyphicon glyphicon-floppy-saved"></span>  حفظ </button>*@
+</div>
+@*<br />*@
+            <div class="form-group" id="alertsuccess" hidden="hidden" dir="rtl">
+                <div class="alert alert-success alert-dismissable fade-in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>تم الحفظ بنجاح</strong>
+                </div>
+            </div>
+            <div class="form-horizontal" dir="rtl">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.Label("انشاء عقد", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-2">
+                        @Html.CheckBox("IsCreateContract")
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("OrderJobCode", "كود امر الشغل", new { @class = "control-label col-md-2" })
+                    <div class="col-md-4">
+                        @Html.TextBox("OrderJobCode", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("OrderJobCode", "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("contractorId", "المقاول", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-4">
+                        @Html.DropDownList("contractorId", (SelectList)ViewBag.contractor, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("contractorId", "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("MainProjectId", "المشروع الرئيسى", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-4">
+                        @Html.DropDownList("MainProjectId", (SelectList)ViewBag.MainProjects, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("MainProjectId", "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("receiptEngenneringId", "المهندس القائم بالاستلام", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-4">
+                        @Html.DropDownList("receiptEngenneringId", (SelectList)ViewBag.receiptEngennering, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("receiptEngenneringId", "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("SupervisorEngenneringId", "المهندس القائم بالاشراف", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-4">
+                        @Html.DropDownList("SupervisorEngenneringId", (SelectList)ViewBag.SupervisorEngennering, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("SupervisorEngenneringId", "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("SpecialNote", "مواصفات خاصة", new { @class = "control-label col-md-2" })
+                    <div class="col-md-4">
+                        @Html.TextBox("SpecialNote", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("SpecialNote", "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("Note", "ملاحظات", new { @class = "control-label col-md-2" })
+                    <div class="col-md-4">
+                        @Html.TextBox("Note", " ", new { @class = "form-control" })
+                        @Html.ValidationMessage("Note", "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("ProjectsId", "المشروع الفرعى", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-4">
+                        @Html.DropDownList("ProjectsId", (SelectList)ViewBag.Projectes, "اختر", new { @class = "form-control" })
+                        @Html.ValidationMessage("ProjectsId", "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+@(Html.Kendo().Grid<EdgeRealEstate.Models.ViewModels.OrderJobDetailsViewModel>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.Stage).ClientTemplate("#=Stage.Aname#").Sortable(false).Width(180);
+            columns.Bound(p => p.MianItems).ClientTemplate("#=MianItems.Name#").Sortable(false).Width(180);
+            columns.Bound(p => p.Cost);
+            columns.Bound(p => p.BeginDateExpected).ClientTemplate("#= kendo.toString(BeginDateExpected, \"dd/MM/yyyy\") #");
+            columns.Bound(p => p.EndDateExpected).ClientTemplate("#= kendo.toString(EndDateExpected, \"dd/MM/yyyy\") #");
+            columns.Bound(p => p.BeginDateAcutely).ClientTemplate("#= kendo.toString(BeginDateAcutely, \"dd/MM/yyyy\") #");
+            columns.Bound(p => p.EndDateAcutely).ClientTemplate("#= kendo.toString(EndDateAcutely, \"dd/MM/yyyy\") #");
+            columns.Bound(p => p.ExecutionTime);
+            columns.Bound(p => p.Note);
+            columns.Command(command => command.Destroy().Text("حذف")).Width(150);
+        })
+        .ToolBar(toolBar =>
+        {
+            toolBar.Create().Text("اضافة جديد");
+            //toolBar.Save().SaveText(" حفظ الفاتورة").CancelText("الغاء");
+        })
+        .Editable(editable => editable.Mode(GridEditMode.InCell))
+        .Pageable()
+        .Sortable()
+        .Scrollable()
+        .HtmlAttributes(new { style = "height:300px;", @class = "k-rtl" })
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .Batch(true)
+            .ServerOperation(false)
+            .Events(events => events.Error("error_handler")/*.Change("onChange")*/)
+            .Model(model =>
+            {
+                model.Id(p => p.Id);
+                model.Field(p => p.Id).Editable(false);
+                model.Field(p => p.Stage).DefaultValue(
+                    ViewData["defaultStage"] as EdgeRealEstate.Models.ViewModels.StageVM);
+                model.Field(p => p.MianItems).DefaultValue(
+                   ViewData["defaultMainItems"] as EdgeRealEstate.Models.ViewModels.MainItemViewModel);
+            })
+            .PageSize(3)
+            .Read(read => read.Action("EditingCustom_Read", "OrderJob"))
+            .Create(create => create.Action("EditingCustom_Create", "OrderJob").Data("getmasterdata"))
+            .Update(update => update.Action("EditingCustom_Update", "OrderJob"))
+            .Destroy(destroy => destroy.Action("EditingCustom_Destroy", "OrderJob"))
+        )
+)
+
+   
+    <script type="text/javascript">
+        function error_handler(e) {
+            if (e.errors) {
+                var message = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            message += this + "\n";
+                        });
+                    }
+                });
+                //alert(message);
+            }
+        }
+    </script>
+    <script>
+
+    $("#saveChanges").kendoButton({
+        click: function (e) {
+            var grid = $("#grid").data("kendoGrid");
+                grid.saveChanges();
+                $("#alertsuccess").show();
+                $("#alertsuccess").fadeTo(2000, 500).slideUp(500, function () {
+                    $("#alertsuccess").slideUp(500);
+                });
+
+            }
+    })
+
+    </script>
+
+    <script>
+
+    function getmasterdata() {
+
+            var vOrderJobCode = $("#OrderJobCode").val();
+            var vSpecialNote = $("#SpecialNote").val();
+            var vNote = $("#Note").val();
+            var vIsCreateContract = $("#IsCreateContract").prop('checked');
+            var vcontractorId = $("#contractorId").val();
+            var vMainProjectId = $("#MainProjectId").val();
+            var vProjectsId = $("#ProjectsId").val();
+            var vreceiptEngenneringId = $("#receiptEngenneringId").val();
+            var vSupervisorEngenneringId = $("#SupervisorEngenneringId").val();
+        return {
+                 OrderJobCode : vOrderJobCode, SpecialNote: vSpecialNote,
+                    Note : vNote, IsCreateContract : vIsCreateContract,
+                    contractorId : vcontractorId, MainProjectId: vMainProjectId,
+                    ProjectsId : vProjectsId, receiptEngenneringId : vreceiptEngenneringId,
+                    SupervisorEngenneringId : vSupervisorEngenneringId
+        };
+        }
+    </script>

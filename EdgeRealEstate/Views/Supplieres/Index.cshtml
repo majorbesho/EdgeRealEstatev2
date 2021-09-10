@@ -1,0 +1,72 @@
+﻿@model IEnumerable<EdgeRealEstate.Entities.Supplieres>
+
+@{
+    ViewBag.Title = "Index";
+    ViewBag.current = "Suppliers";
+    Layout = "~/Views/Shared/_AdminPage.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Aname)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.tele1)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Adress)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.imgLogo)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.nots)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aname)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.tele1)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adress)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.imgLogo)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.nots)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>

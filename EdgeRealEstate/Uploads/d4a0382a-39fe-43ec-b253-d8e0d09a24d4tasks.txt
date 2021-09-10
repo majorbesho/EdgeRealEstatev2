@@ -1,0 +1,23 @@
+cityes
+street
+Dgree
+Districts
+stages
+Discreption 
+ProjectState 
+
+
+Relations
+
+
+project 
+	MainProjectid
+	LandNo
+	ProjectDescriptionID
+
+flat 
+	MainProjectId
+	Projects Id
+	Degreeof_____ Id 	
+
+Attached for Project
